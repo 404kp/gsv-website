@@ -70,7 +70,7 @@ h4 {
     justify-content: center;
     align-items: flex-start;
     gap: 10vw;
-    margin: 0 0 10vh 0;
+    margin: 0 0 25vh 0;
 
     .newsteaser-game {
         align-items: center;
@@ -133,10 +133,17 @@ h4 {
 .teaser-categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4vw;
-    max-width: 60%;
+    gap: 6vw;
+    max-width: 70%;
     margin: 15vh auto;
     place-items: stretch;
+    @media(max-width:$media-width-phone) {
+        max-width: 40%;
+    }
+    @media(min-width:1125px) {
+        max-width: 800px;
+    }
+    
 
 
     .teaser-categories-item {
@@ -190,6 +197,7 @@ h4 {
 
             .teaser-categories-item-text {
                 padding: 4vh 4vw;
+                height: 5vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -200,6 +208,7 @@ h4 {
                 h4 {
                     font-size: clamp(1.2rem, 1.5vw, 1.8rem);
                     margin: 0;
+                    hyphens: none;
                 }
             }
         }
@@ -278,12 +287,13 @@ h4 {
     }
 
     .teaser-categories {
-        display: flex;
-        flex-direction: column;
-        gap: 5vh;
-        max-width: 70%;
-
-        .teaser-categories-item {
+        gap: 3vh;
+        max-width: 90%;
+        @media(max-width:$media-width-phone-small) {
+            display: flex;
+            flex-direction: column;
+        }
+            .teaser-categories-item {
 
             //2nd and 3rd child yellow background and color change
             &:nth-of-type(2),

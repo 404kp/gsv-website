@@ -35,10 +35,9 @@
                     align-items: center; 
                     justify-content: center;
                     background: none;
-                    border: 4px solid $color-neutral-0;
+                    border:none;
                     cursor: pointer;
                     z-index: 20;
-                    border-radius: 50%;
                     width: 50px; 
                     height: 50px;
                     &:hover {
@@ -47,7 +46,7 @@
                 }
                 .slider-overlay {
                     position: absolute;
-                    top: 35%;
+                    top: 40%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     width: 80%;

@@ -42,7 +42,7 @@
     "underscore.string": "^3.3.6"
   },
   "scripts": {
-    "build":"sass src/scss:build/assets/css",
+    "build": "sass src/scss:build/assets/css",
     "deploy": "gh-pages -d build",
     "build:clean": "node --experimental-modules --no-warnings kickstart-scripts/tasks/clean.mjs",
     "build:clean:prod": "node --experimental-modules --no-warnings kickstart-scripts/tasks/clean.mjs --mode=prod",

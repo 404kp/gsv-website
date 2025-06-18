@@ -142,7 +142,8 @@
 
   .footer {
     .footer-motto {
-      grid-template-columns: 35vw auto 35vw;
+      grid-template-columns: 33vw auto 33vw;
+      width: 100vw;
 
       p {
         font-size: 18px;
@@ -171,7 +172,7 @@
           margin: 0;
 
           img {
-            max-width: 20vw;
+            max-width: 30vw;
             padding: 1vw;
             justify-content: center;
           }
