@@ -4,28 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description">
-    <link rel="stylesheet" href="/assets/css/webit-testprojekt.css">
-    <title>GSV Mitglied</title>
+    <meta name="description" content="Mitglied werden beim Goyatzer SV – Infos und Anmeldung.">
+    <link rel="stylesheet" href="assets/css/webit-testprojekt.css">
+    <title>Mitglied werden – Goyatzer SV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <script src="/assets/js/libs/swiper-bundle.min.js" defer></script>
-
 </head>
 
 <body>
     <div id="top"></div>
     {svg:{icon-sprite}}
-    {app:{sandbox-sitemap}}
-    {app:{header}}
-
-    {app:{member-site}}
-    {app:{scroll-to-top-button}}
-
-    <!--Footer mit Logos, Impressum, Datenschutz, ... und social Media-->
-    {app:{footer}}
+    {% include sandbox-sitemap.html %}
+    {% include header.html %}
+    {% include member-site.html %}
+    {% include scroll-to-top-button.html %}
+    {% include footer.html %}
 
 
     <!-- JavaScript -->

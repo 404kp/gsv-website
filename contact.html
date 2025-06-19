@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description">
-  <link rel="stylesheet" href="/assets/css/webit-testprojekt.css">
-  <title>GSV Kontakt</title>
+  <meta name="description" content="Kontakt zum Goyatzer SV – Ansprechpartner, Kontaktformular und mehr!">
+  <link rel="stylesheet" href="assets/css/webit-testprojekt.css">
+  <title>Kontakt – Goyatzer SV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="/assets/js/libs/swiper-bundle.min.js" defer></script>
 
 </head>
@@ -18,15 +17,15 @@
 <body>
   <div id="top"></div>
   {svg:{icon-sprite}}
-  {app:{sandbox-sitemap}}
-  {app:{header}}
+  {% include sandbox-sitemap.html %}
+  {% include header.html %}
   
-  {app:{contact-site}}
+  {% include contact-site.html %}
   
   <!--Footer mit Logos, Impressum, Datenschutz, ... und social Media-->
-  {app:{footer}}
+  {% include footer.html %}
 
-  {app:{scroll-to-top-button}}
+  {% include scroll-to-top-button.html %}
     <!-- JavaScript -->
   <script src="./assets/js/main.js" type="module"></script>
 </body>

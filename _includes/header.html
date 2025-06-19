@@ -1,0 +1,64 @@
+  <!--Unsichtbare Checkbox zum Umschalten-->
+  <input type="checkbox" id="menu-toggle">
+
+<!--Navigationsbar für Phone und Tablet: Logo und blauer Kasten-->
+<div class="navigationbar-phone">
+    <a href="/index.html">
+          <img src="./assets/img/gsv-logo-removed.png" alt="Logo" width="400px">
+    </a>
+  <div class="navigationbar-phone-bar">
+      <!--Hamburger Button Öffnen-->
+      <button class="hamburger-menu" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu-overlay">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</div>
+
+<!--Menue Overlay für Phone und Tablet Ansicht-->
+<div class="menu-overlay" id="menu-overlay" tabindex="-1">
+
+  <div class="menu-overlay-content">
+    <span class="close-menu-overlay" onclick="document.getElementById('menu-toggle').click();">&times;</span>
+    <ul>
+      <li>
+        <!--Icon für football-->
+        <svg class="menu-icon" height="40px" width="40px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-football"></use>
+        </svg>
+        <a href="#football">Fußball</a>
+      </li>
+      <li>
+        <!--Icon for tabletennis-->
+        <svg class="menu-icon" height="40px" width="40px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-tabletennis"></use>
+        </svg>
+        <a href="#tabletennis">Tischtennis</a>
+      </li>
+      <li>
+        <!--Icon for news-->
+        <svg class="menu-icon" height="40px" width="40px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-news"></use>
+        </svg>
+        <a href="#news">Aktuelles</a>
+      </li>
+      <li>
+        <!--Icon for about us-->
+        <svg class="menu-icon" height="40px" width="40px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-aboutus"></use>
+        </svg>
+        <a href="/landingpage.html">Über uns</a>
+      </li>
+      <li>
+        <!--Icon for impressions-->
+        <svg class="menu-icon" height="40px" width="40px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-impressions"></use>
+        </svg>
+        <a href="#impressions">Impressionen</a>
+      </li>
+      <!-- ...weiterer Code... -->
+    </ul>
+  </div>
+</div>
+<!-- ...weiterer Code... -->

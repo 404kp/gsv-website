@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description">
-  <link rel="stylesheet" href="/assets/css/webit-testprojekt.css">
-  <title>GSV Landingpage</title>
+  <meta name="description" content="Goyatzer SV - Über uns, Sportarten, Trainer und mehr!">
+  <link rel="stylesheet" href="assets/css/webit-testprojekt.css">
+  <title>Über uns – Goyatzer SV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="/assets/js/libs/swiper-bundle.min.js" defer></script>
 
 </head>
@@ -18,15 +17,11 @@
 <body>
   <div id="top"></div>
   {svg:{icon-sprite}}
-  {app:{sandbox-sitemap}}
-  {app:{header}}
-  
-  {app:{landing-page}}
-  
-  <!--Footer mit Logos, Impressum, Datenschutz, ... und social Media-->
-  {app:{footer}}
-
-  {app:{scroll-to-top-button}}
+  {% include sandbox-sitemap.html %}
+  {% include header.html %}
+  {% include landing-page.html %}
+  {% include footer.html %}
+  {% include scroll-to-top-button.html %}
     <!-- JavaScript -->
   <script src="./assets/js/main.js" type="module"></script>
 </body>
