@@ -17,15 +17,15 @@
 <body>
   <div id="top"></div>
   {svg:{icon-sprite}}
-  {% include sandbox-sitemap.html %}
-  {% include header.html %}
-  
-  {% include contact-site.html %}
-  
-  <!--Footer mit Logos, Impressum, Datenschutz, ... und social Media-->
-  {% include footer.html %}
+  {app:{sandbox-sitemap}}
+  {app:{header}}
 
-  {% include scroll-to-top-button.html %}
+  {app:{contact-site}}
+
+  <!--Footer mit Logos, Impressum, Datenschutz, ... und social Media-->
+  {app:{footer}}
+
+  {app:{scroll-to-top-button}}
     <!-- JavaScript -->
   <script src="./assets/js/main.js" type="module"></script>
 </body>

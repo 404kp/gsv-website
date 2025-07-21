@@ -19,14 +19,14 @@
 <body>
   <div id="top"></div>
   
-  {% include sandbox-sitemap.html %}
+  {app:{sandbox-sitemap}}
   <div style="height: 0; position: absolute; visibility: hidden; width: 0;">
-    {% include icon-sprite.svg %}
+    {svg:{icon-sprite}}
   </div>
-  {% include header.html %}
+  {app:{header}}
 
    <!--Swiper Slider mit drei 3 Slides-->
-    {% include swiper-slider.html %}
+    {app:{swiper-slider}}
 
     <div class="news">
       <h2>Aktuelles</h2>
@@ -45,17 +45,17 @@
     </div>
 
     <!-- blauer Teaser, hier für Trainer gesucht! Anzeige-->
-    {% include teaser.html %}
+    {app:{teaser}}
 
   <div class="inner">
 
     <!--Scroll to top-->
-    {% include scroll-to-top-button.html %}
+    {app:{scroll-to-top-button}}
 
   </div>
 
   <!--Footer mit Logos, Impressum, Datenschutz, ... und social Media-->
-  {% include footer.html %}
+  {app:{footer}}
 
   <!-- JavaScript -->
   <script src="./assets/js/main.js" type="module"></script>
