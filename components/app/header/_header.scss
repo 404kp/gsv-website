@@ -15,86 +15,122 @@
 }
 
 .navigationbar {
-  align-items: center;
-  background-color: transparent;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  max-width: 1500px;
-  padding: 20px 15px;
+  background-color: $color-accent;
   position: fixed;
   top: 0;
-  transform: translateX(-50%);
-  width: 90%;
-  z-index: 100;
-
-  .navigationbar-actions-social {
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 65px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  
+  // Subtiler Verlauf für mehr Tiefe
+  background: linear-gradient(135deg, $color-accent, $color-accent);
+  
+  .navigationbar-content {
+    max-width: 1150px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    margin-top: -1vh;
-  }
-}
-
-.navigation-logo {
-  align-items: center;
-  display: flex;
-  margin: 0 -20px 0 0;
-  position: relative;
-  z-index: 10;
-}
-
-.navigation-logo img {
-  max-width: 10vh;
-}
-
-.navigationbar-actions {
-  margin-top: -2vh;
-
-  ul {
-    background-color: $color-primary;
-    border-radius: $border-radius-large;
-    border: 5px solid $color-neutral-0;
-    display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
-    padding: 7px 10px 7px 20px;
-    position: relative;
-    z-index: 5;
     align-items: center;
-    hyphens: none;
-    margin-top:2vh;
-
-    li {
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+    
+    .navigation-logo {
+      flex-shrink: 0;
+      position: relative;
+      z-index: 10;
+      
       a {
-        color: $color-neutral-0;
-        font-family: $font-family-base;
-        border-radius: $border-radius-small;
         display: flex;
-        flex-wrap: wrap;
-        font-size: $font-size-base;
-        padding: 15px;
-        text-decoration: none;
-        transition: color 0.3s ease, background-color 0.3s ease;
-
-        &:hover {
-          background-color: $color-accent;
-          border-radius: 5px;
-          color: $color-neutral-100;
+        align-items: center;
+        
+        img {
+          height: 120px;
+          width: auto;
+          transition: all 0.4s ease;
+          position: relative;
+          z-index: 15;
+          
+          // Logo ragt nach unten aus der Navigation heraus
+          margin-bottom: -40px;
+          
+          &:hover {
+            transform: scale(1.08) rotate(2deg);
+            animation: pulse 2s infinite;
+            margin-bottom: -45px;
+          }
+        }
+      }
+      
+    }
+    
+    // Puls-Animation für das Logo
+    @keyframes pulse {
+      0%, 100% { 
+        transform: scale(1.08) rotate(2deg); 
+      }
+      50% { 
+        transform: scale(1.12) rotate(2deg); 
+      }
+    }
+    
+    .navigationbar-menu {
+      display: flex;
+      justify-content: center;
+      
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 15px;
+        align-items: center;
+        
+        li {
+          a {
+            color: $color-primary;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 12px 15px;
+            border-radius: $border-radius-small;
+            transition: all 0.3s ease;
+            
+            &:hover {
+              background-color: $color-primary;
+              color: $color-accent;
+              transform: translateY(-2px);
+            }
+          }
         }
       }
     }
-
-    li:last-child {
-      a {
-        background-color: $color-accent;
-        color: $color-primary;
+    
+    .navigationbar-action {
+      flex-shrink: 0;
+      
+      .primary {
+        background-color: $color-primary;
+        color: $color-accent;
+        border: 2px solid $color-primary;
+        padding: 15px 25px;
+        font-size: 16px;
         font-weight: bold;
-        padding: 15px;
-
+        text-decoration: none;
+        border-radius: $border-radius-large;
+        transition: all 0.3s ease;
+        display: inline-block;
+        
         &:hover {
-          background-color: $color-neutral-0;
+          background-color: $color-accent;
           color: $color-primary;
+          border-color: $color-primary;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(14, 121, 191, 0.3);
         }
       }
     }
@@ -102,23 +138,7 @@
 }
 
 .navbar-social-media {
-  display: flex;
-  gap: 32px;
-  z-index: 110;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-right: 2vw;
-  margin-top: 1vh;
-
-  a {
-    cursor: pointer;
-    max-width: 40px;
-    transition: transform 0.2s ease;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
+  display: none; // Verstecken für das neue Design
 }
 
 // logo as button

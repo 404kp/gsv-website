@@ -44,6 +44,7 @@
   "scripts": {
     "build": "sass src/scss:build/assets/css",
     "deploy": "gh-pages -d build",
+    "dev": "npm run build:dev && npm run watch",
     "build:clean": "node --experimental-modules --no-warnings kickstart-scripts/tasks/clean.mjs",
     "build:clean:prod": "node --experimental-modules --no-warnings kickstart-scripts/tasks/clean.mjs --mode=prod",
     "build:html": "node --experimental-modules --no-warnings kickstart-scripts/tasks/html-replace.mjs && node --experimental-modules --no-warnings kickstart-scripts/tasks/html-minify.mjs && node --experimental-modules --no-warnings kickstart-scripts/tasks/html-validate.mjs",
@@ -75,5 +76,6 @@
   "installedComponents": [],
   "dependencies": {
     "swiper": "^11.2.6"
-  }
+  },
+  "_comment": "cd build && python3 -m http.server 8000"
 }

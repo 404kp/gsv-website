@@ -1,0 +1,483 @@
+// Football Site Styling - Modern redesign based on member-site
+@use "../base/variables" as *;
+
+.football-site {
+    margin: 0;
+    position: relative;
+    top: -81px; // Move hero up to touch navigation, logo extends over hero
+
+    @media (max-width:$media-width-phone-navbar) {
+        top: -55px; // Mobile navigation height
+    }
+
+    .football-hero {
+        background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center;
+        background-size: cover;
+        padding: 8vh 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        position: relative;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        .football-hero-text {
+            color: $color-neutral-0;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            padding: 0 20px;
+
+            h1 {
+                margin: 0 auto 15px auto;
+                text-align: center;
+                max-width: 800px;
+                font-size: 3.5rem;
+                font-weight: 700;
+                line-height: 1.2;
+
+                @media(max-width:$media-width-phone-navbar) {
+                    font-size: 2.5rem;
+                }
+
+                @media(max-width:$media-width-phone) {
+                    font-size: 2rem;
+                }
+            }
+
+            h2 {
+                color: $color-accent;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0 auto 25px auto;
+
+                @media(max-width:$media-width-phone-navbar) {
+                    font-size: 1.3rem;
+                }
+            }
+
+            p {
+                margin: 0 auto;
+                text-align: center;
+                max-width: 700px;
+                font-size: 1.3rem;
+                line-height: 1.6;
+                opacity: 0.95;
+
+                @media(max-width:$media-width-phone-navbar) {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+  
+  .football-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 20px 0 20px;
+  }
+  
+  // Training Schedule Section
+  .training-schedule {
+    margin: 80px 0;
+
+    @media (max-width: $media-width-phone-navbar){
+        margin: 60px 0;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      color: $color-primary;
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 700;
+
+      @media(max-width:$media-width-phone-navbar) {
+          font-size: 2rem;
+      }
+    }
+    
+    .training-schedule-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      line-height: 1.6;
+    }
+    
+    .training-teams {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+      
+      @media (max-width: 580px) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+    
+    .training-team-item {
+      background: $color-neutral-0;
+      border-radius: 20px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+      border: 2px solid #f1f5f9;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+        border-color: $color-primary;
+      }
+      
+      .training-team-header {
+        background: linear-gradient(135deg, $color-primary, #1e40af);
+        padding: 25px 30px;
+        color: white;
+        background-color: $color-primary;
+        position: relative;
+        
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          right: 0;
+          height: 20px;
+          background: linear-gradient(135deg, $color-primary, #1e40af);
+          clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+        }
+        
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin: 0 0 8px 0;
+          background: $color-accent;
+          padding: 12px 20px;
+          border-radius: 25px;
+          display: inline-block;
+          color: $color-primary;
+          text-align: center;
+          min-width: 200px;
+        }
+        
+        .training-age {
+          background: rgba(255, 255, 255, 0.2);
+          color: white;
+          padding: 8px 18px;
+          border-radius: 20px;
+          font-size: 1rem;
+          font-weight: 600;
+          border: 2px solid rgba(255, 255, 255, 0.3);
+          display: inline-block;
+          margin-top: 5px;
+        }
+      }
+      
+      .training-details {
+        padding: 35px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      
+      .training-time,
+      .training-location,
+      .training-trainer,
+      .training-contact {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 15px 0;
+        border-bottom: 1px solid #f1f5f9;
+        
+        &:last-child {
+          border-bottom: none;
+          margin-bottom: 0;
+        }
+        
+        .training-icon {
+          width: 28px;
+          height: 28px;
+          fill: $color-primary;
+          flex-shrink: 0;
+          padding: 8px;
+          background: rgba(14, 121, 191, 0.1);
+          border-radius: 10px;
+        }
+        
+        .training-info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          
+          p {
+            margin: 0;
+            line-height: 1.5;
+            
+            &:first-child {
+              font-weight: 700;
+              color: #1f2937;
+              font-size: 1.1rem;
+              margin-bottom: 4px;
+            }
+            
+            &:last-child {
+              color: #666;
+              font-size: 0.95rem;
+            }
+          }
+        }
+      }
+      
+      .training-contact {
+        .training-info p {
+          color: $color-primary;
+          font-weight: 600;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: $color-accent;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    
+    .training-note {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid $color-primary;
+      
+      p {
+        margin: 0;
+        font-style: italic;
+        color: #666;
+        line-height: 1.5;
+      }
+    }
+  }
+  
+  // Trial Training Section (styled like bildteaser)
+  .trial-training {
+    position: relative;
+    width: 100vw;
+    margin: 12vh 0;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+    align-items: center;
+    font-weight: bold;
+    padding: 4vw 2vw;
+    background: $color-primary;
+    
+    .trial-training-content {
+      max-width: 1500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6vw;
+      
+      .trial-training-text {
+        color: $color-neutral-0;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        text-align: center;
+        
+        h3 {
+          margin-bottom: 0;
+          font-size: clamp(2rem, 4vw, 3rem);
+          color: white;
+        }
+        
+        > p {
+          max-width: 40vw;
+          font-size: clamp(1rem, 2vw, 1.2rem);
+          line-height: 1.6;
+          color: white;
+        }
+        
+        .trial-benefits {
+          margin: 2vh 0;
+          
+          .trial-benefits-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1vh 2vw;
+            max-width: 35vw;
+            
+            .trial-benefit-item {
+              display: flex;
+              align-items: center;
+              gap: 0.5vw;
+              text-align: left;
+              
+              .trial-icon {
+                width: 16px;
+                height: 16px;
+                fill: #22c55e;
+                flex-shrink: 0;
+                padding: 8px;
+                border: 2px solid #22c55e;
+                border-radius: 8px;
+              }
+              
+              p {
+                margin: 0;
+                font-size: clamp(0.8rem, 1.5vw, 1rem);
+                line-height: 1.4;
+                font-weight: normal;
+                color: white;
+              }
+            }
+          }
+        }
+        
+        .secondary {
+          font-size: 20px;
+          margin: 2vh 0;
+          padding: 1vw 2vw;
+          background: rgba(251, 233, 29, 0.9);
+          transition: all 0.3s ease;
+          color: $color-primary;
+          text-decoration: none;
+          border-radius: 8px;
+          
+          &:hover {
+            background: #f2e44b;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(251, 233, 29, 0.4);
+          }
+        }
+        
+        .trial-direct-contact {
+          margin-top: 2vh;
+          text-align: center;
+          color: white;
+          
+          p {
+            margin: 0 0 1vh 0;
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
+            font-weight: normal;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          }
+          
+          .trial-email {
+            color: $color-accent;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
+            padding: 1vh 1vw;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 10px;
+            
+            &:hover {
+              background: rgba(251, 233, 29, 0.2);
+              transform: translateY(-2px);
+            }
+          }
+        }
+      }
+    }
+    
+    @media (max-width: 768px) {
+      margin: 8vh 0;
+      padding: 6vw 4vw;
+      
+      .trial-training-content {
+        flex-direction: column;
+        gap: 4vh;
+        
+        .trial-training-text {
+          
+          > p {
+            max-width: 80vw;
+          }
+          
+          .trial-benefits {
+            .trial-benefits-list {
+              grid-template-columns: 1fr;
+              max-width: 80vw;
+              gap: 2vh 0;
+              
+              .trial-benefit-item {
+                gap: 3vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile responsive adjustments
+@media (max-width: $media-width-phone-navbar) {
+    .football-site {
+        .football-inner {
+            padding: 0 15px;
+
+            .training-schedule {
+                margin: 60px 0;
+
+                .training-teams {
+                    .training-team-item {
+                        padding: 30px 20px;
+                    }
+                }
+            }
+        }
+
+        .trial-training {
+            padding: 60px 0;
+
+            .trial-training-content {
+                padding: 60px 15px;
+            }
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 640px) {
+  .football-site {
+    .training-teams {
+      grid-template-columns: 1fr;
+    }
+    
+    .training-team-item {
+      padding: 20px;
+      
+      .training-team-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        
+        .training-age {
+          align-self: flex-start;
+        }
+      }
+    }
+    
+    .trial-training {
+      padding: 30px 20px;
+    }
+  }
+}

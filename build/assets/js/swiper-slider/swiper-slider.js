@@ -32,25 +32,6 @@ function SliderHero() {
       // },
     });
 
-    let isPlaying = true;
-
-    // Find the pause buttons. It makes sense to do this only if the slider exists.
-    document.querySelectorAll('.swiper-slider-pause').forEach(button => {
-      // Ensure HeroSwiper exists before accessing it (should be guaranteed by the if block above)
-      button.addEventListener('click', function () {
-        if (isPlaying) {
-          HeroSwiper.autoplay.stop();
-          this.textContent = '▶'; // Play symbol
-          console.log('Swiper was stopped');
-        } else {
-          HeroSwiper.autoplay.start();
-          this.textContent = '⏸'; // Pause symbol
-          console.log('Swiper runs again');
-        }
-        isPlaying = !isPlaying;
-      });
-    });
-
     // Intersection Observer for autoplay - also only initialize if the slider exists
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -58,13 +39,9 @@ function SliderHero() {
         if (!HeroSwiper || !HeroSwiper.autoplay) return;
 
         if (entry.isIntersecting) {
-          // Only start if isPlaying is true (i.e., the user hasn't manually paused)
-          if (isPlaying) {
-            HeroSwiper.autoplay.start();
-            console.log('Swiper is visible - autoplay running');
-          } else {
-             console.log('Swiper is visible - autoplay manually paused');
-          }
+          // Start autoplay when slider is visible
+          HeroSwiper.autoplay.start();
+          console.log('Swiper is visible - autoplay running');
         } else {
           // Stop autoplay if the slider is not visible
           HeroSwiper.autoplay.stop();

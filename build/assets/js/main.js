@@ -17,6 +17,7 @@ import InitSliderHero from "./swiper-slider/swiper-slider.js";
 import InitImageZoom from "./image-zoom/image-zoom.js";
 import InitSliderTestimonial from "./landing-page/landing-page.js";
 import InitMenuOverlayPhone from "./header/header.js";
+import InitFootballSite from "./football-site/football-site.js";
 
 
 /**
@@ -45,6 +46,7 @@ function init() {
   InitImageZoom();
   InitSliderTestimonial();
   InitMenuOverlayPhone();
+  InitFootballSite();
 };
 
 init();

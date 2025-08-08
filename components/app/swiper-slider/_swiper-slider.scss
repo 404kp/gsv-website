@@ -3,95 +3,117 @@
 
 //desktop size
 .slider {
-    max-width: 1500px;
-    margin: 15vh auto 5vh auto;
+    max-width: 1600px;
+    margin: 120px auto 8vh auto;
     overflow: hidden;
+    position: relative;
+    
     .swiper-wrapper {
         .swiper-slide {
             overflow: hidden;
             border-radius: $border-radius-large;
+            position: relative;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(14, 121, 191, 0.3), rgba(251, 233, 29, 0.3));
+                z-index: -1;
+                border-radius: $border-radius-large;
+            }
+            
             .swiper-slide-wrapper {
                 max-width: 90%;
                 margin: 0 auto;
+                position: relative;
+                border-radius: $border-radius-large;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                
                 img {
                     width: 100%;
-                    height: 80vh;
+                    height: 70vh;
                     min-width: auto;
                     border-radius: $border-radius-large;
                     object-fit: cover;
                     object-position: center;
+                    transition: transform 0.7s ease;
                 }
-                .swiper-slider-pause {
-                    &:focus {
-                        outline: 2px solid $color-neutral-0;
-                    }
-                    display: flex;
-                    position: absolute;
-                    bottom: 5%;
-                    left: 10%;
-                    font-size: 30px;
-                    font-weight: bold;
-                    color: $color-neutral-0;
-                    align-items: center; 
-                    justify-content: center;
-                    background: none;
-                    border:none;
-                    cursor: pointer;
-                    z-index: 20;
-                    width: 50px; 
-                    height: 50px;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
+                
+                &:hover img {
+                    transform: scale(1.05);
                 }
+                
                 .slider-overlay {
                     position: absolute;
-                    top: 40%;
+                    top: 45%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    width: 80%;
+                    width: 85%;
                     max-width: 1200px;
                     z-index: 10;
                     opacity: 1;
+                    text-align: center;
+                    
                     h1 {
-                        margin: 2vh 0;
+                        margin: 3vh 0;
+                        
                         .highlighted {
                             display: inline-block;
                             background-color: $color-primary;
                             color: $color-accent;
-                            padding: 1vw;
+                            padding: 1.5vw 2vw;
                             border-radius: $border-radius-small;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 8px 20px rgba(14, 121, 191, 0.3);
+                            
                             &:hover {
-                                transform: scale(1.1);
+                                transform: translateY(-5px);
+                                box-shadow: 0 12px 25px rgba(14, 121, 191, 0.4);
                             }
                         }
                     }
+                    
                     a {
                         display: inline-block;
-                        margin-top: 4vh;
+                        margin-top: 5vh;
                         justify-self: center;
                     }
                 }
             }
         }
     }
+    
     .swiper-pagination {
         position: relative;
-        margin: 2vh 0;
+        margin: 4vh 0;
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
 
-        &.bullet {
-            width: 12px;
-            height: 12px;
-            background-color: $color-neutral-50;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(14, 121, 191, 0.3);
             border-radius: 50%;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
 
-            &.active {
+            &.swiper-pagination-bullet-active {
                 background-color: $color-primary;
+                transform: scale(1.2);
+                border: 2px solid $color-accent;
+                box-shadow: 0 4px 12px rgba(14, 121, 191, 0.4);
+            }
+            
+            &:hover {
+                background-color: $color-primary;
+                transform: scale(1.1);
             }
         }
     }  
@@ -111,7 +133,7 @@
                     height: auto;
                 }
                 .slider-overlay {
-                    top: 15%;
+                    top: 23%;
                     left: 50%;
                     margin-top: 8vh;
 
@@ -128,20 +150,6 @@
                             padding: 10px;
                             margin-top: 0;
                         }
-                    }
-                }
-                .swiper-slider-pause {
-                    top: 5%;
-                    left: 68vw;
-                    display: flex;
-                    align-items: center; 
-                    justify-content: center; 
-                    flex-wrap: wrap;
-                    &:hover {
-                        transform: none;
-                    }
-                    &:focus  {
-                        outline: none;
                     }
                 }
                }

@@ -554,7 +554,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
         <svg class="menu-icon" height="40px" width="40px">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-football"></use>
         </svg>
-        <a href="#football">Fußball</a>
+        <a href="/football.html">Fußball</a>
       </li>
       <li>
         <!--Icon for tabletennis-->
@@ -624,47 +624,32 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
 
 <!--hier kommt die Navigationbar für desktop-Ansicht -->
 <div class="navigationbar"> 
-  
-  <!--Goyatzer SV Logo oben links in der Ecke-->
+  <div class="navigationbar-content">
+    
+    <!--Logo links-->
     <div class="navigation-logo">
       <a href="/index.html">
-        <img src="./assets/img/gsv-logo-removed.png" alt="Logo" width="400px">
+        <img src="./assets/img/gsv-logo-removed.png" alt="Goyatzer SV Logo">
       </a>
     </div>
-  
-  <div class="navigationbar-actions-social">
-    <!-- Social Media Icons-->
-    <div class="navbar-social-media">
-        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-          </svg>
-        </a>
-        <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/goyatzer_sv/" target="_blank" aria-label="Instagram">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
-          </svg>
-        </a>
-      </div>
-
-   <!--Navigationsbar: Menüpunkte und Mitglied werden-button-->
-    <div class="navigationbar-actions">
+    
+    <!--Menü in der Mitte-->
+    <div class="navigationbar-menu">
       <ul>
-      <li><a href="#football">Fußball</a></li>
-      <li><a href="#tabletennis">Tischtennis</a></li>
-      <li><a href="#news">Aktuelles</a></li>
-      <li><a href="/landingpage.html">Über uns</a></li>
-      <li><a href="#impressions">Impressionen</a></li>
-      <li><a href="/contact.html">Kontakt</a></li>
-      <li><a href="/member.html">Mitglied werden!</a></li>
+        <li><a href="/football.html">Fußball</a></li>
+        <li><a href="#tabletennis">Tischtennis</a></li>
+        <li><a href="#news">Aktuelles</a></li>
+        <li><a href="/landingpage.html">Über uns</a></li>
+        <li><a href="#impressions">Impressionen</a></li>
+        <li><a href="/contact.html">Kontakt</a></li>
       </ul>
     </div>
-
+    
+    <!--Button rechts-->
+    <div class="navigationbar-action">
+      <a href="/member.html" class="primary">Mitglied werden</a>
+    </div>
+    
   </div>
 </div>
 
@@ -685,7 +670,6 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
           <h1><span class="highlighted">Leidenschaft.</span></h1>
           <a href="" class="primary">Jetzt ihr Kind anmelden!</a>
         </div>
-        <button class="swiper-slider-pause">&#9208;</button>
 
 
       </div>
@@ -703,7 +687,6 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
           <h1><span class="highlighted">Zusammenhalt.</span></h1>
           <a href="" class="primary">Jetzt ihr Kind anmelden!</a>
         </div>
-        <button class="swiper-slider-pause">&#9208;</button>
 
       </div>
     </div>
@@ -720,7 +703,6 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
           <h1><span class="highlighted">Zukunft.</span></h1>
           <a href="" class="primary">Jetzt ihr Kind anmelden!</a>
         </div>
-        <button class="swiper-slider-pause">&#9208;</button>
 
       </div>
     </div>
@@ -728,7 +710,6 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
   <!--Pagination-->
   <div class="swiper-pagination hero-pagination"></div>
 </div>
-
 
     <div class="news">
       <h2>Aktuelles</h2>
@@ -758,9 +739,8 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
         uns sehr freuen, wenn Vereinsmitglieder oder Nichtvereinsmitglieder sich der Aufgabe stellen und die neue
         Herausforderung annehmen würden. 
       </P>
-      <a href="https://www.fussball.de/mannschaft/goyatzer-sv-goyatzer-sv-brandenburg/-/saison/2425/team-id/015S8IN9N4000000VV0AG80NVVD9188S#!/"
-        class="secondary">
-        zum Kontaktformular
+      <a href="/contact.html"class="secondary">
+        Kontakt
       </a>
     </div>
     <div class="bildteaser-img">
@@ -769,11 +749,11 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
   </div>
 </div>
 
+<!--Teaser komplett auskommentieren
 
-<!--Newsteaser: Anzeige von vergangenen Spielen der 1. Männermannschaft-->
 <h3>Abteilung Fußball Herren</h3>
 <div class="newsteaser">
-  <!--div letztes Spiel-->
+
   <div class="newsteaser-game">
     <h4>Letztes Spiel</h4>
     <div class="newsteaser-game-score">
@@ -794,7 +774,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
     </a>
   </div>
 
-  <!--div nächstes Spiel-->
+
   <div class="newsteaser-game">
     <h4>Nächstes Spiel</h4>
     <div class="newsteaser-game-score">
@@ -815,7 +795,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
     </a>
   </div>
 
-  <!--div Tabelle-->
+
   <div class="newsteaser-table">
     <h4>Tabelle</h4>
     <a href="https://www.fussball.de/mannschaft/goyatzer-sv-goyatzer-sv-brandenburg/-/saison/2425/team-id/015S8IN9N4000000VV0AG80NVVD9188S#!/"
@@ -826,6 +806,8 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
     </a>
   </div>
 </div>
+
+Ende auskommentierter Teaser-->
 
 <!--Teaser für Kategorien unten vor Footer-->
 <div class="teaser-categories">
