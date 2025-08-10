@@ -10,22 +10,17 @@
   display: none;
 }
 
-#menu-toggle {
-  display: none;
-}
-
 .navigationbar {
   background-color: $color-accent;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
-  height: 65px;
-  padding: 15px 20px;
+  height: 80px;
+  padding: 15px 0;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  overflow: visible;
+  box-sizing: border-box;
   
   // Subtiler Verlauf für mehr Tiefe
   background: linear-gradient(135deg, $color-accent, $color-accent);
@@ -35,9 +30,11 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
     
     .navigation-logo {
       flex-shrink: 0;
@@ -81,6 +78,7 @@
     .navigationbar-menu {
       display: flex;
       justify-content: center;
+      flex: 1;
       
       ul {
         display: flex;
@@ -89,8 +87,11 @@
         padding: 0;
         gap: 15px;
         align-items: center;
+        justify-content: center;
         
         li {
+          position: relative;
+          
           a {
             color: $color-primary;
             text-decoration: none;
@@ -99,11 +100,84 @@
             padding: 12px 15px;
             border-radius: $border-radius-small;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
             
             &:hover {
               background-color: $color-primary;
               color: $color-accent;
               transform: translateY(-2px);
+            }
+          }
+          
+          // Dropdown Styles
+          &.nav-dropdown {
+            .nav-dropdown-trigger {
+              .dropdown-arrow {
+                width: 12px;
+                height: 12px;
+                fill: $color-primary;
+                transition: transform 0.3s ease;
+              }
+            }
+            
+            .nav-dropdown-menu {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              background: $color-primary;
+              border: 2px solid $color-accent;
+              border-radius: $border-radius-medium;
+              box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+              opacity: 0;
+              visibility: hidden;
+              transform: translateY(-10px);
+              transition: all 0.3s ease;
+              z-index: 1000;
+              min-width: 220px;
+              
+              a {
+                display: block;
+                padding: 12px 20px;
+                color: $color-neutral-0;
+                border-radius: 0;
+                font-size: 16px;
+                white-space: nowrap;
+                
+                &:first-child {
+                  border-top-left-radius: $border-radius-medium;
+                  border-top-right-radius: $border-radius-medium;
+                  font-weight: 600;
+                  color: $color-accent;
+                  border-bottom: 1px solid $color-accent;
+                }
+                
+                &:last-child {
+                  border-bottom-left-radius: $border-radius-medium;
+                  border-bottom-right-radius: $border-radius-medium;
+                }
+                
+                &:hover {
+                  background: $color-accent;
+                  color: $color-primary;
+                  transform: none;
+                }
+              }
+            }
+            
+            &:hover {
+              .nav-dropdown-trigger {
+                .dropdown-arrow {
+                  transform: rotate(180deg);
+                }
+              }
+              
+              .nav-dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+              }
             }
           }
         }
@@ -191,7 +265,7 @@
   }
 
   #menu-toggle {
-    display: none;
+    display: none; // Menu Toggle aktivieren für mobile
   }
 
 
@@ -202,8 +276,11 @@
     position: fixed;
     top: 5px;
     left: 0;
-    width: 100%;
-    z-index: 1002;
+    width: 100vw;
+    z-index: 10000;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 
     img {
       max-width: 72px;
@@ -214,9 +291,9 @@
     }
 
     .navigationbar-phone-bar {
-      width: 85%;
+      flex: 1;
       align-items: center;
-      height: 30px;
+      height: 50px;
       padding: 10px;
       background-color: $color-primary;
       border-radius: $border-radius-small $border-radius-small $border-radius-small 0;
@@ -226,6 +303,7 @@
       margin-left: -30px;
       z-index: 5;
       border: 2px solid $color-neutral-0;
+      box-sizing: border-box;
 
       .hamburger-menu {
         &:focus {
@@ -238,6 +316,11 @@
         flex-direction: column;
         gap: 5px;
         padding: 0;
+        z-index: 10001;
+        position: relative;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        will-change: transform;
 
         span {
           display: block;
@@ -245,6 +328,8 @@
           height: 5px;
           background-color: $color-neutral-0;
           border-radius: $border-radius-small;
+          transition: all 0.3s ease;
+          transform-origin: center;
         }
       }
     }
@@ -258,12 +343,12 @@
       outline: 2px solid $color-neutral-100;
     }
 
-    z-index: 1010;
+    z-index: 11000;
     position: fixed;
     font-size: 22px;
     font-weight: 500;
     width: 80vw;
-    height: 100%;
+    height: 100vh;
     right: 0;
     transform: translateX(100%);
     opacity: 0;
@@ -275,8 +360,10 @@
     justify-self: flex-end;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease,
-    opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
 
     //mediaquery damit Overlay nicht zu groß bei 1000px
     @media(min-width:$media-width-overlay-big) {
@@ -349,8 +436,10 @@
       top: 15px;
       right: 20px;
       font-size: 70px;
-      z-index: 1015;
+      z-index: 11001;
       transition: transform 0.3s ease;
+      cursor: pointer;
+      color: $color-neutral-100;
     }
 
   }

@@ -1,11 +1,21 @@
 /* Allgemeine Styles */
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #ffffff;
     font-family: "Inter", sans-serif;
     font-size: 26px;
     margin: 0;
-    padding-top:3000px;
     padding: 0;
+    padding-top: 80px; /* Platz für fixierte Navigation */
+    overflow-x: hidden;
 }
 
 /* Überschriften */

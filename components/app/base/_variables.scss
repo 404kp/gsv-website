@@ -6,10 +6,16 @@ $font-size-base: 20px;
 // colors
 $color-primary: #0e79bf;
 $color-accent: #fbe91d;
+$color-neutral-900: #1a1a1a;
+$color-neutral-800: #2d2d2d;
+$color-neutral-700: #4a4a4a;
 $color-neutral-100: #1e1e1e;
 $color-neutral-50: #e0d9d9;
 $color-neutral-25: #eeeded;
 $color-neutral-0: #ffffff;
+
+// zusätzliche Abstufungen
+$media-width-tablet: 1024px;
 
 // primary button
 $btn-primary-bg: $color-accent;
@@ -27,6 +33,7 @@ $font-size-secondary-btn: $font-size-base;
 
 // Borders, etc.
 $border-radius-large: 25px;
+$border-radius-medium: 15px;
 $border-radius-small: 10px;
 
 //media widths

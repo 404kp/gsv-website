@@ -4,7 +4,7 @@
 .football-site {
     margin: 0;
     position: relative;
-    top: -81px; // Move hero up to touch navigation, logo extends over hero
+    top: -93px; // Move hero up to touch navigation, logo extends over hero
 
     @media (max-width:$media-width-phone-navbar) {
         top: -55px; // Mobile navigation height
@@ -109,6 +109,40 @@
       margin: 0 auto 60px;
       line-height: 1.6;
     }
+
+    // Training Sections (Herren and Jugend)
+    .training-section {
+      margin-bottom: 60px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .training-section-title {
+      font-size: 2rem;
+      color: $color-primary;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 600;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: $color-accent;
+        border-radius: 2px;
+      }
+
+      @media(max-width:$media-width-phone-navbar) {
+          font-size: 1.6rem;
+      }
+    }
     
     .training-teams {
       display: grid;
@@ -178,6 +212,132 @@
           border: 2px solid rgba(255, 255, 255, 0.3);
           display: inline-block;
           margin-top: 5px;
+        }
+      }
+      
+      .training-details {
+        padding: 35px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      
+      .training-time,
+      .training-location,
+      .training-trainer,
+      .training-contact {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 15px 0;
+        border-bottom: 1px solid #f1f5f9;
+        
+        &:last-child {
+          border-bottom: none;
+          margin-bottom: 0;
+        }
+        
+        .training-icon {
+          width: 28px;
+          height: 28px;
+          fill: $color-primary;
+          flex-shrink: 0;
+          padding: 8px;
+          background: rgba(14, 121, 191, 0.1);
+          border-radius: 10px;
+        }
+        
+        .training-info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          
+          p {
+            margin: 0;
+            line-height: 1.5;
+            
+            &:first-child {
+              font-weight: 700;
+              color: #1f2937;
+              font-size: 1.1rem;
+              margin-bottom: 4px;
+            }
+            
+            &:last-child {
+              color: #666;
+              font-size: 0.95rem;
+            }
+          }
+        }
+      }
+      
+      .training-contact {
+        .training-info p {
+          color: $color-primary;
+          font-weight: 600;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: $color-primary;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    // Spezielle Klasse für Herrenmannschaften
+    .training-team-item-senior {
+      background: $color-neutral-0;
+      border-radius: 20px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+      border: 2px solid #f1f5f9;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+        border-color: $color-primary;
+      }
+      
+      .training-team-header {
+        background: linear-gradient(135deg, $color-primary, #1e40af);
+        padding: 25px 30px;
+        color: white;
+        background-color: $color-primary;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          right: 0;
+          height: 20px;
+          background: linear-gradient(135deg, $color-primary, #1e40af);
+          clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+        }
+        
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin: 0;
+          background: $color-accent;
+          padding: 12px 20px;
+          border-radius: 25px;
+          display: inline-block;
+          color: $color-primary;
+          text-align: center;
+          min-width: 200px;
+          
+          .team-class {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-left: 10px;
+            opacity: 0.8;
+          }
         }
       }
       
@@ -438,7 +598,8 @@
                 margin: 60px 0;
 
                 .training-teams {
-                    .training-team-item {
+                    .training-team-item,
+                    .training-team-item-senior {
                         padding: 30px 20px;
                     }
                 }
@@ -462,7 +623,8 @@
       grid-template-columns: 1fr;
     }
     
-    .training-team-item {
+    .training-team-item,
+    .training-team-item-senior {
       padding: 20px;
       
       .training-team-header {
@@ -473,6 +635,15 @@
         .training-age {
           align-self: flex-start;
         }
+
+        h3 {
+          .team-class {
+            display: block;
+            margin-left: 0;
+            margin-top: 5px;
+            font-size: 1rem;
+          }
+        }
       }
     }
     
@@ -481,3 +652,78 @@
     }
   }
 }
+
+// Team Detail Button Styles
+.training-team-button {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+    
+    .team-detail-btn {
+      display: inline-block;
+      padding: 18px 35px;
+      background: linear-gradient(135deg, $color-accent, #f7d834);
+      color: $color-primary;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 6px 20px rgba(251, 233, 29, 0.3);
+      border: 3px solid $color-accent;
+      min-width: 250px;
+      position: relative;
+      overflow: hidden;
+      
+      // Subtiler Glanz-Effekt
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.6s ease;
+      }
+      
+      &:hover {
+        background: $color-primary;
+        color: $color-accent;
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 12px 30px rgba(14, 121, 191, 0.4);
+        border-color: $color-accent;
+        
+        &:before {
+          left: 100%;
+        }
+      }
+      
+      &:active {
+        transform: translateY(-2px) scale(1.01);
+        box-shadow: 0 8px 20px rgba(14, 121, 191, 0.3);
+        transition: all 0.1s ease;
+      }
+      
+      // Fokus-State für Accessibility
+      &:focus {
+        outline: none;
+        box-shadow: 0 6px 20px rgba(251, 233, 29, 0.3), 0 0 0 4px rgba(251, 233, 29, 0.4);
+      }
+      
+      @media (max-width: $media-width-phone) {
+        padding: 16px 30px;
+        font-size: 1rem;
+        min-width: 220px;
+        border-width: 2px;
+      }
+      
+      @media (max-width: $media-width-phone-small) {
+        padding: 14px 25px;
+        font-size: 0.95rem;
+        min-width: 200px;
+        border-width: 2px;
+      }
+    }
+  }

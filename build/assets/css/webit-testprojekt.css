@@ -1108,22 +1108,17 @@ a {
   display: none;
 }
 
-#menu-toggle {
-  display: none;
-}
-
 .navigationbar {
   background-color: #fbe91d;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
-  height: 65px;
-  padding: 15px 20px;
+  height: 80px;
+  padding: 15px 0;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  overflow: visible;
+  box-sizing: border-box;
   background: linear-gradient(135deg, #fbe91d, #fbe91d);
 }
 .navigationbar .navigationbar-content {
@@ -1131,9 +1126,11 @@ a {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
   height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .navigationbar .navigationbar-content .navigation-logo {
   flex-shrink: 0;
@@ -1168,6 +1165,7 @@ a {
 .navigationbar .navigationbar-content .navigationbar-menu {
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 .navigationbar .navigationbar-content .navigationbar-menu ul {
   display: flex;
@@ -1176,6 +1174,10 @@ a {
   padding: 0;
   gap: 15px;
   align-items: center;
+  justify-content: center;
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li {
+  position: relative;
 }
 .navigationbar .navigationbar-content .navigationbar-menu ul li a {
   color: #0e79bf;
@@ -1185,11 +1187,67 @@ a {
   padding: 12px 15px;
   border-radius: 10px;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .navigationbar .navigationbar-content .navigationbar-menu ul li a:hover {
   background-color: #0e79bf;
   color: #fbe91d;
   transform: translateY(-2px);
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown .nav-dropdown-trigger .dropdown-arrow {
+  width: 12px;
+  height: 12px;
+  fill: #0e79bf;
+  transition: transform 0.3s ease;
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown .nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0e79bf;
+  border: 2px solid #fbe91d;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  min-width: 220px;
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown .nav-dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown .nav-dropdown-menu a:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-weight: 600;
+  color: #fbe91d;
+  border-bottom: 1px solid #fbe91d;
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown .nav-dropdown-menu a:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown .nav-dropdown-menu a:hover {
+  background: #fbe91d;
+  color: #0e79bf;
+  transform: none;
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown:hover .nav-dropdown-trigger .dropdown-arrow {
+  transform: rotate(180deg);
+}
+.navigationbar .navigationbar-content .navigationbar-menu ul li.nav-dropdown:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .navigationbar .navigationbar-content .navigationbar-action {
   flex-shrink: 0;
@@ -1259,8 +1317,11 @@ a {
     position: fixed;
     top: 5px;
     left: 0;
-    width: 100%;
-    z-index: 1002;
+    width: 100vw;
+    z-index: 10000;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
   .navigationbar-phone img {
     max-width: 72px;
@@ -1270,9 +1331,9 @@ a {
     z-index: 10;
   }
   .navigationbar-phone .navigationbar-phone-bar {
-    width: 85%;
+    flex: 1;
     align-items: center;
-    height: 30px;
+    height: 50px;
     padding: 10px;
     background-color: #0e79bf;
     border-radius: 10px 10px 10px 0;
@@ -1282,6 +1343,7 @@ a {
     margin-left: -30px;
     z-index: 5;
     border: 2px solid #ffffff;
+    box-sizing: border-box;
   }
   .navigationbar-phone .navigationbar-phone-bar .hamburger-menu {
     background: none;
@@ -1290,6 +1352,11 @@ a {
     flex-direction: column;
     gap: 5px;
     padding: 0;
+    z-index: 10001;
+    position: relative;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
   }
   .navigationbar-phone .navigationbar-phone-bar .hamburger-menu:focus {
     outline: 2px solid #1e1e1e;
@@ -1300,14 +1367,16 @@ a {
     height: 5px;
     background-color: #ffffff;
     border-radius: 10px;
+    transition: all 0.3s ease;
+    transform-origin: center;
   }
   .menu-overlay {
-    z-index: 1010;
+    z-index: 11000;
     position: fixed;
     font-size: 22px;
     font-weight: 500;
     width: 80vw;
-    height: 100%;
+    height: 100vh;
     right: 0;
     transform: translateX(100%);
     opacity: 0;
@@ -1320,6 +1389,9 @@ a {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
   }
   .menu-overlay a:focus,
   .menu-overlay button:focus {
@@ -1395,8 +1467,10 @@ a {
     top: 15px;
     right: 20px;
     font-size: 70px;
-    z-index: 1015;
+    z-index: 11001;
     transition: transform 0.3s ease;
+    cursor: pointer;
+    color: #1e1e1e;
   }
   #menu-toggle:checked ~ .menu-overlay {
     transform: translateX(0);
@@ -2118,7 +2192,7 @@ html {
   text-align: center;
   margin: 0;
   position: relative;
-  top: -81px;
+  top: -93px;
 }
 @media (max-width: 1140px) {
   .landing-page {
@@ -2791,7 +2865,7 @@ html {
 .contact-site {
   margin: 0 0 0 0;
   position: relative;
-  top: -81px;
+  top: -93px;
 }
 @media (max-width: 1140px) {
   .contact-site {
@@ -3269,7 +3343,7 @@ html {
 .member-site {
   margin: 0;
   position: relative;
-  top: -81px;
+  top: -93px;
 }
 @media (max-width: 1140px) {
   .member-site {
@@ -3847,7 +3921,7 @@ html {
 .football-site {
   margin: 0;
   position: relative;
-  top: -81px;
+  top: -93px;
 }
 @media (max-width: 1140px) {
   .football-site {
@@ -3950,6 +4024,36 @@ html {
   max-width: 700px;
   margin: 0 auto 60px;
   line-height: 1.6;
+}
+.football-site .training-schedule .training-section {
+  margin-bottom: 60px;
+}
+.football-site .training-schedule .training-section:last-child {
+  margin-bottom: 0;
+}
+.football-site .training-schedule .training-section-title {
+  font-size: 2rem;
+  color: #0e79bf;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  position: relative;
+}
+.football-site .training-schedule .training-section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #fbe91d;
+  border-radius: 2px;
+}
+@media (max-width: 1140px) {
+  .football-site .training-schedule .training-section-title {
+    font-size: 1.6rem;
+  }
 }
 .football-site .training-schedule .training-teams {
   display: grid;
@@ -4090,6 +4194,131 @@ html {
   transition: color 0.3s ease;
 }
 .football-site .training-schedule .training-team-item .training-contact .training-info p:hover {
+  color: #0e79bf;
+  text-decoration: underline;
+}
+.football-site .training-schedule .training-team-item-senior {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+  border: 2px solid #f1f5f9;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.football-site .training-schedule .training-team-item-senior:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+  border-color: #0e79bf;
+}
+.football-site .training-schedule .training-team-item-senior .training-team-header {
+  background: linear-gradient(135deg, #0e79bf, #1e40af);
+  padding: 25px 30px;
+  color: white;
+  background-color: #0e79bf;
+  position: relative;
+}
+.football-site .training-schedule .training-team-item-senior .training-team-header::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(135deg, #0e79bf, #1e40af);
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+}
+.football-site .training-schedule .training-team-item-senior .training-team-header h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  background: #fbe91d;
+  padding: 12px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  color: #0e79bf;
+  text-align: center;
+  min-width: 200px;
+}
+.football-site .training-schedule .training-team-item-senior .training-team-header h3 .team-class {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 10px;
+  opacity: 0.8;
+}
+.football-site .training-schedule .training-team-item-senior .training-details {
+  padding: 35px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.football-site .training-schedule .training-team-item-senior .training-time,
+.football-site .training-schedule .training-team-item-senior .training-location,
+.football-site .training-schedule .training-team-item-senior .training-trainer,
+.football-site .training-schedule .training-team-item-senior .training-contact {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.football-site .training-schedule .training-team-item-senior .training-time:last-child,
+.football-site .training-schedule .training-team-item-senior .training-location:last-child,
+.football-site .training-schedule .training-team-item-senior .training-trainer:last-child,
+.football-site .training-schedule .training-team-item-senior .training-contact:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.football-site .training-schedule .training-team-item-senior .training-time .training-icon,
+.football-site .training-schedule .training-team-item-senior .training-location .training-icon,
+.football-site .training-schedule .training-team-item-senior .training-trainer .training-icon,
+.football-site .training-schedule .training-team-item-senior .training-contact .training-icon {
+  width: 28px;
+  height: 28px;
+  fill: #0e79bf;
+  flex-shrink: 0;
+  padding: 8px;
+  background: rgba(14, 121, 191, 0.1);
+  border-radius: 10px;
+}
+.football-site .training-schedule .training-team-item-senior .training-time .training-info,
+.football-site .training-schedule .training-team-item-senior .training-location .training-info,
+.football-site .training-schedule .training-team-item-senior .training-trainer .training-info,
+.football-site .training-schedule .training-team-item-senior .training-contact .training-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.football-site .training-schedule .training-team-item-senior .training-time .training-info p,
+.football-site .training-schedule .training-team-item-senior .training-location .training-info p,
+.football-site .training-schedule .training-team-item-senior .training-trainer .training-info p,
+.football-site .training-schedule .training-team-item-senior .training-contact .training-info p {
+  margin: 0;
+  line-height: 1.5;
+}
+.football-site .training-schedule .training-team-item-senior .training-time .training-info p:first-child,
+.football-site .training-schedule .training-team-item-senior .training-location .training-info p:first-child,
+.football-site .training-schedule .training-team-item-senior .training-trainer .training-info p:first-child,
+.football-site .training-schedule .training-team-item-senior .training-contact .training-info p:first-child {
+  font-weight: 700;
+  color: #1f2937;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+.football-site .training-schedule .training-team-item-senior .training-time .training-info p:last-child,
+.football-site .training-schedule .training-team-item-senior .training-location .training-info p:last-child,
+.football-site .training-schedule .training-team-item-senior .training-trainer .training-info p:last-child,
+.football-site .training-schedule .training-team-item-senior .training-contact .training-info p:last-child {
+  color: #666;
+  font-size: 0.95rem;
+}
+.football-site .training-schedule .training-team-item-senior .training-contact .training-info p {
+  color: #0e79bf;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.football-site .training-schedule .training-team-item-senior .training-contact .training-info p:hover {
   color: #fbe91d;
   text-decoration: underline;
 }
@@ -4247,7 +4476,8 @@ html {
   .football-site .football-inner .training-schedule {
     margin: 60px 0;
   }
-  .football-site .football-inner .training-schedule .training-teams .training-team-item {
+  .football-site .football-inner .training-schedule .training-teams .training-team-item,
+  .football-site .football-inner .training-schedule .training-teams .training-team-item-senior {
     padding: 30px 20px;
   }
   .football-site .trial-training {
@@ -4261,19 +4491,411 @@ html {
   .football-site .training-teams {
     grid-template-columns: 1fr;
   }
-  .football-site .training-team-item {
+  .football-site .training-team-item,
+  .football-site .training-team-item-senior {
     padding: 20px;
   }
-  .football-site .training-team-item .training-team-header {
+  .football-site .training-team-item .training-team-header,
+  .football-site .training-team-item-senior .training-team-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  .football-site .training-team-item .training-team-header .training-age {
+  .football-site .training-team-item .training-team-header .training-age,
+  .football-site .training-team-item-senior .training-team-header .training-age {
     align-self: flex-start;
+  }
+  .football-site .training-team-item .training-team-header h3 .team-class,
+  .football-site .training-team-item-senior .training-team-header h3 .team-class {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+    font-size: 1rem;
   }
   .football-site .trial-training {
     padding: 30px 20px;
+  }
+}
+.training-team-button {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.training-team-button .team-detail-btn {
+  display: inline-block;
+  padding: 18px 35px;
+  background: linear-gradient(135deg, #fbe91d, #f7d834);
+  color: #0e79bf;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 6px 20px rgba(251, 233, 29, 0.3);
+  border: 3px solid #fbe91d;
+  min-width: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.training-team-button .team-detail-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+.training-team-button .team-detail-btn:hover {
+  background: #0e79bf;
+  color: #fbe91d;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(14, 121, 191, 0.4);
+  border-color: #fbe91d;
+}
+.training-team-button .team-detail-btn:hover:before {
+  left: 100%;
+}
+.training-team-button .team-detail-btn:active {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(14, 121, 191, 0.3);
+  transition: all 0.1s ease;
+}
+.training-team-button .team-detail-btn:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(251, 233, 29, 0.3), 0 0 0 4px rgba(251, 233, 29, 0.4);
+}
+@media (max-width: 850px) {
+  .training-team-button .team-detail-btn {
+    padding: 16px 30px;
+    font-size: 1rem;
+    min-width: 220px;
+    border-width: 2px;
+  }
+}
+@media (max-width: 500px) {
+  .training-team-button .team-detail-btn {
+    padding: 14px 25px;
+    font-size: 0.95rem;
+    min-width: 200px;
+    border-width: 2px;
+  }
+}
+
+.youth-team-page {
+  position: relative;
+  top: -93px;
+}
+.youth-team-page .youth-hero {
+  background: linear-gradient(135deg, #0e79bf, #0e79bf);
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+@media (min-width: 1024px) {
+  .youth-team-page .youth-hero {
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    text-align: left;
+  }
+}
+.youth-team-page .youth-hero .youth-hero-image {
+  flex-shrink: 0;
+}
+.youth-team-page .youth-hero .youth-hero-image .team-photo {
+  width: 650px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.youth-team-page .youth-hero .youth-hero-image .team-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+.youth-team-page .youth-hero .youth-hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .youth-team-page .youth-hero .youth-hero-text {
+    margin: 0;
+    flex: 1;
+  }
+}
+.youth-team-page .youth-hero .youth-hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .youth-team-page .youth-hero .youth-hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+.youth-team-page .youth-hero .youth-hero-text h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .youth-team-page .youth-hero .youth-hero-text h2 {
+    font-size: 1.4rem;
+  }
+}
+.youth-team-page .youth-hero .youth-hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .youth-team-page .youth-hero .youth-hero-text p {
+    font-size: 1rem;
+  }
+}
+.youth-team-page .youth-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.youth-team-page .youth-content .youth-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid #1e1e1e;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #0e79bf;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card h3 {
+  color: #0e79bf;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card h3::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background: #fbe91d;
+  border-radius: 2px;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-trainer,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time .training-icon,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location .training-icon,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-trainer .training-icon,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-contact .training-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  fill: #fbe91d;
+  margin-top: 2px;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time .training-info,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location .training-info,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-trainer .training-info,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-contact .training-info {
+  flex: 1;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time .training-info p,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location .training-info p,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-trainer .training-info p,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-contact .training-info p {
+  margin: 0 0 5px 0;
+  color: #2d2d2d;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time .training-info p strong,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location .training-info p strong,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-trainer .training-info p strong,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-contact .training-info p strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time .training-info p a,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location .training-info p a,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-trainer .training-info p a,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-contact .training-info p a {
+  color: #0e79bf;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time .training-info p a:hover,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location .training-info p a:hover,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-trainer .training-info p a:hover,
+.youth-team-page .youth-content .youth-info-grid .youth-info-card .training-contact .training-info p a:hover {
+  color: #0e79bf;
+}
+.youth-team-page .youth-content .youth-details {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 40px;
+  margin-top: 40px;
+  border: 2px solid #1e1e1e;
+}
+.youth-team-page .youth-content .youth-details h3 {
+  color: #0e79bf;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.youth-team-page .youth-content .youth-details .youth-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.youth-team-page .youth-content .youth-details .youth-features .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #e0d9d9;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid #ffffff;
+}
+.youth-team-page .youth-content .youth-details .youth-features .feature-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(14, 121, 191, 0.2);
+  border-color: #0e79bf;
+}
+.youth-team-page .youth-content .youth-details .youth-features .feature-item .feature-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  fill: #0e79bf;
+}
+.youth-team-page .youth-content .youth-details .youth-features .feature-item p {
+  margin: 0;
+  color: #2d2d2d;
+  font-weight: 500;
+}
+.youth-team-page .youth-content .youth-details .youth-cta {
+  text-align: center;
+  padding: 30px;
+  background: #e0d9d9;
+  border-radius: 15px;
+  border: 2px solid #0e79bf;
+}
+.youth-team-page .youth-content .youth-details .youth-cta h4 {
+  color: #0e79bf;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.youth-team-page .youth-content .youth-details .youth-cta p {
+  color: #4a4a4a;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+.youth-team-page .youth-content .youth-details .youth-cta .cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .primary,
+.youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .secondary {
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+@media (max-width: 850px) {
+  .youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .primary,
+  .youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .secondary {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .primary {
+  background: #0e79bf;
+  color: #ffffff;
+  border: 2px solid #0e79bf;
+}
+.youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .primary:hover {
+  background: #0e79bf;
+  border-color: #0e79bf;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(14, 121, 191, 0.3);
+}
+.youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .secondary {
+  background: transparent;
+  color: #0e79bf;
+  border: 2px solid #0e79bf;
+}
+.youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .secondary:hover {
+  background: #0e79bf;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .youth-team-page .youth-content {
+    padding: 40px 15px;
+  }
+  .youth-team-page .youth-content .youth-info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .youth-team-page .youth-content .youth-details {
+    padding: 30px 20px;
+  }
+  .youth-team-page .youth-content .youth-details .youth-features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .youth-team-page .youth-content .youth-details .youth-cta {
+    padding: 20px;
+  }
+  .youth-team-page .youth-content .youth-details .youth-cta .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .primary,
+  .youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .secondary {
+    width: 100%;
+    max-width: 300px;
   }
 }
 .tennis-hero {
