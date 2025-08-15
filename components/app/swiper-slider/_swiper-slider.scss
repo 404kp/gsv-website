@@ -8,6 +8,12 @@
     overflow: hidden;
     position: relative;
     
+    // Hide swiper navigation arrows globally for this slider
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+    
     .swiper-wrapper {
         .swiper-slide {
             overflow: hidden;

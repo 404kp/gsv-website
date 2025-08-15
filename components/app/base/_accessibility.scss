@@ -2,5 +2,5 @@
 @use "./variables" as *;
 
 a:focus, input:focus, textarea:focus {
-    outline: 2px solid $color-neutral-100;
+    outline: none;
 }

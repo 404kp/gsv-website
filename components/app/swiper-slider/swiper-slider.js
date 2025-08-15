@@ -17,6 +17,9 @@ function SliderHero() {
         delay: 5000,
         disableOnInteraction: false,
       },
+      navigation: {
+        enabled: false
+      },
       pagination: {
         el: '.hero-pagination', // Important: Ensure this element also exists if the slider exists!
         clickable: true,

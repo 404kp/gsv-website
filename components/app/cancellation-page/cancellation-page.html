@@ -1,0 +1,128 @@
+<div class="cancellation-page">
+    <div class="cancellation-hero">
+        <div class="cancellation-hero-text">
+            <h1>Mitgliedschaft kündigen</h1>
+            <p>Wir bedauern, dass Sie Ihre Mitgliedschaft beim GSV beenden möchten. Bitte füllen Sie das untenstehende Formular aus.</p>
+        </div>
+    </div>
+
+    <div class="cancellation-content">
+        <div class="cancellation-form-wrapper">
+            <div class="cancellation-info">
+                <h2>Wichtige Informationen zur Kündigung</h2>
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="info-icon">⚠️</div>
+                        <div class="info-text">
+                            <h4>Kündigungsfrist</h4>
+                            <p>Die Kündigung muss bis zum 30. November für das Folgejahr eingereicht werden.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📄</div>
+                        <div class="info-text">
+                            <h4>Schriftliche Bestätigung</h4>
+                            <p>Sie erhalten eine schriftliche Bestätigung Ihrer Kündigung per E-Mail.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">💰</div>
+                        <div class="info-text">
+                            <h4>Beitragspflicht</h4>
+                            <p>Der Mitgliedsbeitrag ist bis zum Ende der Mitgliedschaft zu entrichten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cancellation-form">
+                <h2>Kündigungsformular</h2>
+                <form id="cancellationForm" action="#" method="POST">
+                    <div class="form-section">
+                        <h3>Persönliche Daten</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Vorname *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nachname *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail-Adresse *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonnummer</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Adresse</h3>
+                        <div class="form-group">
+                            <label for="street">Straße und Hausnummer *</label>
+                            <input type="text" id="street" name="street" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="zipCode">Postleitzahl *</label>
+                                <input type="text" id="zipCode" name="zipCode" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Ort *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Kündigungsdetails</h3>
+                        <div class="form-group">
+                            <label for="membershipNumber">Mitgliedsnummer (falls bekannt)</label>
+                            <input type="text" id="membershipNumber" name="membershipNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="cancellationDate">Gewünschtes Kündigungsdatum *</label>
+                            <input type="date" id="cancellationDate" name="cancellationDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Grund der Kündigung (optional)</label>
+                            <select id="reason" name="reason">
+                                <option value="">Bitte wählen</option>
+                                <option value="zeitliche-gruende">Zeitliche Gründe</option>
+                                <option value="finanzielle-gruende">Finanzielle Gründe</option>
+                                <option value="umzug">Umzug</option>
+                                <option value="unzufriedenheit">Unzufriedenheit</option>
+                                <option value="gesundheitliche-gruende">Gesundheitliche Gründe</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Zusätzliche Anmerkungen</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Möchten Sie uns noch etwas mitteilen?"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="dataConsent" name="dataConsent" required>
+                            <label for="dataConsent">Ich bestätige, dass alle Angaben korrekt sind und stimme der Verarbeitung meiner Daten zur Bearbeitung der Kündigung zu. *</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="finalConsent" name="finalConsent" required>
+                            <label for="finalConsent">Ich bestätige hiermit die Kündigung meiner Mitgliedschaft beim GSV. *</label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Kündigung einreichen</button>
+                        <a href="member.html" class="cancel-btn">Zurück zur Mitgliedschaft</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

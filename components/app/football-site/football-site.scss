@@ -5,9 +5,10 @@
     margin: 0;
     position: relative;
     top: -93px; // Move hero up to touch navigation, logo extends over hero
+    z-index: 1; // Positiv aber niedriger als Navigation (1000)
 
     @media (max-width:$media-width-phone-navbar) {
-        top: -55px; // Mobile navigation height
+        top: -60px; // Angepasst für neue mobile navigation + body padding
     }
 
     .football-hero {

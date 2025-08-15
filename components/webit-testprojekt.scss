@@ -8,13 +8,44 @@
 @use "./app/header/header.scss";
 @use "./app/teaser/teaser.scss";
 @use "./app/formular/formular.scss";
-@use "./app/scroll-to-top-button/scroll-to-top-button.scss";
 @use "./app/swiper-slider/swiper-slider.scss";
 @use "./app/image-zoom/image-zoom.scss";
 @use "./app/landing-page/landing-page.scss";
 @use "./app/contact-site/contact-site.scss";
 @use "./app/member-site/member-site.scss";
+@use "./app/cancellation-page/cancellation-page.scss";
 @use "./app/football-site/football-site.scss";
 @use "./app/youth-team/youth-team-page.scss";
 @use "./app/tennis/tennis.scss";
 @use "./app/footer/footer.scss";
+
+// Global fix: Hide all Swiper navigation buttons
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+// Extra specific fix for testimonials
+.testimonials-slider {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+}
+
+// Ultimate fix: Target any navigation buttons anywhere in testimonials slider with highest specificity
+div.swiper.testimonials-slider .swiper-button-next,
+div.swiper.testimonials-slider .swiper-button-prev,
+.testimonials-slider div.swiper-button-next,
+.testimonials-slider div.swiper-button-prev {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+}

@@ -13,6 +13,7 @@
 import { debounce } from './_utilities/debounce.js';
 import { throttle } from './_utilities/throttle.js';
 import { triggerEvent } from './_utilities/trigger-event.js';
+import { initSwiperNavigationRemoval } from './_utilities/remove-swiper-navigation.js';
 import InitSliderHero from "./swiper-slider/swiper-slider.js";
 import InitImageZoom from "./image-zoom/image-zoom.js";
 import InitSliderTestimonial from "./landing-page/landing-page.js";
@@ -40,6 +41,9 @@ function cacheElements() {
 }
 
 function init() {
+  // Initialize swiper navigation removal FIRST, before any Swiper instances are created
+  initSwiperNavigationRemoval();
+  
   cacheElements();
   bindEvents();
   InitSliderHero();

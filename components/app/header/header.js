@@ -93,14 +93,15 @@ function MenuOverlayPhone() {
       focusableElements.forEach(el => {
         el.setAttribute("tabindex", isMenuOpen ? "0" : "-1");
       });
-  
-      // Update overlay visibility
+
+      // Body-Scroll verhindern/erlauben
       if (isMenuOpen) {
+        document.body.style.overflow = 'hidden';
         menuOverlay.focus();
+      } else {
+        document.body.style.overflow = '';
       }
-    }
-  
-    // Initialize focus trap when menu is open
+    }    // Initialize focus trap when menu is open
     function setupFocusTrap() {
       const focusableElements = menuOverlay.querySelectorAll('a, button, [tabindex="0"]');
       if (focusableElements.length > 0) {

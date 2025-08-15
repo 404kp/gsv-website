@@ -9,6 +9,9 @@
 .navigationbar-phone {
   display: none;
 }
+#menu-toggle {
+  display: none; // Menu Toggle aktivieren für mobile
+}
 
 .navigationbar {
   background-color: $color-accent;
@@ -16,11 +19,14 @@
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 1000;
+  z-index: 99999 ;
   height: 80px;
   padding: 15px 0;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  visibility: visible ;
+  opacity: 1 ;
+  display: block ;
   
   // Subtiler Verlauf für mehr Tiefe
   background: linear-gradient(135deg, $color-accent, $color-accent);
@@ -238,8 +244,7 @@
 .menu-overlay a:focus,
 .hamburger-menu:focus,
 .close-menu-overlay:focus {
-  outline: 2px solid $color-neutral-100;
-  outline-offset: 2px;
+  outline: none;
 }
 
 .menu-overlay[aria-hidden="true"] {
@@ -265,7 +270,10 @@
   }
 
   #menu-toggle {
-    display: none; // Menu Toggle aktivieren für mobile
+    position: absolute;
+    left: -9999px; // Checkbox verstecken aber für CSS-Selektoren verfügbar lassen
+    opacity: 0;
+    pointer-events: none;
   }
 
 
@@ -274,17 +282,19 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 5px;
+    top: 0px;
     left: 0;
     width: 100vw;
     z-index: 10000;
     box-sizing: border-box;
     transform: translateZ(0);
     backface-visibility: hidden;
+    border-bottom: 1px solid rgba(14, 121, 191, 0.1);
+    transition: all 0.3s ease;
 
     img {
       max-width: 72px;
-      padding: 10px;
+      padding: 5px 10px;
       display: block;
       position: relative;
       z-index: 10;
@@ -293,21 +303,21 @@
     .navigationbar-phone-bar {
       flex: 1;
       align-items: center;
-      height: 50px;
-      padding: 10px;
+      height: 45px;
+      padding: 7px 10px;
       background-color: $color-primary;
       border-radius: $border-radius-small $border-radius-small $border-radius-small 0;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      margin-left: -30px;
+      margin-left: -25px;
       z-index: 5;
       border: 2px solid $color-neutral-0;
       box-sizing: border-box;
 
       .hamburger-menu {
         &:focus {
-          outline: 2px solid $color-neutral-100;
+          outline: none;
         }
 
         background: none;
@@ -340,7 +350,7 @@
 
     a:focus,
     button:focus {
-      outline: 2px solid $color-neutral-100;
+      outline: none;
     }
 
     z-index: 11000;
@@ -348,10 +358,9 @@
     font-size: 22px;
     font-weight: 500;
     width: 80vw;
+    max-width: 400px;
     height: 100vh;
     right: 0;
-    transform: translateX(100%);
-    opacity: 0;
     top: 0;
     background-color: $color-accent;
     border-radius: 25px 0 0 25px;
@@ -360,10 +369,15 @@
     justify-self: flex-end;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
     box-sizing: border-box;
-    backface-visibility: hidden;
-    will-change: transform, opacity;
+    // Verbesserter Transform-Ansatz
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    // Schatten für bessere Tiefe
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    // Overflow verhindern
+    overflow-y: auto;
+    overflow-x: hidden;
 
     //mediaquery damit Overlay nicht zu groß bei 1000px
     @media(min-width:$media-width-overlay-big) {
@@ -446,6 +460,10 @@
 
   #menu-toggle:checked~.menu-overlay {
     transform: translateX(0);
-    opacity: 1;
+  }
+
+  // Body-Scroll beim geöffneten Menü verhindern
+  body:has(#menu-toggle:checked) {
+    overflow: hidden;
   }
 }

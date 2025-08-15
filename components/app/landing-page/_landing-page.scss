@@ -8,11 +8,7 @@
     text-align: center;
     margin: 0;
     position: relative;
-    top: -93px; // Move hero up to touch navigation, logo extends over hero
-
-    @media (max-width:$media-width-phone-navbar) {
-        top: -55px; // Mobile navigation height
-    }
+    z-index: 1; // Niedriger z-index als Header
 
     .landingpage-hero {
         background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center;
@@ -156,7 +152,7 @@
         align-items: center;
         gap: 6vh;
         margin: 5vh auto 15vh auto;
-        width: 100%;
+        width: 80%;
 
         @media (max-width: $media-width-phone) {
             gap: 4vh;
@@ -360,7 +356,7 @@
             justify-content: space-around;
 
             @media (max-width: $media-width-phone-navbar) {
-                flex-direction: column;
+                flex-direction: column-reverse;
                 text-align: center;
                 gap: 3rem;
             }
@@ -526,6 +522,15 @@
         @media (max-width: $media-width-phone) {
             max-width: 95vw;
             margin-bottom: 3vh;
+        }
+
+        // Hide swiper navigation arrows for testimonials with high specificity
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
         }
 
         .testimonial-item {

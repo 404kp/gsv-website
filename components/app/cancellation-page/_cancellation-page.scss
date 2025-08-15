@@ -1,0 +1,356 @@
+// _cancellation-page.scss - Styles for membership cancellation page
+@use "../base/variables" as *;
+
+.cancellation-page {
+    margin: 0;
+    position: relative;
+    top: -93px;
+    z-index: 1; // Niedriger z-index als Header
+
+    @media (max-width: $media-width-phone-navbar) {
+        top: -60px; // Angepasst für neue mobile navigation + body padding
+    }
+
+    .cancellation-hero {
+        background: linear-gradient(rgba(220, 38, 127, 0.8), rgba(220, 38, 127, 0.6)), 
+                    url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center;
+        background-size: cover;
+        padding: 8vh 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        position: relative;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        .cancellation-hero-text {
+            color: $color-neutral-0;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            padding: 0 20px;
+            text-align: center;
+
+            h1 {
+                margin: 0 auto 15px auto;
+                font-size: 3.5rem;
+                font-weight: 700;
+                line-height: 1.2;
+
+                @media(max-width: $media-width-phone-navbar) {
+                    font-size: 2.5rem;
+                }
+
+                @media(max-width: $media-width-phone) {
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                margin: 0 auto;
+                max-width: 700px;
+                font-size: 1.3rem;
+                line-height: 1.6;
+                opacity: 0.95;
+
+                @media(max-width: $media-width-phone-navbar) {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    .cancellation-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 20px;
+
+        .cancellation-form-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: start;
+
+            @media (max-width: $media-width-tablet) {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .cancellation-info {
+                background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+                padding: 40px;
+                border-radius: 20px;
+                border-left: 4px solid #ffc107;
+
+                h2 {
+                    color: $color-primary;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+
+                .info-items {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    .info-item {
+                        display: flex;
+                        gap: 15px;
+                        align-items: flex-start;
+
+                        .info-icon {
+                            font-size: 1.5rem;
+                            flex-shrink: 0;
+                            margin-top: 2px;
+                        }
+
+                        .info-text {
+                            h4 {
+                                color: $color-primary;
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                margin: 0 0 8px 0;
+                            }
+
+                            p {
+                                color: #666;
+                                font-size: 0.95rem;
+                                line-height: 1.5;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cancellation-form {
+                background: $color-neutral-0;
+                padding: 40px;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+                h2 {
+                    color: $color-primary;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+
+                .form-section {
+                    margin-bottom: 40px;
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #eee;
+
+                    &:last-of-type {
+                        border-bottom: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+
+                    h3 {
+                        color: $color-primary;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                        padding-left: 15px;
+                        border-left: 3px solid $color-accent;
+                    }
+                }
+
+                .form-row {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+
+                    @media (max-width: $media-width-phone) {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
+                    }
+                }
+
+                .form-group {
+                    margin-bottom: 20px;
+
+                    label {
+                        display: block;
+                        color: $color-primary;
+                        font-weight: 600;
+                        margin-bottom: 8px;
+                        font-size: 0.95rem;
+                    }
+
+                    input, select, textarea {
+                        width: 100%;
+                        padding: 12px 15px;
+                        border: 2px solid #e0e0e0;
+                        border-radius: 10px;
+                        font-size: 1rem;
+                        transition: all 0.3s ease;
+                        box-sizing: border-box;
+
+                        &:focus {
+                            outline: none;
+                            border-color: $color-primary;
+                            box-shadow: 0 0 0 3px rgba(14, 121, 191, 0.1);
+                        }
+
+                        &:invalid {
+                            border-color: #dc267f;
+                        }
+                    }
+
+                    textarea {
+                        resize: vertical;
+                        min-height: 100px;
+                    }
+
+                    &.checkbox-group {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 12px;
+
+                        input[type="checkbox"] {
+                            width: auto;
+                            margin-top: 3px;
+                            flex-shrink: 0;
+                        }
+
+                        label {
+                            margin-bottom: 0;
+                            font-size: 0.9rem;
+                            line-height: 1.4;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .form-actions {
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+                    margin-top: 40px;
+
+                    @media (max-width: $media-width-phone) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .submit-btn {
+                        background: linear-gradient(135deg, #dc267f, #b01f68);
+                        color: white;
+                        border: none;
+                        padding: 15px 40px;
+                        border-radius: 50px;
+                        font-weight: 700;
+                        font-size: 1.1rem;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        box-shadow: 0 5px 20px rgba(220, 38, 127, 0.3);
+
+                        &:hover {
+                            transform: translateY(-3px);
+                            box-shadow: 0 8px 25px rgba(220, 38, 127, 0.4);
+                        }
+
+                        &:active {
+                            transform: translateY(0);
+                        }
+                    }
+
+                    .cancel-btn {
+                        background: transparent;
+                        color: $color-primary;
+                        border: 2px solid $color-primary;
+                        padding: 13px 40px;
+                        border-radius: 50px;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        display: inline-block;
+
+                        &:hover {
+                            background: $color-primary;
+                            color: white;
+                            transform: translateY(-3px);
+                            box-shadow: 0 5px 15px rgba(14, 121, 191, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile responsive adjustments
+@media (max-width: $media-width-phone-navbar) {
+    .cancellation-page {
+        .cancellation-content {
+            padding: 60px 15px;
+
+            .cancellation-form-wrapper {
+                .cancellation-info {
+                    padding: 30px 25px;
+
+                    h2 {
+                        font-size: 1.6rem;
+                    }
+
+                    .info-items {
+                        gap: 20px;
+
+                        .info-item {
+                            .info-icon {
+                                font-size: 1.3rem;
+                            }
+
+                            .info-text {
+                                h4 {
+                                    font-size: 1rem;
+                                }
+
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .cancellation-form {
+                    padding: 30px 25px;
+
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+
+                    .form-section {
+                        margin-bottom: 30px;
+                        padding-bottom: 20px;
+
+                        h3 {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .form-group {
+                        input, select, textarea {
+                            padding: 10px 12px;
+                        }
+                    }
+
+                    .form-actions {
+                        margin-top: 30px;
+
+                        .submit-btn, .cancel-btn {
+                            padding: 12px 30px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
