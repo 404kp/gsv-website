@@ -1,4 +1,10 @@
 function SliderHero() {
+  // Check if Swiper is available
+  if (typeof Swiper === 'undefined') {
+    console.warn('Swiper is not loaded yet, skipping hero slider initialization');
+    return;
+  }
+  
   // 1. Try to find the slider element
   const sliderElement = document.querySelector('.hero-slider');
 

@@ -354,7 +354,6 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
       <li><a href="fussballseiteKarl.html" target="_blank" >Fußball</a></li>
       <li><a href="tisch-Tennis-Karl.html" target="_blank" >Tisch-Tennis</a></li>
       <li><a href="news-inspo.html" target="_blank">Aktuelles/News</a></li>
-      <li><a href="impressionen-inspo.html" target="_blank">Impressionen</a></li>
     </ul>
 
     <strong>Screendesign Figma</strong>
@@ -523,10 +522,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
 
 </script>
 --> -->
-    <!--Unsichtbare Checkbox zum Umschalten-->
-  <input type="checkbox" id="menu-toggle">
-
-<!--Navigationsbar für Phone und Tablet: Logo und blauer Kasten-->
+  <!--Navigationsbar für Phone und Tablet: Logo und blauer Kasten-->
 <div class="navigationbar-phone">
     <a href="/index.html">
           <img src="./assets/img/gsv-logo-removed.png" alt="Logo" width="400px">
@@ -542,59 +538,64 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
 </div>
 
 <!--Menue Overlay für Phone und Tablet Ansicht-->
-<div class="menu-overlay" id="menu-overlay" tabindex="-1">
+<div class="menu-overlay" id="menu-overlay" aria-hidden="true" tabindex="-1">
 
   <div class="menu-overlay-content">
-    <span class="close-menu-overlay" onclick="document.getElementById('menu-toggle').click();">&times;</span>
+    <button class="close-menu-overlay" aria-label="Menü schließen">&times;</button>
     <ul>
       <li>
         <!--Icon für football-->
-        <svg class="menu-icon" height="40px" width="40px">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-football"></use>
-        </svg>
-        <a href="/football.html">Fußball</a>
+        <a href="/football.html">
+          <svg class="menu-icon" height="40px" width="40px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-football"></use>
+          </svg>
+          <span>Fußball</span>
+        </a>
       </li>
       <li>
         <!--Icon for tabletennis-->
-        <svg class="menu-icon" height="40px" width="40px">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-tabletennis"></use>
-        </svg>
-        <a href="#tabletennis">Tischtennis</a>
+        <a href="/tischtennis.html">
+          <svg class="menu-icon" height="40px" width="40px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-tabletennis"></use>
+          </svg>
+          <span>Tischtennis</span>
+        </a>
       </li>
       <li>
         <!--Icon for news-->
-        <svg class="menu-icon" height="40px" width="40px">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-news"></use>
-        </svg>
-        <a href="#news">Aktuelles</a>
+        <a href="/aktuelles.html">
+          <svg class="menu-icon" height="40px" width="40px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-news"></use>
+          </svg>
+          <span>Aktuelles</span>
+        </a>
       </li>
       <li>
         <!--Icon for about us-->
-        <svg class="menu-icon" height="40px" width="40px">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-aboutus"></use>
-        </svg>
-        <a href="/landingpage.html">Über uns</a>
-      </li>
-      <li>
-        <!--Icon for impressions-->
-        <svg class="menu-icon" height="40px" width="40px">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-impressions"></use>
-        </svg>
-        <a href="#impressions">Impressionen</a>
+        <a href="/landingpage.html">
+          <svg class="menu-icon" height="40px" width="40px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-aboutus"></use>
+          </svg>
+          <span>Über uns</span>
+        </a>
       </li>
       <li>
         <!-- Icon for contact-->
-        <svg class="menu-icon" height="40px" width="40px">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-contact"></use>
-        </svg>
-        <a href="/contact.html">Kontakt</a>
+        <a href="/contact.html">
+          <svg class="menu-icon" height="40px" width="40px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-contact"></use>
+          </svg>
+          <span>Kontakt</span>
+        </a>
       </li>
       <li>
         <!--Icon for member-->
-        <svg class="menu-icon" height="40px" width="40px">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-member"></use>
-        </svg>
-        <a href="/member.html">Mitglied werden!</a>
+        <a href="/member.html">
+          <svg class="menu-icon" height="40px" width="40px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-member"></use>
+          </svg>
+          <span>Mitglied werden!</span>
+        </a>
       </li>
     </ul>
   </div>
@@ -653,10 +654,9 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
             <a href="/f-jugend.html">F-Jugend (U7/U8)</a>
           </div>
         </li>
-        <li><a href="#tabletennis">Tischtennis</a></li>
-        <li><a href="#news">Aktuelles</a></li>
+        <li><a href="/tischtennis.html">Tischtennis</a></li>
+        <li><a href="/aktuelles.html">Aktuelles</a></li>
         <li><a href="/landingpage.html">Über uns</a></li>
-        <li><a href="#impressions">Impressionen</a></li>
         <li><a href="/contact.html">Kontakt</a></li>
       </ul>
     </div>
@@ -732,27 +732,15 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
                 <h3>Was erwartet Ihr Kind?</h3>
                 <div class="youth-features">
                     <div class="feature-item">
-                        <svg class="icon feature-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-ph"></use>
-                        </svg>
                         <p>Verfeinerung der Grundtechniken</p>
                     </div>
                     <div class="feature-item">
-                        <svg class="icon feature-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-ph"></use>
-                        </svg>
                         <p>Erste taktische Grundlagen</p>
                     </div>
                     <div class="feature-item">
-                        <svg class="icon feature-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-ph"></use>
-                        </svg>
                         <p>Kleinfeld-Fußball mit einfachen Regeln</p>
                     </div>
                     <div class="feature-item">
-                        <svg class="icon feature-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-ph"></use>
-                        </svg>
                         <p>Förderung der Kreativität am Ball</p>
                     </div>
                 </div>
@@ -822,7 +810,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
         <ul>
           <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Impressum</a></li>
           <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Datenschutz</a></li>
-          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Kontakt</a></li>
+          <li><a href="/contact.html">Kontakt</a></li>
         </ul>
       </div>
 

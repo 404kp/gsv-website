@@ -22,6 +22,7 @@
         left: 50%;
         transform: translateX(-50%);
         margin-bottom: 5vh;
+        margin-top: -75px;
 
         @media (max-width: $media-width-phone-navbar) {
             padding: 6vh 0;
@@ -513,18 +514,20 @@
     .testimonials-slider {
         max-width: 60vw;
         margin-bottom: 5vh;
+        padding-bottom: 40px; // Mehr Platz für Pagination
 
         @media (max-width: $media-width-phone-navbar) {
             max-width: 85vw;
             margin-bottom: 4vh;
+            padding-bottom: 35px;
         }
 
         @media (max-width: $media-width-phone) {
             max-width: 95vw;
             margin-bottom: 3vh;
+            padding-bottom: 30px;
         }
 
-        // Hide swiper navigation arrows for testimonials with high specificity
         .swiper-button-next,
         .swiper-button-prev {
             display: none !important;
@@ -647,6 +650,22 @@
 
     .testimonial-pagination {
         position: relative;
-        top: 5px;
+        top: 20px;
+        margin-top: 20px;
+        
+        // Pagination-Dots anpassen
+        .swiper-pagination-bullet {
+            background: $color-primary;
+            opacity: 0.3;
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
+            
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+                background: $color-accent;
+                border: 2px solid $color-primary;
+            }
+        }
     }
 }

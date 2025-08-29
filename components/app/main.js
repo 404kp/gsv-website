@@ -41,16 +41,46 @@ function cacheElements() {
 }
 
 function init() {
+  console.log('Initializing main application...');
+  
   // Initialize swiper navigation removal FIRST, before any Swiper instances are created
   initSwiperNavigationRemoval();
   
   cacheElements();
   bindEvents();
-  InitSliderHero();
-  InitImageZoom();
-  InitSliderTestimonial();
-  InitMenuOverlayPhone();
-  InitFootballSite();
+  
+  // Initialize modules with error handling
+  try {
+    InitSliderHero();
+  } catch (error) {
+    console.warn('InitSliderHero failed:', error);
+  }
+  
+  try {
+    InitImageZoom();
+  } catch (error) {
+    console.warn('InitImageZoom failed:', error);
+  }
+  
+  try {
+    InitSliderTestimonial();
+  } catch (error) {
+    console.warn('InitSliderTestimonial failed:', error);
+  }
+  
+  try {
+    InitMenuOverlayPhone();
+  } catch (error) {
+    console.warn('InitMenuOverlayPhone failed:', error);
+  }
+  
+  try {
+    InitFootballSite();
+  } catch (error) {
+    console.warn('InitFootballSite failed:', error);
+  }
+  
+  console.log('Main application initialization complete');
 };
 
 init();
