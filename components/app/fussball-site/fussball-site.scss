@@ -1,7 +1,7 @@
-// Football Site Styling - Modern redesign based on member-site
+// Fußball Site Styling - Modern redesign based on member-site
 @use "../base/variables" as *;
 
-.football-site {
+.fussball-site {
     margin: 0;
     position: relative;
     top: -93px; // Move hero up to touch navigation, logo extends over hero
@@ -12,7 +12,7 @@
     }
 
     .football-hero {
-        background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center;
+        background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url('https://images.unsplash.com/photo-1490108474814-221f6198acc5?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
         background-size: cover;
         padding: 8vh 0;
         display: flex;
@@ -591,7 +591,7 @@
 
 // Mobile responsive adjustments
 @media (max-width: $media-width-phone-navbar) {
-    .football-site {
+    .fussball-site {
         .football-inner {
             padding: 0 15px;
 
@@ -619,7 +619,7 @@
 
 // Responsive adjustments
 @media (max-width: 640px) {
-  .football-site {
+  .fussball-site {
     .training-teams {
       grid-template-columns: 1fr;
     }

@@ -1,4 +1,4 @@
-<div class="member-site">
+<div class="mitglieder-site">
     <!--Hero Kontakt und Ansprechpartner-->
     <div class="member-hero">
         <div class="member-hero-text">
@@ -261,29 +261,87 @@
                             <div class="form-group checkbox-group">
                                 <input type="checkbox" id="datenschutz" name="datenschutz" required>
                                 <label for="datenschutz">
-                                    Ich stimme der Verarbeitung meiner personenbezogenen Daten entsprechend der Datenschutzerklärung zu. <span class="required">*</span>
+                                    Ich stimme der Verarbeitung meiner personenbezogenen Daten entsprechend der <a href="/documents/datenschutzerklaerung.pdf" target="_blank" class="document-link">Datenschutzerklärung</a> zu.<span class="required">*</span>
                                 </label>
                             </div>
 
                             <div class="form-group checkbox-group">
-                                <input type="checkbox" id="bildrechte" name="bildrechte">
+                                <input type="checkbox" id="bildrechte" name="bildrechte" required>
                                 <label for="bildrechte">
-                                    Ich erlaube die Verwendung von Bildern meiner Person für Vereinszwecke (Website, Social Media, Presseartikel).
-                                </label>
-                            </div>
-
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <label for="newsletter">
-                                    Ich möchte den Vereinsnewsletter per E-Mail erhalten.
+                                    Ich erlaube die Verwendung von Bildern meiner Person für Vereinszwecke (Website, Social Media, Presseartikel).<span class="required">*</span>
                                 </label>
                             </div>
 
                             <div class="form-group checkbox-group">
                                 <input type="checkbox" id="agb" name="agb" required>
                                 <label for="agb">
-                                    Ich habe die Satzung und Beitragsordnung des Goyatzer SV gelesen und erkenne diese an. <span class="required">*</span>
+                                    Ich habe die <a href="/documents/satzung.pdf" target="_blank" class="document-link">Satzung</a> und <a href="/documents/beitragsordnung.pdf" target="_blank" class="document-link">Beitragsordnung</a> des Goyatzer SV gelesen und erkenne diese an.<span class="required">*</span>
                                 </label>
+                            </div>
+                        </div>
+
+                        <!-- SEPA-Lastschriftmandat -->
+                        <div class="form-section">
+                            <h5>SEPA-Lastschriftmandat für Beitragszahlung</h5>
+                            
+                            <div class="sepa-info-box">
+                                <div class="sepa-details">
+                                    <p><strong>Zahlungsempfänger:</strong> Goyatzer SV e.V., Goyatzer Dorfstr. 13, 15913 Schwielochsee</p>
+                                    <p><strong>Gläubiger-ID:</strong> DE70ZZZ00002174322</p>
+                                </div>
+                            </div>
+
+                            <div class="sepa-explanation">
+                                <p>
+                                    Mit diesem Mandat ermächtigen Sie uns, Ihren Mitgliedsbeitrag bequem per Lastschrift von Ihrem Konto einzuziehen. 
+                                    Sie können innerhalb von acht Wochen ab Belastungsdatum eine Erstattung verlangen.
+                                </p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="kontoinhaber">Kontoinhaber <span class="required">*</span></label>
+                                <input type="text" id="kontoinhaber" name="kontoinhaber" placeholder="Falls abweichend vom Mitglied" value="">
+                                <small class="field-note">Nur ausfüllen, wenn der Kontoinhaber nicht das Mitglied selbst ist</small>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="iban">IBAN <span class="required">*</span></label>
+                                    <input type="text" id="iban" name="iban" placeholder="DE12 3456 7890 1234 5678 90" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bic">BIC <span class="required">*</span></label>
+                                    <input type="text" id="bic" name="bic" placeholder="ABCDEFGH" maxlength="11" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bank-name">Name der Bank</label>
+                                <input type="text" id="bank-name" name="bank-name" placeholder="z.B. Sparkasse Brandenburg">
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="sepa-mandate" name="sepa-mandate" required>
+                                <label for="sepa-mandate">
+                                    <strong>Ich ermächtige den Goyatzer SV e.V., meinen jährlichen Mitgliedsbeitrag per SEPA-Lastschrift von meinem Konto einzuziehen.</strong>
+                                    Gleichzeitig weise ich mein Kreditinstitut an, die Lastschriften einzulösen.<span class="required">*</span>
+                                </label>
+                            </div>
+
+                            <div class="sepa-highlights">
+                                <h6 class="sepa-highlights-title">Wichtige Informationen zum SEPA-Lastschriftverfahren</h6>
+                                <div class="highlight-item">
+                                    <span class="highlight-text">Einzug: jährlich bis 31. März</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-text">Vorab-Info per E-Mail</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-text">Jederzeit widerrufbar</span>
+                                </div>
+                                <div class="highlight-item warning">
+                                    <span class="highlight-text">Rückgabe kostet 15€</span>
+                                </div>
                             </div>
                         </div>
 
@@ -312,7 +370,7 @@
             <p>
                 Wir helfen gerne weiter! Zögere nicht, uns bei Unklarheiten oder Fragen zu kontaktieren. Nutze unser Kontaktformular oder wende dich direkt an einen unserer Ansprechpartner.
             </p>
-            <a href="/contact.html" class="secondary">Kontakt</a>
+            <a href="/kontakt.html" class="secondary">Kontakt</a>
         </div>
     </div>
     <div class="member-cancellation">

@@ -2287,7 +2287,7 @@ form input.success:focus, form textarea.success:focus {
   z-index: 1;
 }
 .landing-page .landingpage-hero {
-  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center;
+  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1459865264687-595d652de67e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center;
   background-size: cover;
   padding: 8vh 0;
   display: flex;
@@ -2973,19 +2973,19 @@ form input.success:focus, form textarea.success:focus {
   border: 2px solid #0e79bf;
 }
 
-.contact-site {
+.kontakt-site {
   margin: 0 0 0 0;
   position: relative;
   top: -93px;
   z-index: 1;
 }
 @media (max-width: 1000px) {
-  .contact-site {
+  .kontakt-site {
     margin: 0;
     top: -60px;
   }
 }
-.contact-site .contacts-hero {
+.kontakt-site .contacts-hero {
   background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center;
   background-size: cover;
   padding: 8vh 0;
@@ -2996,14 +2996,14 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.contact-site .contacts-hero .contacts-hero-text {
+.kontakt-site .contacts-hero .contacts-hero-text {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   padding: 0 20px;
 }
-.contact-site .contacts-hero .contacts-hero-text h1 {
+.kontakt-site .contacts-hero .contacts-hero-text h1 {
   hyphens: none;
   margin: 0 auto 20px auto;
   text-align: center;
@@ -3013,16 +3013,28 @@ form input.success:focus, form textarea.success:focus {
   line-height: 1.2;
 }
 @media (max-width: 1000px) {
-  .contact-site .contacts-hero .contacts-hero-text h1 {
+  .kontakt-site .contacts-hero .contacts-hero-text h1 {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 850px) {
-  .contact-site .contacts-hero .contacts-hero-text h1 {
+  .kontakt-site .contacts-hero .contacts-hero-text h1 {
     font-size: 2rem;
   }
 }
-.contact-site .contacts-hero .contacts-hero-text p {
+.kontakt-site .contacts-hero .contacts-hero-text h2 {
+  color: #fbe91d;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto 25px auto;
+}
+@media (max-width: 1000px) {
+  .kontakt-site .contacts-hero .contacts-hero-text h2 {
+    font-size: 1.3rem;
+  }
+}
+.kontakt-site .contacts-hero .contacts-hero-text p {
   margin: 0 auto;
   text-align: center;
   max-width: 700px;
@@ -3031,11 +3043,11 @@ form input.success:focus, form textarea.success:focus {
   opacity: 0.95;
 }
 @media (max-width: 1000px) {
-  .contact-site .contacts-hero .contacts-hero-text p {
+  .kontakt-site .contacts-hero .contacts-hero-text p {
     font-size: 1.1rem;
   }
 }
-.contact-site .contacts-inner {
+.kontakt-site .contacts-inner {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -3043,7 +3055,7 @@ form input.success:focus, form textarea.success:focus {
   gap: 60px;
   padding: 158px 20px 80px 20px;
 }
-.contact-site .contacts-inner .assoc-infos {
+.kontakt-site .contacts-inner .assoc-infos {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 20px;
@@ -3055,22 +3067,22 @@ form input.success:focus, form textarea.success:focus {
   height: -moz-fit-content;
   height: fit-content;
 }
-.contact-site .contacts-inner .assoc-infos:hover {
+.kontakt-site .contacts-inner .assoc-infos:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
-.contact-site .contacts-inner .assoc-infos h2 {
+.kontakt-site .contacts-inner .assoc-infos h2 {
   margin: 0 0 40px 0;
   color: #0e79bf;
   font-size: 2.2rem;
   font-weight: 700;
 }
 @media (max-width: 1000px) {
-  .contact-site .contacts-inner .assoc-infos h2 {
+  .kontakt-site .contacts-inner .assoc-infos h2 {
     font-size: 1.8rem;
   }
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item {
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -3079,49 +3091,49 @@ form input.success:focus, form textarea.success:focus {
   border-radius: 12px;
   transition: background-color 0.3s ease;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item:hover {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item:hover {
   background-color: rgba(14, 121, 191, 0.03);
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-icon {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-icon {
   height: 28px;
   width: 28px;
   color: #0e79bf;
   flex-shrink: 0;
   margin-top: 4px;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text {
   margin: 0;
   padding: 0;
   flex: 1;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p {
   margin: 0 0 8px 0;
   line-height: 1.6;
   padding: 0;
   text-align: left;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p:first-child {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p:first-child {
   font-weight: 700;
   color: #0e79bf;
   font-size: 1.1rem;
   margin-bottom: 12px;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p.clickable {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p.clickable {
   color: #0e79bf;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p.clickable:hover {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p.clickable:hover {
   color: #005fa3;
   text-decoration: underline;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
   gap: 12px;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3131,26 +3143,26 @@ form input.success:focus, form textarea.success:focus {
   background-color: rgba(14, 121, 191, 0.1);
   transition: all 0.3s ease;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a:hover {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a:hover {
   background-color: #0e79bf;
   transform: scale(1.1) rotate(5deg);
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a .icon {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a .icon {
   height: 20px;
   width: 20px;
   fill: #0e79bf;
   transition: fill 0.3s ease;
 }
-.contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a:hover .icon {
+.kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a:hover .icon {
   fill: white;
 }
-.contact-site .contacts-inner .key-contacts-block {
+.kontakt-site .contacts-inner .key-contacts-block {
   width: 65%;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.contact-site .contacts-inner .key-contacts-block h2 {
+.kontakt-site .contacts-inner .key-contacts-block h2 {
   color: #0e79bf;
   font-size: 2.5rem;
   font-weight: 700;
@@ -3158,12 +3170,12 @@ form input.success:focus, form textarea.success:focus {
   text-align: center;
 }
 @media (max-width: 1000px) {
-  .contact-site .contacts-inner .key-contacts-block h2 {
+  .kontakt-site .contacts-inner .key-contacts-block h2 {
     font-size: 2rem;
     text-align: left;
   }
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas h3 {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas h3 {
   text-align: left;
   color: #0e79bf;
   margin: 0 0 25px 0;
@@ -3172,7 +3184,7 @@ form input.success:focus, form textarea.success:focus {
   position: relative;
   padding-bottom: 15px;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas h3:after {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas h3:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -3182,21 +3194,21 @@ form input.success:focus, form textarea.success:focus {
   background-color: #fbe91d;
   border-radius: 2px;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-hr {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-hr {
   display: none;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
 @media (max-width: 640px) {
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
     grid-template-columns: 1fr;
   }
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3212,7 +3224,7 @@ form input.success:focus, form textarea.success:focus {
   width: 100%;
   max-width: 100%;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item:before {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3221,16 +3233,16 @@ form input.success:focus, form textarea.success:focus {
   height: 4px;
   background: linear-gradient(90deg, #0e79bf, #fbe91d);
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item:hover {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(14, 121, 191, 0.15);
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img img {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -3239,29 +3251,29 @@ form input.success:focus, form textarea.success:focus {
   border: 4px solid rgba(14, 121, 191, 0.1);
   transition: all 0.3s ease;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item:hover .contacts-item-img img {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item:hover .contacts-item-img img {
   border-color: #0e79bf;
   transform: scale(1.05);
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item h4 {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item h4 {
   margin: 0 0 10px 0;
   font-size: 1.4rem;
   font-weight: 700;
   color: #0e79bf;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item p {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item p {
   margin: 0 0 20px 0;
   padding: 0;
   color: #666;
   line-height: 1.5;
   font-size: 1rem;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a {
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3272,28 +3284,28 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover {
   background-color: #0e79bf;
   border-color: #0e79bf;
   transform: translateY(-2px);
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail .contacts-item-mail-icon {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail .contacts-item-mail-icon {
   height: 18px;
   width: 18px;
   color: #0e79bf;
   transition: color 0.3s ease;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail p {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail p {
   font-size: 0.9rem;
   margin: 0;
   color: #0e79bf;
   font-weight: 500;
   transition: color 0.3s ease;
 }
-.contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover .contacts-item-mail-icon, .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover p {
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover .contacts-item-mail-icon, .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover p {
   color: white;
 }
-.contact-site .contact-map-container {
+.kontakt-site .contact-map-container {
   width: 100vw;
   background: linear-gradient(135deg, rgba(14, 121, 191, 0.08), rgba(14, 121, 191, 0.03));
   display: flex;
@@ -3303,7 +3315,7 @@ form input.success:focus, form textarea.success:focus {
   transform: translateX(-50%);
   padding: 80px 0;
 }
-.contact-site .contact-map-container .contact-map {
+.kontakt-site .contact-map-container .contact-map {
   max-width: 1400px;
   width: 90%;
   display: flex;
@@ -3311,51 +3323,51 @@ form input.success:focus, form textarea.success:focus {
   flex-direction: column;
   text-align: center;
 }
-.contact-site .contact-map-container .contact-map h2 {
+.kontakt-site .contact-map-container .contact-map h2 {
   color: #0e79bf;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
 @media (max-width: 1000px) {
-  .contact-site .contact-map-container .contact-map h2 {
+  .kontakt-site .contact-map-container .contact-map h2 {
     font-size: 2rem;
   }
 }
-.contact-site .contact-map-container .contact-map .contact-map-iframe {
+.kontakt-site .contact-map-container .contact-map .contact-map-iframe {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.contact-site .contact-map-container .contact-map .contact-map-iframe:hover {
+.kontakt-site .contact-map-container .contact-map .contact-map-iframe:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
-.contact-site .contact-map-container .contact-map .contact-map-iframe iframe {
+.kontakt-site .contact-map-container .contact-map .contact-map-iframe iframe {
   width: 100%;
   height: 500px;
   border: none;
   display: block;
 }
 @media (max-width: 1000px) {
-  .contact-site .contact-map-container .contact-map .contact-map-iframe iframe {
+  .kontakt-site .contact-map-container .contact-map .contact-map-iframe iframe {
     height: 400px;
   }
 }
 @media (max-width: 850px) {
-  .contact-site .contact-map-container .contact-map .contact-map-iframe iframe {
+  .kontakt-site .contact-map-container .contact-map .contact-map-iframe iframe {
     height: 300px;
   }
 }
 
 @media (max-width: 1000px) {
-  .contact-site .contacts-inner {
+  .kontakt-site .contacts-inner {
     flex-direction: column;
     gap: 40px;
     padding: 60px 20px;
   }
-  .contact-site .contacts-inner .assoc-infos {
+  .kontakt-site .contacts-inner .assoc-infos {
     width: 100%;
     max-width: 100%;
     position: relative;
@@ -3364,107 +3376,107 @@ form input.success:focus, form textarea.success:focus {
     padding: 30px;
     box-sizing: border-box;
   }
-  .contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item {
+  .kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item {
     padding: 15px;
     margin-bottom: 25px;
   }
-  .contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-icon {
+  .kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-icon {
     height: 24px;
     width: 24px;
   }
-  .contact-site .contacts-inner .key-contacts-block {
+  .kontakt-site .contacts-inner .key-contacts-block {
     width: 100%;
     max-width: 100%;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item {
     padding: 25px 15px;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img img {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img img {
     width: 100px;
     height: 100px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item h4 {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item h4 {
     font-size: 1.2rem;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail {
     padding: 10px 15px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail .contacts-item-mail-icon {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail .contacts-item-mail-icon {
     height: 16px;
     width: 16px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail p {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail p {
     font-size: 0.85rem;
   }
-  .contact-site .contact-map-container {
+  .kontakt-site .contact-map-container {
     padding: 60px 0;
   }
-  .contact-site .contact-map-container .contact-map {
+  .kontakt-site .contact-map-container .contact-map {
     width: 95%;
   }
-  .contact-site .contact-map-container .contact-map h2 {
+  .kontakt-site .contact-map-container .contact-map h2 {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 480px) {
-  .contact-site .contacts-inner {
+  .kontakt-site .contacts-inner {
     padding: 40px 15px;
   }
-  .contact-site .contacts-inner .assoc-infos {
+  .kontakt-site .contacts-inner .assoc-infos {
     padding: 20px;
   }
-  .contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item {
+  .kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item {
     padding: 10px;
     margin-bottom: 20px;
   }
-  .contact-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-icon {
+  .kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-icon {
     height: 20px;
     width: 20px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all {
     gap: 20px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item {
     padding: 20px 10px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img img {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-img img {
     width: 80px;
     height: 80px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item h4 {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item h4 {
     font-size: 1.1rem;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail {
     padding: 8px 12px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail .contacts-item-mail-icon {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail .contacts-item-mail-icon {
     height: 14px;
     width: 14px;
   }
-  .contact-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail p {
+  .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item .contacts-item-mail p {
     font-size: 0.8rem;
   }
 }
-.member-site {
+.mitglieder-site {
   margin: 0;
   position: relative;
   top: -93px;
   z-index: 1;
 }
 @media (max-width: 1000px) {
-  .member-site {
+  .mitglieder-site {
     top: -60px;
   }
 }
-.member-site .member-hero {
-  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center;
+.mitglieder-site .member-hero {
+  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center;
   background-size: cover;
   padding: 8vh 0;
   display: flex;
@@ -3474,14 +3486,14 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.member-site .member-hero .member-hero-text {
+.mitglieder-site .member-hero .member-hero-text {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   padding: 0 20px;
 }
-.member-site .member-hero .member-hero-text h1 {
+.mitglieder-site .member-hero .member-hero-text h1 {
   margin: 0 auto 15px auto;
   text-align: center;
   max-width: 800px;
@@ -3490,16 +3502,16 @@ form input.success:focus, form textarea.success:focus {
   line-height: 1.2;
 }
 @media (max-width: 1000px) {
-  .member-site .member-hero .member-hero-text h1 {
+  .mitglieder-site .member-hero .member-hero-text h1 {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 850px) {
-  .member-site .member-hero .member-hero-text h1 {
+  .mitglieder-site .member-hero .member-hero-text h1 {
     font-size: 2rem;
   }
 }
-.member-site .member-hero .member-hero-text h2 {
+.mitglieder-site .member-hero .member-hero-text h2 {
   color: #fbe91d;
   text-align: center;
   font-size: 1.5rem;
@@ -3507,11 +3519,11 @@ form input.success:focus, form textarea.success:focus {
   margin: 0 auto 25px auto;
 }
 @media (max-width: 1000px) {
-  .member-site .member-hero .member-hero-text h2 {
+  .mitglieder-site .member-hero .member-hero-text h2 {
     font-size: 1.3rem;
   }
 }
-.member-site .member-hero .member-hero-text p {
+.mitglieder-site .member-hero .member-hero-text p {
   margin: 0 auto;
   text-align: center;
   max-width: 700px;
@@ -3520,11 +3532,11 @@ form input.success:focus, form textarea.success:focus {
   opacity: 0.95;
 }
 @media (max-width: 1000px) {
-  .member-site .member-hero .member-hero-text p {
+  .mitglieder-site .member-hero .member-hero-text p {
     font-size: 1.1rem;
   }
 }
-.member-site .member-inner {
+.mitglieder-site .member-inner {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -3532,15 +3544,15 @@ form input.success:focus, form textarea.success:focus {
   flex-direction: column;
   padding: 80px 20px 0 20px;
 }
-.member-site .member-inner .member-adv {
+.mitglieder-site .member-inner .member-adv {
   margin: 80px 0;
 }
 @media (max-width: 1000px) {
-  .member-site .member-inner .member-adv {
+  .mitglieder-site .member-inner .member-adv {
     margin: 60px 0;
   }
 }
-.member-site .member-inner .member-adv h3 {
+.mitglieder-site .member-inner .member-adv h3 {
   color: #0e79bf;
   font-size: 2.5rem;
   font-weight: 700;
@@ -3548,29 +3560,29 @@ form input.success:focus, form textarea.success:focus {
   margin-bottom: 50px;
 }
 @media (max-width: 1000px) {
-  .member-site .member-inner .member-adv h3 {
+  .mitglieder-site .member-inner .member-adv h3 {
     font-size: 2rem;
   }
 }
-.member-site .member-inner .member-adv .member-adv-all {
+.mitglieder-site .member-inner .member-adv .member-adv-all {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   margin: 0;
 }
 @media (max-width: 1000px) {
-  .member-site .member-inner .member-adv .member-adv-all {
+  .mitglieder-site .member-inner .member-adv .member-adv-all {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
   }
 }
 @media (max-width: 850px) {
-  .member-site .member-inner .member-adv .member-adv-all {
+  .mitglieder-site .member-inner .member-adv .member-adv-all {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 }
-.member-site .member-inner .member-adv .member-adv-all .member-adv-item {
+.mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3583,7 +3595,7 @@ form input.success:focus, form textarea.success:focus {
   position: relative;
   overflow: hidden;
 }
-.member-site .member-inner .member-adv .member-adv-all .member-adv-item:before {
+.mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3592,21 +3604,21 @@ form input.success:focus, form textarea.success:focus {
   height: 4px;
   background: linear-gradient(90deg, #0e79bf, #fbe91d);
 }
-.member-site .member-inner .member-adv .member-adv-all .member-adv-item:hover {
+.mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(14, 121, 191, 0.15);
 }
 @media (max-width: 1000px) {
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item {
     padding: 35px 25px;
   }
 }
 @media (max-width: 850px) {
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item {
     padding: 30px 20px;
   }
 }
-.member-site .member-inner .member-adv .member-adv-all .member-adv-item .member-adv-icon {
+.mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item .member-adv-icon {
   height: 80px;
   width: 80px;
   margin-bottom: 25px;
@@ -3614,39 +3626,39 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
 }
 @media (max-width: 1000px) {
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item .member-adv-icon {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item .member-adv-icon {
     height: 70px;
     width: 70px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 850px) {
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item .member-adv-icon {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item .member-adv-icon {
     height: 60px;
     width: 60px;
   }
 }
-.member-site .member-inner .member-adv .member-adv-all .member-adv-item:hover .member-adv-icon {
+.mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item:hover .member-adv-icon {
   transform: scale(1.1) rotate(5deg);
   color: #fbe91d;
 }
-.member-site .member-inner .member-adv .member-adv-all .member-adv-item h4 {
+.mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item h4 {
   margin: 0 0 15px 0;
   font-size: 1.4rem;
   font-weight: 700;
   color: #0e79bf;
 }
 @media (max-width: 1000px) {
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item h4 {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item h4 {
     font-size: 1.3rem;
   }
 }
 @media (max-width: 850px) {
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item h4 {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item h4 {
     font-size: 1.2rem;
   }
 }
-.member-site .member-inner .member-adv .member-adv-all .member-adv-item p {
+.mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item p {
   padding: 0;
   margin: 0;
   line-height: 1.6;
@@ -3654,11 +3666,11 @@ form input.success:focus, form textarea.success:focus {
   font-size: 1rem;
 }
 @media (max-width: 850px) {
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item p {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item p {
     font-size: 0.95rem;
   }
 }
-.member-site .member-registration {
+.mitglieder-site .member-registration {
   width: 100vw;
   background: #0e79bf;
   margin: 0 auto;
@@ -3667,12 +3679,12 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.member-site .member-registration .member-registration-content {
+.mitglieder-site .member-registration .member-registration-content {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
 }
-.member-site .member-registration .member-registration-content h3 {
+.mitglieder-site .member-registration .member-registration-content h3 {
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 700;
@@ -3680,15 +3692,15 @@ form input.success:focus, form textarea.success:focus {
   text-align: center;
 }
 @media (max-width: 1000px) {
-  .member-site .member-registration .member-registration-content h3 {
+  .mitglieder-site .member-registration .member-registration-content h3 {
     font-size: 2rem;
   }
 }
-.member-site .member-registration .member-registration-content .registration-intro {
+.mitglieder-site .member-registration .member-registration-content .registration-intro {
   text-align: center;
   margin-bottom: 60px;
 }
-.member-site .member-registration .member-registration-content .registration-intro p {
+.mitglieder-site .member-registration .member-registration-content .registration-intro p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.2rem;
   line-height: 1.6;
@@ -3696,47 +3708,47 @@ form input.success:focus, form textarea.success:focus {
   margin: 0 auto;
 }
 @media (max-width: 1000px) {
-  .member-site .member-registration .member-registration-content .registration-intro p {
+  .mitglieder-site .member-registration .member-registration-content .registration-intro p {
     font-size: 1.1rem;
   }
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 60px;
   align-items: start;
 }
 @media (max-width: 1024px) {
-  .member-site .member-registration .member-registration-content .registration-form-wrapper {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info {
   background: rgba(255, 255, 255, 0.95);
   padding: 35px;
   border-radius: 20px;
   border-left: 4px solid #fbe91d;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info h4 {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info h4 {
   color: #0e79bf;
   font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 25px;
   text-align: center;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item {
   display: flex;
   gap: 12px;
   align-items: flex-start;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-icon {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-icon {
   color: #0e79bf;
   font-size: 1.1rem;
   flex-shrink: 0;
@@ -3744,46 +3756,46 @@ form input.success:focus, form textarea.success:focus {
   width: 20px;
   height: 20px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text {
   flex: 1;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text h5 {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text h5 {
   color: #0e79bf;
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0 0 6px 0;
   line-height: 1.3;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text p {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text p {
   color: #555;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form {
   background: #ffffff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form h4 {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form h4 {
   color: #0e79bf;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
   text-align: center;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section {
   margin-bottom: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid #eee;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section:last-of-type {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section:last-of-type {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section h5 {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section h5 {
   color: #0e79bf;
   font-size: 1.4rem;
   font-weight: 600;
@@ -3791,32 +3803,32 @@ form input.success:focus, form textarea.success:focus {
   padding-left: 15px;
   border-left: 3px solid #fbe91d;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-row {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 @media (max-width: 850px) {
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-row {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-row {
     grid-template-columns: 1fr;
     gap: 15px;
   }
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group {
   margin-bottom: 20px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group label {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group label {
   display: block;
   color: #0e79bf;
   font-weight: 600;
   margin-bottom: 8px;
   font-size: 0.95rem;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group label .required {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group label .required {
   color: #dc267f;
   margin-left: 4px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea {
   width: 100%;
   padding: 12px 15px;
   border: 2px solid #e0e0e0;
@@ -3825,46 +3837,61 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-sizing: border-box;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input:focus, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select:focus, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea:focus {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input:focus, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select:focus, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea:focus {
   outline: none;
   border-color: #0e79bf;
   box-shadow: 0 0 0 3px rgba(14, 121, 191, 0.1);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input:invalid, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select:invalid, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea:invalid {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input:invalid, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select:invalid, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea:invalid {
   border-color: #dc267f;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input.error, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select.error, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea.error {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input.error, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select.error, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea.error {
   border-color: #dc267f;
   background-color: rgba(220, 38, 127, 0.05);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea {
   resize: vertical;
   min-height: 100px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 15px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group input[type=checkbox] {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group input[type=checkbox] {
   width: auto;
   margin-top: 3px;
   flex-shrink: 0;
   transform: scale(1.2);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group label {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group label {
   margin-bottom: 0;
   font-size: 0.9rem;
   line-height: 1.4;
   cursor: pointer;
+  color: #1a1a1a;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group label .document-link {
+  color: #0e79bf;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group label .document-link:hover {
+  color: color-mix(in srgb, #0e79bf 90%, black);
+  text-decoration: underline;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group.checkbox-group label .document-link:focus {
+  outline: 2px solid #0e79bf;
+  outline-offset: 2px;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -3874,50 +3901,50 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option:hover {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option:hover {
   border-color: #0e79bf;
   background-color: rgba(14, 121, 191, 0.05);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option.selected {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option.selected {
   border-color: #0e79bf;
   background-color: rgba(14, 121, 191, 0.1);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option input[type=radio] {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option input[type=radio] {
   width: auto;
   margin: 0;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details {
   flex: 1;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details .option-title {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details .option-title {
   font-weight: 600;
   color: #0e79bf;
   margin-bottom: 4px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details .option-description {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details .option-description {
   font-size: 0.9rem;
   color: #666;
   margin: 0;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details .option-price {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option .option-details .option-price {
   font-weight: 700;
   color: #1e1e1e;
   font-size: 1.1rem;
   margin-top: 4px;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
 }
 @media (max-width: 850px) {
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
     flex-direction: column;
     align-items: center;
   }
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn {
   background: linear-gradient(135deg, #0e79bf, #005fa3);
   color: white;
   border: none;
@@ -3929,20 +3956,20 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(14, 121, 191, 0.3);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:hover {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(14, 121, 191, 0.4);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:active {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:active {
   transform: translateY(0);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:disabled {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
   box-shadow: 0 5px 20px rgba(14, 121, 191, 0.3);
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn {
   background: transparent;
   color: #666;
   border: 2px solid #ccc;
@@ -3954,13 +3981,74 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn:hover {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn:hover {
   background: #f5f5f5;
   border-color: #999;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.member-site .member-questions {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights {
+  margin-top: 25px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(14, 121, 191, 0.05), rgba(14, 121, 191, 0.02));
+  border-radius: 15px;
+  border: 1px solid rgba(14, 121, 191, 0.1);
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .sepa-highlights-title {
+  color: #0e79bf;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(14, 121, 191, 0.1);
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background: #ffffff;
+  border-radius: 10px;
+  border-left: 3px solid #0e79bf;
+  transition: all 0.3s ease;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item:last-child {
+  margin-bottom: 0;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(14, 121, 191, 0.1);
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item.warning {
+  border-left-color: #dc267f;
+  background: linear-gradient(135deg, rgba(220, 38, 127, 0.05), rgba(220, 38, 127, 0.02));
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item.warning .highlight-text {
+  color: #dc267f;
+  font-weight: 600;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item .highlight-text {
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media (max-width: 850px) {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights {
+    padding: 15px;
+  }
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .sepa-highlights-title {
+    font-size: 1rem;
+  }
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item {
+    padding: 6px 10px;
+  }
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item .highlight-text {
+    font-size: 0.9rem;
+  }
+}
+.mitglieder-site .member-questions {
   width: 100vw;
   background: #eeeded;
   margin: 0 auto;
@@ -3969,7 +4057,7 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.member-site .member-questions .member-questions-content {
+.mitglieder-site .member-questions .member-questions-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3979,18 +4067,18 @@ form input.success:focus, form textarea.success:focus {
   padding: 0 20px;
   text-align: center;
 }
-.member-site .member-questions .member-questions-content h3 {
+.mitglieder-site .member-questions .member-questions-content h3 {
   color: #0e79bf;
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 25px;
 }
 @media (max-width: 1000px) {
-  .member-site .member-questions .member-questions-content h3 {
+  .mitglieder-site .member-questions .member-questions-content h3 {
     font-size: 1.8rem;
   }
 }
-.member-site .member-questions .member-questions-content p {
+.mitglieder-site .member-questions .member-questions-content p {
   color: #666;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -3998,11 +4086,11 @@ form input.success:focus, form textarea.success:focus {
   max-width: 600px;
 }
 @media (max-width: 1000px) {
-  .member-site .member-questions .member-questions-content p {
+  .mitglieder-site .member-questions .member-questions-content p {
     font-size: 1.1rem;
   }
 }
-.member-site .member-questions .member-questions-content .secondary {
+.mitglieder-site .member-questions .member-questions-content .secondary {
   display: inline-block;
   padding: 15px 30px;
   background-color: #0e79bf;
@@ -4014,13 +4102,13 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(251, 233, 29, 0.3);
 }
-.member-site .member-questions .member-questions-content .secondary:hover {
+.mitglieder-site .member-questions .member-questions-content .secondary:hover {
   background-color: #0e79bf;
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(14, 121, 191, 0.3);
 }
-.member-site .member-cancellation {
+.mitglieder-site .member-cancellation {
   width: 100vw;
   background: linear-gradient(135deg, rgba(220, 38, 127, 0.1), rgba(220, 38, 127, 0.05));
   margin: 0 auto;
@@ -4029,7 +4117,7 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.member-site .member-cancellation .member-cancellation-content {
+.mitglieder-site .member-cancellation .member-cancellation-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4039,18 +4127,18 @@ form input.success:focus, form textarea.success:focus {
   padding: 0 20px;
   text-align: center;
 }
-.member-site .member-cancellation .member-cancellation-content h3 {
+.mitglieder-site .member-cancellation .member-cancellation-content h3 {
   color: #dc267f;
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 25px;
 }
 @media (max-width: 1000px) {
-  .member-site .member-cancellation .member-cancellation-content h3 {
+  .mitglieder-site .member-cancellation .member-cancellation-content h3 {
     font-size: 1.8rem;
   }
 }
-.member-site .member-cancellation .member-cancellation-content p {
+.mitglieder-site .member-cancellation .member-cancellation-content p {
   color: #666;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -4058,11 +4146,11 @@ form input.success:focus, form textarea.success:focus {
   max-width: 600px;
 }
 @media (max-width: 1000px) {
-  .member-site .member-cancellation .member-cancellation-content p {
+  .mitglieder-site .member-cancellation .member-cancellation-content p {
     font-size: 1.1rem;
   }
 }
-.member-site .member-cancellation .member-cancellation-content .cancellation-btn {
+.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -4076,20 +4164,20 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(220, 38, 127, 0.3);
 }
-.member-site .member-cancellation .member-cancellation-content .cancellation-btn:hover {
+.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn:hover {
   background-color: #b01f68;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(220, 38, 127, 0.4);
 }
-.member-site .member-cancellation .member-cancellation-content .cancellation-btn .cancel-icon {
+.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn .cancel-icon {
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease;
 }
-.member-site .member-cancellation .member-cancellation-content .cancellation-btn:hover .cancel-icon {
+.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn:hover .cancel-icon {
   transform: scale(1.1);
 }
-.member-site .member-cancellation .member-cancellation-content .warning-note {
+.mitglieder-site .member-cancellation .member-cancellation-content .warning-note {
   margin-top: 30px;
   padding: 20px;
   background-color: rgba(255, 193, 7, 0.1);
@@ -4097,7 +4185,7 @@ form input.success:focus, form textarea.success:focus {
   border-radius: 8px;
   max-width: 600px;
 }
-.member-site .member-cancellation .member-cancellation-content .warning-note p {
+.mitglieder-site .member-cancellation .member-cancellation-content .warning-note p {
   color: #856404;
   font-size: 0.95rem;
   margin: 0;
@@ -4106,95 +4194,95 @@ form input.success:focus, form textarea.success:focus {
 }
 
 @media (max-width: 1000px) {
-  .member-site .member-inner {
+  .mitglieder-site .member-inner {
     padding: 0 15px;
   }
-  .member-site .member-inner .member-adv {
+  .mitglieder-site .member-inner .member-adv {
     margin: 60px 0;
   }
-  .member-site .member-inner .member-adv .member-adv-all .member-adv-item {
+  .mitglieder-site .member-inner .member-adv .member-adv-all .member-adv-item {
     padding: 30px 20px;
   }
-  .member-site .member-registration {
+  .mitglieder-site .member-registration {
     padding: 60px 0;
   }
-  .member-site .member-registration .member-registration-content {
+  .mitglieder-site .member-registration .member-registration-content {
     padding: 0 15px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info {
     padding: 30px 25px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info h4 {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info h4 {
     font-size: 1.6rem;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items {
     gap: 20px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item {
     gap: 10px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-icon {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-icon {
     font-size: 1rem;
     width: 18px;
     height: 18px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text h5 {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text h5 {
     font-size: 1.1rem;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text p {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text p {
     font-size: 0.95rem;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form {
     padding: 30px 25px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form h4 {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form h4 {
     font-size: 1.8rem;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section {
     margin-bottom: 30px;
     padding-bottom: 20px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section h5 {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-section h5 {
     font-size: 1.2rem;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group input, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group select, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group textarea {
     padding: 10px 12px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-group .membership-options .membership-option {
     padding: 12px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
     margin-top: 30px;
   }
-  .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn, .member-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn, .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn {
     padding: 12px 30px;
     font-size: 1rem;
   }
-  .member-site .member-questions {
+  .mitglieder-site .member-questions {
     padding: 60px 0;
   }
-  .member-site .member-questions .member-questions-content {
+  .mitglieder-site .member-questions .member-questions-content {
     padding: 0 15px;
   }
-  .member-site .member-cancellation {
+  .mitglieder-site .member-cancellation {
     padding: 60px 0;
   }
-  .member-site .member-cancellation .member-cancellation-content {
+  .mitglieder-site .member-cancellation .member-cancellation-content {
     padding: 0 15px;
   }
-  .member-site .member-cancellation .member-cancellation-content .cancellation-btn {
+  .mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn {
     padding: 12px 25px;
     font-size: 1rem;
   }
-  .member-site .member-cancellation .member-cancellation-content .cancellation-btn .cancel-icon {
+  .mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn .cancel-icon {
     width: 18px;
     height: 18px;
   }
-  .member-site .member-cancellation .member-cancellation-content .warning-note {
+  .mitglieder-site .member-cancellation .member-cancellation-content .warning-note {
     margin-top: 25px;
     padding: 15px;
   }
-  .member-site .member-cancellation .member-cancellation-content .warning-note p {
+  .mitglieder-site .member-cancellation .member-cancellation-content .warning-note p {
     font-size: 0.9rem;
   }
 }
@@ -4497,19 +4585,19 @@ form input.success:focus, form textarea.success:focus {
     font-size: 1rem;
   }
 }
-.football-site {
+.fussball-site {
   margin: 0;
   position: relative;
   top: -93px;
   z-index: 1;
 }
 @media (max-width: 1000px) {
-  .football-site {
+  .fussball-site {
     top: -60px;
   }
 }
-.football-site .football-hero {
-  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center;
+.fussball-site .football-hero {
+  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1490108474814-221f6198acc5?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center;
   background-size: cover;
   padding: 8vh 0;
   display: flex;
@@ -4519,14 +4607,14 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.football-site .football-hero .football-hero-text {
+.fussball-site .football-hero .football-hero-text {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   padding: 0 20px;
 }
-.football-site .football-hero .football-hero-text h1 {
+.fussball-site .football-hero .football-hero-text h1 {
   margin: 0 auto 15px auto;
   text-align: center;
   max-width: 800px;
@@ -4535,16 +4623,16 @@ form input.success:focus, form textarea.success:focus {
   line-height: 1.2;
 }
 @media (max-width: 1000px) {
-  .football-site .football-hero .football-hero-text h1 {
+  .fussball-site .football-hero .football-hero-text h1 {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 850px) {
-  .football-site .football-hero .football-hero-text h1 {
+  .fussball-site .football-hero .football-hero-text h1 {
     font-size: 2rem;
   }
 }
-.football-site .football-hero .football-hero-text h2 {
+.fussball-site .football-hero .football-hero-text h2 {
   color: #fbe91d;
   text-align: center;
   font-size: 1.5rem;
@@ -4552,11 +4640,11 @@ form input.success:focus, form textarea.success:focus {
   margin: 0 auto 25px auto;
 }
 @media (max-width: 1000px) {
-  .football-site .football-hero .football-hero-text h2 {
+  .fussball-site .football-hero .football-hero-text h2 {
     font-size: 1.3rem;
   }
 }
-.football-site .football-hero .football-hero-text p {
+.fussball-site .football-hero .football-hero-text p {
   margin: 0 auto;
   text-align: center;
   max-width: 700px;
@@ -4565,11 +4653,11 @@ form input.success:focus, form textarea.success:focus {
   opacity: 0.95;
 }
 @media (max-width: 1000px) {
-  .football-site .football-hero .football-hero-text p {
+  .fussball-site .football-hero .football-hero-text p {
     font-size: 1.1rem;
   }
 }
-.football-site .football-inner {
+.fussball-site .football-inner {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -4577,15 +4665,15 @@ form input.success:focus, form textarea.success:focus {
   flex-direction: column;
   padding: 80px 20px 0 20px;
 }
-.football-site .training-schedule {
+.fussball-site .training-schedule {
   margin: 80px 0;
 }
 @media (max-width: 1000px) {
-  .football-site .training-schedule {
+  .fussball-site .training-schedule {
     margin: 60px 0;
   }
 }
-.football-site .training-schedule h2 {
+.fussball-site .training-schedule h2 {
   font-size: 2.5rem;
   color: #0e79bf;
   text-align: center;
@@ -4593,11 +4681,11 @@ form input.success:focus, form textarea.success:focus {
   font-weight: 700;
 }
 @media (max-width: 1000px) {
-  .football-site .training-schedule h2 {
+  .fussball-site .training-schedule h2 {
     font-size: 2rem;
   }
 }
-.football-site .training-schedule .training-schedule-intro {
+.fussball-site .training-schedule .training-schedule-intro {
   text-align: center;
   font-size: 1.1rem;
   color: #666;
@@ -4605,13 +4693,13 @@ form input.success:focus, form textarea.success:focus {
   margin: 0 auto 60px;
   line-height: 1.6;
 }
-.football-site .training-schedule .training-section {
+.fussball-site .training-schedule .training-section {
   margin-bottom: 60px;
 }
-.football-site .training-schedule .training-section:last-child {
+.fussball-site .training-schedule .training-section:last-child {
   margin-bottom: 0;
 }
-.football-site .training-schedule .training-section-title {
+.fussball-site .training-schedule .training-section-title {
   font-size: 2rem;
   color: #0e79bf;
   text-align: center;
@@ -4619,7 +4707,7 @@ form input.success:focus, form textarea.success:focus {
   font-weight: 600;
   position: relative;
 }
-.football-site .training-schedule .training-section-title::after {
+.fussball-site .training-schedule .training-section-title::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -4631,23 +4719,23 @@ form input.success:focus, form textarea.success:focus {
   border-radius: 2px;
 }
 @media (max-width: 1000px) {
-  .football-site .training-schedule .training-section-title {
+  .fussball-site .training-schedule .training-section-title {
     font-size: 1.6rem;
   }
 }
-.football-site .training-schedule .training-teams {
+.fussball-site .training-schedule .training-teams {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
   margin-bottom: 40px;
 }
 @media (max-width: 580px) {
-  .football-site .training-schedule .training-teams {
+  .fussball-site .training-schedule .training-teams {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 }
-.football-site .training-schedule .training-team-item {
+.fussball-site .training-schedule .training-team-item {
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
@@ -4655,19 +4743,19 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.football-site .training-schedule .training-team-item:hover {
+.fussball-site .training-schedule .training-team-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
   border-color: #0e79bf;
 }
-.football-site .training-schedule .training-team-item .training-team-header {
+.fussball-site .training-schedule .training-team-item .training-team-header {
   background: linear-gradient(135deg, #0e79bf, #1e40af);
   padding: 25px 30px;
   color: white;
   background-color: #0e79bf;
   position: relative;
 }
-.football-site .training-schedule .training-team-item .training-team-header::after {
+.fussball-site .training-schedule .training-team-item .training-team-header::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -4677,7 +4765,7 @@ form input.success:focus, form textarea.success:focus {
   background: linear-gradient(135deg, #0e79bf, #1e40af);
   clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
 }
-.football-site .training-schedule .training-team-item .training-team-header h3 {
+.fussball-site .training-schedule .training-team-item .training-team-header h3 {
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0 0 8px 0;
@@ -4689,7 +4777,7 @@ form input.success:focus, form textarea.success:focus {
   text-align: center;
   min-width: 200px;
 }
-.football-site .training-schedule .training-team-item .training-team-header .training-age {
+.fussball-site .training-schedule .training-team-item .training-team-header .training-age {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   padding: 8px 18px;
@@ -4700,33 +4788,33 @@ form input.success:focus, form textarea.success:focus {
   display: inline-block;
   margin-top: 5px;
 }
-.football-site .training-schedule .training-team-item .training-details {
+.fussball-site .training-schedule .training-team-item .training-details {
   padding: 35px 30px 30px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.football-site .training-schedule .training-team-item .training-time,
-.football-site .training-schedule .training-team-item .training-location,
-.football-site .training-schedule .training-team-item .training-trainer,
-.football-site .training-schedule .training-team-item .training-contact {
+.fussball-site .training-schedule .training-team-item .training-time,
+.fussball-site .training-schedule .training-team-item .training-location,
+.fussball-site .training-schedule .training-team-item .training-trainer,
+.fussball-site .training-schedule .training-team-item .training-contact {
   display: flex;
   align-items: center;
   gap: 18px;
   padding: 15px 0;
   border-bottom: 1px solid #f1f5f9;
 }
-.football-site .training-schedule .training-team-item .training-time:last-child,
-.football-site .training-schedule .training-team-item .training-location:last-child,
-.football-site .training-schedule .training-team-item .training-trainer:last-child,
-.football-site .training-schedule .training-team-item .training-contact:last-child {
+.fussball-site .training-schedule .training-team-item .training-time:last-child,
+.fussball-site .training-schedule .training-team-item .training-location:last-child,
+.fussball-site .training-schedule .training-team-item .training-trainer:last-child,
+.fussball-site .training-schedule .training-team-item .training-contact:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-.football-site .training-schedule .training-team-item .training-time .training-icon,
-.football-site .training-schedule .training-team-item .training-location .training-icon,
-.football-site .training-schedule .training-team-item .training-trainer .training-icon,
-.football-site .training-schedule .training-team-item .training-contact .training-icon {
+.fussball-site .training-schedule .training-team-item .training-time .training-icon,
+.fussball-site .training-schedule .training-team-item .training-location .training-icon,
+.fussball-site .training-schedule .training-team-item .training-trainer .training-icon,
+.fussball-site .training-schedule .training-team-item .training-contact .training-icon {
   width: 28px;
   height: 28px;
   fill: #0e79bf;
@@ -4735,49 +4823,49 @@ form input.success:focus, form textarea.success:focus {
   background: rgba(14, 121, 191, 0.1);
   border-radius: 10px;
 }
-.football-site .training-schedule .training-team-item .training-time .training-info,
-.football-site .training-schedule .training-team-item .training-location .training-info,
-.football-site .training-schedule .training-team-item .training-trainer .training-info,
-.football-site .training-schedule .training-team-item .training-contact .training-info {
+.fussball-site .training-schedule .training-team-item .training-time .training-info,
+.fussball-site .training-schedule .training-team-item .training-location .training-info,
+.fussball-site .training-schedule .training-team-item .training-trainer .training-info,
+.fussball-site .training-schedule .training-team-item .training-contact .training-info {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.football-site .training-schedule .training-team-item .training-time .training-info p,
-.football-site .training-schedule .training-team-item .training-location .training-info p,
-.football-site .training-schedule .training-team-item .training-trainer .training-info p,
-.football-site .training-schedule .training-team-item .training-contact .training-info p {
+.fussball-site .training-schedule .training-team-item .training-time .training-info p,
+.fussball-site .training-schedule .training-team-item .training-location .training-info p,
+.fussball-site .training-schedule .training-team-item .training-trainer .training-info p,
+.fussball-site .training-schedule .training-team-item .training-contact .training-info p {
   margin: 0;
   line-height: 1.5;
 }
-.football-site .training-schedule .training-team-item .training-time .training-info p:first-child,
-.football-site .training-schedule .training-team-item .training-location .training-info p:first-child,
-.football-site .training-schedule .training-team-item .training-trainer .training-info p:first-child,
-.football-site .training-schedule .training-team-item .training-contact .training-info p:first-child {
+.fussball-site .training-schedule .training-team-item .training-time .training-info p:first-child,
+.fussball-site .training-schedule .training-team-item .training-location .training-info p:first-child,
+.fussball-site .training-schedule .training-team-item .training-trainer .training-info p:first-child,
+.fussball-site .training-schedule .training-team-item .training-contact .training-info p:first-child {
   font-weight: 700;
   color: #1f2937;
   font-size: 1.1rem;
   margin-bottom: 4px;
 }
-.football-site .training-schedule .training-team-item .training-time .training-info p:last-child,
-.football-site .training-schedule .training-team-item .training-location .training-info p:last-child,
-.football-site .training-schedule .training-team-item .training-trainer .training-info p:last-child,
-.football-site .training-schedule .training-team-item .training-contact .training-info p:last-child {
+.fussball-site .training-schedule .training-team-item .training-time .training-info p:last-child,
+.fussball-site .training-schedule .training-team-item .training-location .training-info p:last-child,
+.fussball-site .training-schedule .training-team-item .training-trainer .training-info p:last-child,
+.fussball-site .training-schedule .training-team-item .training-contact .training-info p:last-child {
   color: #666;
   font-size: 0.95rem;
 }
-.football-site .training-schedule .training-team-item .training-contact .training-info p {
+.fussball-site .training-schedule .training-team-item .training-contact .training-info p {
   color: #0e79bf;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.football-site .training-schedule .training-team-item .training-contact .training-info p:hover {
+.fussball-site .training-schedule .training-team-item .training-contact .training-info p:hover {
   color: #0e79bf;
   text-decoration: underline;
 }
-.football-site .training-schedule .training-team-item-senior {
+.fussball-site .training-schedule .training-team-item-senior {
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
@@ -4785,19 +4873,19 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.football-site .training-schedule .training-team-item-senior:hover {
+.fussball-site .training-schedule .training-team-item-senior:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
   border-color: #0e79bf;
 }
-.football-site .training-schedule .training-team-item-senior .training-team-header {
+.fussball-site .training-schedule .training-team-item-senior .training-team-header {
   background: linear-gradient(135deg, #0e79bf, #1e40af);
   padding: 25px 30px;
   color: white;
   background-color: #0e79bf;
   position: relative;
 }
-.football-site .training-schedule .training-team-item-senior .training-team-header::after {
+.fussball-site .training-schedule .training-team-item-senior .training-team-header::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -4807,7 +4895,7 @@ form input.success:focus, form textarea.success:focus {
   background: linear-gradient(135deg, #0e79bf, #1e40af);
   clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
 }
-.football-site .training-schedule .training-team-item-senior .training-team-header h3 {
+.fussball-site .training-schedule .training-team-item-senior .training-team-header h3 {
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
@@ -4819,39 +4907,39 @@ form input.success:focus, form textarea.success:focus {
   text-align: center;
   min-width: 200px;
 }
-.football-site .training-schedule .training-team-item-senior .training-team-header h3 .team-class {
+.fussball-site .training-schedule .training-team-item-senior .training-team-header h3 .team-class {
   font-size: 1.2rem;
   font-weight: 500;
   margin-left: 10px;
   opacity: 0.8;
 }
-.football-site .training-schedule .training-team-item-senior .training-details {
+.fussball-site .training-schedule .training-team-item-senior .training-details {
   padding: 35px 30px 30px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.football-site .training-schedule .training-team-item-senior .training-time,
-.football-site .training-schedule .training-team-item-senior .training-location,
-.football-site .training-schedule .training-team-item-senior .training-trainer,
-.football-site .training-schedule .training-team-item-senior .training-contact {
+.fussball-site .training-schedule .training-team-item-senior .training-time,
+.fussball-site .training-schedule .training-team-item-senior .training-location,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer,
+.fussball-site .training-schedule .training-team-item-senior .training-contact {
   display: flex;
   align-items: center;
   gap: 18px;
   padding: 15px 0;
   border-bottom: 1px solid #f1f5f9;
 }
-.football-site .training-schedule .training-team-item-senior .training-time:last-child,
-.football-site .training-schedule .training-team-item-senior .training-location:last-child,
-.football-site .training-schedule .training-team-item-senior .training-trainer:last-child,
-.football-site .training-schedule .training-team-item-senior .training-contact:last-child {
+.fussball-site .training-schedule .training-team-item-senior .training-time:last-child,
+.fussball-site .training-schedule .training-team-item-senior .training-location:last-child,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer:last-child,
+.fussball-site .training-schedule .training-team-item-senior .training-contact:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-.football-site .training-schedule .training-team-item-senior .training-time .training-icon,
-.football-site .training-schedule .training-team-item-senior .training-location .training-icon,
-.football-site .training-schedule .training-team-item-senior .training-trainer .training-icon,
-.football-site .training-schedule .training-team-item-senior .training-contact .training-icon {
+.fussball-site .training-schedule .training-team-item-senior .training-time .training-icon,
+.fussball-site .training-schedule .training-team-item-senior .training-location .training-icon,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer .training-icon,
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-icon {
   width: 28px;
   height: 28px;
   fill: #0e79bf;
@@ -4860,61 +4948,61 @@ form input.success:focus, form textarea.success:focus {
   background: rgba(14, 121, 191, 0.1);
   border-radius: 10px;
 }
-.football-site .training-schedule .training-team-item-senior .training-time .training-info,
-.football-site .training-schedule .training-team-item-senior .training-location .training-info,
-.football-site .training-schedule .training-team-item-senior .training-trainer .training-info,
-.football-site .training-schedule .training-team-item-senior .training-contact .training-info {
+.fussball-site .training-schedule .training-team-item-senior .training-time .training-info,
+.fussball-site .training-schedule .training-team-item-senior .training-location .training-info,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer .training-info,
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-info {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.football-site .training-schedule .training-team-item-senior .training-time .training-info p,
-.football-site .training-schedule .training-team-item-senior .training-location .training-info p,
-.football-site .training-schedule .training-team-item-senior .training-trainer .training-info p,
-.football-site .training-schedule .training-team-item-senior .training-contact .training-info p {
+.fussball-site .training-schedule .training-team-item-senior .training-time .training-info p,
+.fussball-site .training-schedule .training-team-item-senior .training-location .training-info p,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer .training-info p,
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-info p {
   margin: 0;
   line-height: 1.5;
 }
-.football-site .training-schedule .training-team-item-senior .training-time .training-info p:first-child,
-.football-site .training-schedule .training-team-item-senior .training-location .training-info p:first-child,
-.football-site .training-schedule .training-team-item-senior .training-trainer .training-info p:first-child,
-.football-site .training-schedule .training-team-item-senior .training-contact .training-info p:first-child {
+.fussball-site .training-schedule .training-team-item-senior .training-time .training-info p:first-child,
+.fussball-site .training-schedule .training-team-item-senior .training-location .training-info p:first-child,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer .training-info p:first-child,
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-info p:first-child {
   font-weight: 700;
   color: #1f2937;
   font-size: 1.1rem;
   margin-bottom: 4px;
 }
-.football-site .training-schedule .training-team-item-senior .training-time .training-info p:last-child,
-.football-site .training-schedule .training-team-item-senior .training-location .training-info p:last-child,
-.football-site .training-schedule .training-team-item-senior .training-trainer .training-info p:last-child,
-.football-site .training-schedule .training-team-item-senior .training-contact .training-info p:last-child {
+.fussball-site .training-schedule .training-team-item-senior .training-time .training-info p:last-child,
+.fussball-site .training-schedule .training-team-item-senior .training-location .training-info p:last-child,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer .training-info p:last-child,
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-info p:last-child {
   color: #666;
   font-size: 0.95rem;
 }
-.football-site .training-schedule .training-team-item-senior .training-contact .training-info p {
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-info p {
   color: #0e79bf;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.football-site .training-schedule .training-team-item-senior .training-contact .training-info p:hover {
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-info p:hover {
   color: #fbe91d;
   text-decoration: underline;
 }
-.football-site .training-schedule .training-note {
+.fussball-site .training-schedule .training-note {
   background: #f8fafc;
   padding: 20px;
   border-radius: 12px;
   border-left: 4px solid #0e79bf;
 }
-.football-site .training-schedule .training-note p {
+.fussball-site .training-schedule .training-note p {
   margin: 0;
   font-style: italic;
   color: #666;
   line-height: 1.5;
 }
-.football-site .trial-training {
+.fussball-site .trial-training {
   position: relative;
   width: 100vw;
   margin: 12vh 0;
@@ -4925,7 +5013,7 @@ form input.success:focus, form textarea.success:focus {
   padding: 4vw 2vw;
   background: #0e79bf;
 }
-.football-site .trial-training .trial-training-content {
+.fussball-site .trial-training .trial-training-content {
   max-width: 1500px;
   margin: 0 auto;
   display: flex;
@@ -4934,7 +5022,7 @@ form input.success:focus, form textarea.success:focus {
   align-items: center;
   gap: 6vw;
 }
-.football-site .trial-training .trial-training-content .trial-training-text {
+.fussball-site .trial-training .trial-training-content .trial-training-text {
   color: #ffffff;
   border-radius: 16px;
   display: flex;
@@ -4943,33 +5031,33 @@ form input.success:focus, form textarea.success:focus {
   gap: 3vh;
   text-align: center;
 }
-.football-site .trial-training .trial-training-content .trial-training-text h3 {
+.fussball-site .trial-training .trial-training-content .trial-training-text h3 {
   margin-bottom: 0;
   font-size: clamp(2rem, 4vw, 3rem);
   color: white;
 }
-.football-site .trial-training .trial-training-content .trial-training-text > p {
+.fussball-site .trial-training .trial-training-content .trial-training-text > p {
   max-width: 40vw;
   font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.6;
   color: white;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-benefits {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits {
   margin: 2vh 0;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1vh 2vw;
   max-width: 35vw;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item {
   display: flex;
   align-items: center;
   gap: 0.5vw;
   text-align: left;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item .trial-icon {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item .trial-icon {
   width: 16px;
   height: 16px;
   fill: #22c55e;
@@ -4978,14 +5066,14 @@ form input.success:focus, form textarea.success:focus {
   border: 2px solid #22c55e;
   border-radius: 8px;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item p {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item p {
   margin: 0;
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   line-height: 1.4;
   font-weight: normal;
   color: white;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .secondary {
+.fussball-site .trial-training .trial-training-content .trial-training-text .secondary {
   font-size: 20px;
   margin: 2vh 0;
   padding: 1vw 2vw;
@@ -4995,23 +5083,23 @@ form input.success:focus, form textarea.success:focus {
   text-decoration: none;
   border-radius: 8px;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .secondary:hover {
+.fussball-site .trial-training .trial-training-content .trial-training-text .secondary:hover {
   background: #f2e44b;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(251, 233, 29, 0.4);
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact {
   margin-top: 2vh;
   text-align: center;
   color: white;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact p {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact p {
   margin: 0 0 1vh 0;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-weight: normal;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact .trial-email {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact .trial-email {
   color: #fbe91d;
   text-decoration: none;
   font-weight: 500;
@@ -5023,76 +5111,76 @@ form input.success:focus, form textarea.success:focus {
   border: 1px solid white;
   border-radius: 10px;
 }
-.football-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact .trial-email:hover {
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-direct-contact .trial-email:hover {
   background: rgba(251, 233, 29, 0.2);
   transform: translateY(-2px);
 }
 @media (max-width: 768px) {
-  .football-site .trial-training {
+  .fussball-site .trial-training {
     margin: 8vh 0;
     padding: 6vw 4vw;
   }
-  .football-site .trial-training .trial-training-content {
+  .fussball-site .trial-training .trial-training-content {
     flex-direction: column;
     gap: 4vh;
   }
-  .football-site .trial-training .trial-training-content .trial-training-text > p {
+  .fussball-site .trial-training .trial-training-content .trial-training-text > p {
     max-width: 80vw;
   }
-  .football-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list {
+  .fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list {
     grid-template-columns: 1fr;
     max-width: 80vw;
     gap: 2vh 0;
   }
-  .football-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item {
+  .fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item {
     gap: 3vw;
   }
 }
 
 @media (max-width: 1000px) {
-  .football-site .football-inner {
+  .fussball-site .football-inner {
     padding: 0 15px;
   }
-  .football-site .football-inner .training-schedule {
+  .fussball-site .football-inner .training-schedule {
     margin: 60px 0;
   }
-  .football-site .football-inner .training-schedule .training-teams .training-team-item,
-  .football-site .football-inner .training-schedule .training-teams .training-team-item-senior {
+  .fussball-site .football-inner .training-schedule .training-teams .training-team-item,
+  .fussball-site .football-inner .training-schedule .training-teams .training-team-item-senior {
     padding: 30px 20px;
   }
-  .football-site .trial-training {
+  .fussball-site .trial-training {
     padding: 60px 0;
   }
-  .football-site .trial-training .trial-training-content {
+  .fussball-site .trial-training .trial-training-content {
     padding: 60px 15px;
   }
 }
 @media (max-width: 640px) {
-  .football-site .training-teams {
+  .fussball-site .training-teams {
     grid-template-columns: 1fr;
   }
-  .football-site .training-team-item,
-  .football-site .training-team-item-senior {
+  .fussball-site .training-team-item,
+  .fussball-site .training-team-item-senior {
     padding: 20px;
   }
-  .football-site .training-team-item .training-team-header,
-  .football-site .training-team-item-senior .training-team-header {
+  .fussball-site .training-team-item .training-team-header,
+  .fussball-site .training-team-item-senior .training-team-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  .football-site .training-team-item .training-team-header .training-age,
-  .football-site .training-team-item-senior .training-team-header .training-age {
+  .fussball-site .training-team-item .training-team-header .training-age,
+  .fussball-site .training-team-item-senior .training-team-header .training-age {
     align-self: flex-start;
   }
-  .football-site .training-team-item .training-team-header h3 .team-class,
-  .football-site .training-team-item-senior .training-team-header h3 .team-class {
+  .fussball-site .training-team-item .training-team-header h3 .team-class,
+  .fussball-site .training-team-item-senior .training-team-header h3 .team-class {
     display: block;
     margin-left: 0;
     margin-top: 5px;
     font-size: 1rem;
   }
-  .football-site .trial-training {
+  .fussball-site .trial-training {
     padding: 30px 20px;
   }
 }
@@ -5550,7 +5638,7 @@ form input.success:focus, form textarea.success:focus {
   }
 }
 .tennis-hero {
-  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center;
+  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1646978567314-32cfd5a8854e?q=80&w=1255&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat bottom center;
   background-size: cover;
   padding: 8vh 0;
   display: flex;
@@ -5579,6 +5667,7 @@ form input.success:focus, form textarea.success:focus {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
+  text-align: center;
 }
 @media (max-width: 1000px) {
   .tennis-hero .tennis-hero-content h1 {
@@ -5588,6 +5677,18 @@ form input.success:focus, form textarea.success:focus {
 @media (max-width: 850px) {
   .tennis-hero .tennis-hero-content h1 {
     font-size: 2rem;
+  }
+}
+.tennis-hero .tennis-hero-content h2 {
+  color: #fbe91d;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto 25px auto;
+}
+@media (max-width: 1000px) {
+  .tennis-hero .tennis-hero-content h2 {
+    font-size: 1.3rem;
   }
 }
 .tennis-hero .tennis-hero-content p {
@@ -6053,7 +6154,7 @@ form input.success:focus, form textarea.success:focus {
   margin-bottom: 80px;
 }
 .aktuelles-page .aktuelles-hero {
-  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center;
+  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center;
   background-size: cover;
   padding: 8vh 0;
   display: flex;
@@ -6534,6 +6635,409 @@ form input.success:focus, form textarea.success:focus {
   .aktuelles-page .contact-quick .primary {
     font-size: 1rem;
     padding: 12px 24px;
+  }
+}
+
+.downloads-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.downloads-page .downloads-hero {
+  background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url("https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center;
+  background-size: cover;
+  padding: 8vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5vh;
+  margin-top: -75px;
+}
+@media (max-width: 1000px) {
+  .downloads-page .downloads-hero {
+    padding: 6vh 0;
+    margin-bottom: 4vh;
+    margin-top: -60px;
+  }
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-hero {
+    padding: 5vh 0;
+    margin-bottom: 3vh;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-hero {
+    padding: 4vh 0;
+  }
+}
+.downloads-page .downloads-hero .downloads-hero-text {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-hero .downloads-hero-text {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-hero .downloads-hero-text {
+    padding: 0 10px;
+  }
+}
+.downloads-page .downloads-hero .downloads-hero-text h1 {
+  margin: 0 auto 15px auto;
+  text-align: center;
+  max-width: 800px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (max-width: 1000px) {
+  .downloads-page .downloads-hero .downloads-hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-hero .downloads-hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-hero .downloads-hero-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .downloads-page .downloads-hero .downloads-hero-text h1 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+}
+.downloads-page .downloads-hero .downloads-hero-text h2 {
+  color: #fbe91d;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto 25px auto;
+}
+@media (max-width: 1000px) {
+  .downloads-page .downloads-hero .downloads-hero-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-hero .downloads-hero-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-hero .downloads-hero-text h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+}
+.downloads-page .downloads-hero .downloads-hero-text p {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+@media (max-width: 1000px) {
+  .downloads-page .downloads-hero .downloads-hero-text p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-hero .downloads-hero-text p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-hero .downloads-hero-text p {
+    font-size: 0.95rem;
+  }
+}
+.downloads-page .downloads-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .downloads-page .downloads-content {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-content {
+    padding: 50px 15px;
+  }
+}
+.downloads-page .downloads-section {
+  margin-bottom: 80px;
+}
+.downloads-page .downloads-section:last-child {
+  margin-bottom: 0;
+}
+.downloads-page .downloads-section h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0e79bf;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+}
+.downloads-page .downloads-section h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #fbe91d;
+  border-radius: 2px;
+}
+@media (max-width: 1000px) {
+  .downloads-page .downloads-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+}
+.downloads-page .downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-grid {
+    gap: 15px;
+  }
+}
+.downloads-page .download-item {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(14, 121, 191, 0.1);
+  transition: all 0.3s ease;
+}
+.downloads-page .download-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border-color: #0e79bf;
+}
+@media (max-width: 850px) {
+  .downloads-page .download-item {
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .download-item {
+    padding: 15px;
+  }
+}
+.downloads-page .download-item .download-content h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+@media (max-width: 500px) {
+  .downloads-page .download-item .download-content h4 {
+    font-size: 1.2rem;
+  }
+}
+.downloads-page .download-item .download-content .download-description {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .downloads-page .download-item .download-content .download-description {
+    font-size: 0.9rem;
+  }
+}
+.downloads-page .download-item .download-content .download-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+@media (max-width: 850px) {
+  .downloads-page .download-item .download-content .download-meta {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .download-item .download-content .download-meta {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+}
+.downloads-page .download-item .download-content .download-meta span {
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.downloads-page .download-item .download-content .download-meta span.file-size {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+.downloads-page .download-item .download-content .download-meta span.file-type {
+  background: rgba(14, 121, 191, 0.1);
+  color: #0e79bf;
+}
+@media (max-width: 500px) {
+  .downloads-page .download-item .download-content .download-meta span {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+}
+.downloads-page .download-item .download-content .download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #0e79bf;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+.downloads-page .download-item .download-content .download-button:hover {
+  background: rgb(10.5170731707, 90.8975609756, 143.4829268293);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 121, 191, 0.3);
+}
+.downloads-page .download-item .download-content .download-button .icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+@media (max-width: 500px) {
+  .downloads-page .download-item .download-content .download-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+.downloads-page .downloads-help {
+  background: linear-gradient(135deg, #eeeded 0%, rgba(14, 121, 191, 0.05) 100%);
+  border-radius: 25px;
+  padding: 50px 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+@media (max-width: 1000px) {
+  .downloads-page .downloads-help {
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-help {
+    padding: 30px 15px;
+    margin-top: 30px;
+  }
+}
+.downloads-page .downloads-help .downloads-help-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.downloads-page .downloads-help .downloads-help-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0e79bf;
+  margin-bottom: 15px;
+}
+.downloads-page .downloads-help .downloads-help-content h3::after {
+  display: none;
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-help .downloads-help-content h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-help .downloads-help-content h3 {
+    font-size: 1.3rem;
+  }
+}
+.downloads-page .downloads-help .downloads-help-content p {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+@media (max-width: 850px) {
+  .downloads-page .downloads-help .downloads-help-content p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-help .downloads-help-content p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+}
+.downloads-page .downloads-help .downloads-help-content .primary {
+  background: #0e79bf;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.downloads-page .downloads-help .downloads-help-content .primary:hover {
+  background: rgb(10.5170731707, 90.8975609756, 143.4829268293);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 121, 191, 0.3);
+}
+@media (max-width: 500px) {
+  .downloads-page .downloads-help .downloads-help-content .primary {
+    padding: 12px 24px;
+    font-size: 1rem;
   }
 }
 

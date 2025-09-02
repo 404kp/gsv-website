@@ -2,28 +2,30 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description">
-    <link rel="stylesheet" href="/assets/css/webit-testprojekt.css">
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/assets/img/GoyatzerSV-Logo.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/gsv-logo-removed.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/gsv-logo-removed.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/gsv-logo-removed.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Service nicht verfügbar - Goyatzer SV. Der Service ist vorübergehend nicht verfügbar.">
+  <link rel="stylesheet" href="assets/css/webit-testprojekt.css">
   
-    <title>Mitglied werden | Goyatzer SV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <script src="/assets/js/libs/swiper-bundle.min.js" defer></script>
-
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="build/assets/img/GoyatzerSV-Logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/assets/img/gsv-logo-removed.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="build/assets/img/gsv-logo-removed.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="build/assets/img/gsv-logo-removed.png">
+  
+  <title>503 - Service nicht verfügbar | Goyatzer SV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="top"></div>
-  <!-- START components\app\_svg\icon-sprite\icon-sprite.svg -->
+  
+  <div style="height: 0; position: absolute; visibility: hidden; width: 0;">
+    <!-- START components\app\_svg\icon-sprite\icon-sprite.svg -->
 <svg><defs>
 <pattern id="pattern0_1423_162" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1423_162" transform="scale(0.0166667)"/>
@@ -343,200 +345,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
 <path d="M311.6 345.067C307.467 349.333 304 353.333 304 354C304 354.8 310 361.333 317.333 368.533L330.533 381.867L337.6 375.333C341.467 371.733 345.2 367.867 345.867 366.933C346.667 365.467 343.333 361.333 333.2 351.2L319.333 337.333L311.6 345.067Z" fill="#0E79BF"/>
 </symbol></svg><!-- END components\app\_svg\icon-sprite\icon-sprite.svg -->
 
-    <!-- <!-- only for Frontend Development-->
-<!-- 
-<div id="sandbox-sitemap" class="normal">
-  <button id="sitemap-button">&#9776;</button>
-
-  <div class="scrollable-container">
-
-    <strong>Sandboxes</strong>
-    <ul>
-      <li><a href="sandbox.html" tabindex="-1">Sandbox</a></li>
-    </ul>
-    
-    <strong><a href="/index.html">Startseite</a></strong>
-
-    <strong>Unterseiten</strong>
-    <ul>
-      <li><a href="/landingpage.html">Landingpage</a></li>
-      <li><a href="/member.html">Mitglied werden</a></li>
-      <li><a href="/contact.html">Kontakt</a></li>
-    </ul>
-    
-    <strong>Unterseiten Inspiration</strong>
-    <ul>
-      <li><a href="fussballseiteKarl.html" target="_blank" >Fußball</a></li>
-      <li><a href="tisch-Tennis-Karl.html" target="_blank" >Tisch-Tennis</a></li>
-      <li><a href="news-inspo.html" target="_blank">Aktuelles/News</a></li>
-    </ul>
-
-    <strong>Screendesign Figma</strong>
-    <ul>
-      <li><a target=”_blank” rel="noopener" href="https://www.figma.com/design/82AbwmuDbcASNzCWjVBnOR/Screendesign?node-id=618-112&p=f&t=REzosqJymSJKr85H-0" tabindex="-1">Bearbeitung</a></li>
-      <li><a target=”_blank” rel="noopener" href="https://www.figma.com/proto/82AbwmuDbcASNzCWjVBnOR/Screendesign?node-id=991-423&p=f&t=REzosqJymSJKr85H-0&scaling=min-zoom&content-scaling=fixed&page-id=618%3A112&starting-point-node-id=991%3A423&show-proto-sidebar=1" tabindex="-1">Ansicht</a></li>
-    </ul>
-  </div> <!-- scrollable-container -->
-</div> <!-- sandbox-sitemap -->
-
-
-<style>
-  :root {
-    --sandbox-sitemap-primary-color: #1e1e1e;
-  }
-
-  #sandbox-sitemap {
-    background-color: #fff;
-    bottom: 0;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-    color: #4c4c4c;
-    font-size: 1.6rem;
-    left: 0;
-    line-height: 1.2;
-    padding: 1rem 0 1rem 1rem;
-    position: fixed;
-    transform: translate(-100%, 0);
-    transition: transform 0.3s ease;
-    z-index: 100;
-  }
-
-  #sandbox-sitemap ul {
-    display: block;
-    list-style-type: circle;
-    padding-right: 2rem;
-    margin: 0 0 3rem;
-  }
-
-  #sandbox-sitemap strong,
-  #sandbox-sitemap li,
-  #sandbox-sitemap a {
-    color: #1a1a1a;
-    font: inherit;
-  }
-
-  #sandbox-sitemap li {
-    position: relative;
-  }
-
-  #sandbox-sitemap li + li {
-    margin-top: .5rem;
-  }
-
-  #sandbox-sitemap li::before {
-    content: none;
-  }
-
-  #sandbox-sitemap a {
-    text-decoration: none;
-    padding: .5rem 0;
-    display: block;
-    width: 100%;
-  }
-
-  #sandbox-sitemap a:hover,
-  #sandbox-sitemap a:focus {
-    text-decoration: underline;
-  }
-
-  #sandbox-sitemap a[aria-current="page"] {
-    text-decoration: underline;
-    font-weight: 700;
-    color: var(--sandbox-sitemap-primary-color);
-  }
-
-  #sandbox-sitemap strong {
-    display: block;
-    font-weight: bold;
-    margin-bottom: .8rem;
-  }
-
-  #sandbox-sitemap .sandbox-headline {
-    display: block;
-    font-weight: 500;
-  }
-
-  #sitemap-button {
-    border-bottom-right-radius: 100%;
-    border-top-right-radius: 100%;
-    border: none;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-    font-size: clamp(2rem, 4vw, 3rem);
-    left: 100%;
-    outline: none;
-    padding: .8rem 1.3rem .8rem .8rem;
-    position: absolute;
-    top: 50%;
-  }
-
-  #sitemap-button {
-    background-color: var(--sandbox-sitemap-primary-color);
-    color: white;
-  }
-
-  .scrollable-container {
-    max-height: 50vh;
-    overflow-y: auto;
-    padding: 1rem 0;
-  }
-
-  #sandbox-sitemap.show {
-    transform: translate(0, 0);
-  }
-
-  @media (min-width: 601px) {
-    #sitemap-button {
-      transform: translate(0, -50%);
-    }
-  }
-
-  @media print {
-    #sandbox-sitemap {
-      display: none !important;
-    }
-  }
-
-</style>
-
-<script>
-  /* cache elements */
-  const sitemap = document.querySelector('#sandbox-sitemap');
-  const sitemapButton = document.querySelector('#sitemap-button');
-  const sitemapContainer = document.querySelector('#sandbox-sitemap .scrollable-container');
-
-  /* event listener */
-  sitemapButton.addEventListener('click', toggleSitemap);
-    
-  function toggleSitemap() {
-    if(sitemap.classList.contains('show')) {
-      sitemapButton.innerHTML = '&#9776;';
-    } else {
-      sitemapButton.innerHTML = '&#10006;';
-    }
-
-    sitemap.classList.toggle('show');
-  }
-
-  
-
-  function setCurrentPage() {
-    const currentPathname = window.location.pathname;
-    const sitemapLinks = sitemap.querySelectorAll('a');
-
-    let linkUrl = null;
-
-    for (let counter = 0; counter < sitemapLinks.length; counter++) {
-      linkUrl = new URL(sitemapLinks[counter].href);
-
-      if (linkUrl.pathname === currentPathname) {
-        sitemapLinks[counter].setAttribute('aria-current', 'page');
-        return;
-      }
-    }
-  }
-  setCurrentPage();
-
-</script>
---> -->
+  </div>
   <!--Navigationsbar für Phone und Tablet: Logo und blauer Kasten-->
 <div class="navigationbar-phone">
     <a href="/index.html">
@@ -560,7 +369,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
     <ul>
       <li>
         <!--Icon für football-->
-        <a href="/football.html">
+        <a href="/fussball.html">
           <svg class="menu-icon" height="40px" width="40px">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-football"></use>
           </svg>
@@ -586,6 +395,15 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
         </a>
       </li>
       <li>
+        <!--Icon for downloads-->
+        <a href="/downloads.html">
+          <svg class="menu-icon" height="40px" width="40px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-download"></use>
+          </svg>
+          <span>Downloads</span>
+        </a>
+      </li>
+      <li>
         <!--Icon for about us-->
         <a href="/landingpage.html">
           <svg class="menu-icon" height="40px" width="40px">
@@ -596,7 +414,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
       </li>
       <li>
         <!-- Icon for contact-->
-        <a href="/contact.html">
+        <a href="/kontakt.html">
           <svg class="menu-icon" height="40px" width="40px">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-contact"></use>
           </svg>
@@ -605,7 +423,7 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
       </li>
       <li>
         <!--Icon for member-->
-        <a href="/member.html">
+        <a href="/mitglieder.html">
           <svg class="menu-icon" height="40px" width="40px">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-member"></use>
           </svg>
@@ -651,14 +469,14 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
     <div class="navigationbar-menu">
       <ul>
         <li class="nav-dropdown">
-          <a href="/football.html" class="nav-dropdown-trigger">
+          <a href="/fussball.html" class="nav-dropdown-trigger">
             Fußball 
             <svg class="dropdown-arrow">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
             </svg>
           </a>
           <div class="nav-dropdown-menu">
-            <a href="/football.html">Alle Mannschaften</a>
+            <a href="/fussball.html">Alle Mannschaften</a>
             <a href="/maenner.html">Männermannschaft</a>
             <a href="/altherren.html">Altherren</a>
             <a href="/a-jugend.html">A-Jugend (U17/U18)</a>
@@ -671,437 +489,246 @@ c-500 717 -908 1306 -906 1309 8 13 370 9 386 -4z"/>
         </li>
         <li><a href="/tischtennis.html">Tischtennis</a></li>
         <li><a href="/aktuelles.html">Aktuelles</a></li>
+        <li><a href="/downloads.html">Downloads</a></li>
         <li><a href="/landingpage.html">Über uns</a></li>
-        <li><a href="/contact.html">Kontakt</a></li>
+        <li><a href="/kontakt.html">Kontakt</a></li>
       </ul>
     </div>
     
     <!--Button rechts-->
     <div class="navigationbar-action">
-      <a href="/member.html" class="primary">Mitglied werden</a>
+      <a href="/mitglieder.html" class="primary">Mitglied werden</a>
     </div>
     
   </div>
-</div>    <div class="member-site">
-    <!--Hero Kontakt und Ansprechpartner-->
-    <div class="member-hero">
-        <div class="member-hero-text">
-            <h1>Werde Teil des Goyatzer SV!</h1>
-            <h2>Gemeinschaft erleben - Sport treiben - Spaß haben!</h2>
-            <p>
-                Wir freuen uns, dass du dich für eine Mitgliedschaft im Goyatzer SV interessierst.<br>
-                Entdecke die vielen Vorteile und werde noch heute Teil unserer Familie!
-            </p>
-        </div>
-    </div>
-
-    <div class="member-inner">
-        <div class="member-adv">
-            <h3>Deine Vorteile als Mitglied</h3>
-            <div class="member-adv-all">
-                <div class="member-adv-item">
-                    <svg class="icon member-adv-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Gemeinschaft"></use>
-                    </svg>
-                    <h4>Starke Gemeinschaft</h4>
-                    <p>
-                        Finde neue Freunde und erlebe echtes Teamgefühl bei gemeinsamen Aktivitäten und Festen.
-                    </p>
-                </div>
-                <div class="member-adv-item">
-                    <svg class="icon member-adv-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sportarten"></use>
-                    </svg>
-                    <h4>Vielfältiges Sportangebot</h4>
-                    <p>
-                        Ob Fußball, Tennis oder Tischtennis - bei uns findest du die passende Sportart für dich.
-                    </p>
-                </div>
-                <div class="member-adv-item">
-                    <svg class="icon member-adv-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gesundheit"></use>
-                    </svg>
-                    <h4>Gesundheit & Fitness</h4>
-                    <p>
-                        Bleib fit, aktiv und fördere deine Gesundheit durch regelmäßige Bewegung und Training.
-                    </p>
-                </div>
-                <div class="member-adv-item">
-                    <svg class="icon member-adv-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#kind"></use>
-                    </svg>
-                    <h4>Förderung für Kinder</h4>
-                    <p>
-                        Wie bieten qualifiziertes Training und eine tolle Umgebung für die sportliche Entwicklung deines
-                        Kindes.
-                    </p>
-                </div>
-                <div class="member-adv-item">
-                    <svg class="icon member-adv-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#calendar"></use>
-                    </svg>
-                    <h4>Regelmäßige Events</h4>
-                    <p>
-                        Nimm teil an spannenden Wettkämpfen, Turnieren, Trainingslagern und Vereinsfeiern.
-                    </p>
-                </div>
-                <div class="member-adv-item">
-                    <svg class="icon member-adv-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unterstuetzung"></use>
-                    </svg>
-                    <h4>Unterstützendes Umfeld</h4>
-                    <p>
-                        Engagierte Trainer und Mitglieder sorgen dafür, dass sich jeder bei uns wohlfühlt.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="member-registration">
-        <div class="member-registration-content">
-            <h3>Online-Mitgliedsantrag</h3>
-            <div class="registration-intro">
-                <p>
-                    Werde jetzt ganz einfach und bequem online Mitglied im Goyatzer SV! 
-                    Fülle das folgende Formular aus und wir bearbeiten deinen Antrag schnellstmöglich.
-                </p>
-            </div>
-
-            <div class="registration-form-wrapper">
-                <div class="registration-info">
-                    <h4>Wichtige Informationen</h4>
-                    <div class="info-items">
-                        <div class="info-item">
-                            <svg class="info-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                            </svg>
-                            <div class="info-text">
-                                <h5>Schnelle Bearbeitung</h5>
-                                <p>Dein Antrag wird innerhalb von 2-3 Werktagen bearbeitet.</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <svg class="info-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#security"></use>
-                            </svg>
-                            <div class="info-text">
-                                <h5>Sichere Übertragung</h5>
-                                <p>Alle Daten werden verschlüsselt und sicher übertragen.</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <svg class="info-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#support"></use>
-                            </svg>
-                            <div class="info-text">
-                                <h5>Hilfe & Support</h5>
-                                <p>Bei Fragen stehen wir dir gerne zur Verfügung.</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <svg class="info-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#calendar"></use>
-                            </svg>
-                            <div class="info-text">
-                                <h5>Beitragszahlung</h5>
-                                <p>Der jährliche Mitgliedsbeitrag ist bis zum 31.03. des laufenden Jahres fällig.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="registration-form">
-                    <h4>Mitgliedsantrag</h4>
-                    <form id="membershipForm" action="/submit-membership" method="POST">
-                        
-                        <!-- Persönliche Daten -->
-                        <div class="form-section">
-                            <h5>Persönliche Daten</h5>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="nachname">Nachname <span class="required">*</span></label>
-                                    <input type="text" id="nachname" name="nachname" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="vorname">Vorname <span class="required">*</span></label>
-                                    <input type="text" id="vorname" name="vorname" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="geburtsdatum">Geburtsdatum <span class="required">*</span></label>
-                                    <input type="date" id="geburtsdatum" name="geburtsdatum" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="geburtsort">Geburtsort</label>
-                                    <input type="text" id="geburtsort" name="geburtsort">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kontaktdaten -->
-                        <div class="form-section">
-                            <h5>Kontaktdaten</h5>
-                            <div class="form-group">
-                                <label for="anschrift">Anschrift <span class="required">*</span></label>
-                                <input type="text" id="anschrift" name="anschrift" placeholder="Straße und Hausnummer" required>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="plz">PLZ <span class="required">*</span></label>
-                                    <input type="text" id="plz" name="plz" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ort">Ort <span class="required">*</span></label>
-                                    <input type="text" id="ort" name="ort" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="telefon">Telefon</label>
-                                    <input type="tel" id="telefon" name="telefon">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">E-Mail <span class="required">*</span></label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mitgliedschaft -->
-                        <div class="form-section">
-                            <h5>Art der Mitgliedschaft</h5>
-                            <div class="form-group">
-                                <label>Mitgliedschaftsart wählen <span class="required">*</span></label>
-                                <div class="membership-options">
-                                    <div class="membership-option">
-                                        <input type="radio" id="member-adult" name="mitgliedschaft" value="adult" required>
-                                        <div class="option-details">
-                                            <div class="option-title">Vereinsmitglied (18 bis 59 Jahre)</div>
-                                            <div class="option-description">Vollmitgliedschaft mit allen Rechten und Pflichten</div>
-                                            <div class="option-price">120,00 €</div>
-                                        </div>
-                                    </div>
-                                    <div class="membership-option">
-                                        <input type="radio" id="member-youth" name="mitgliedschaft" value="youth" required>
-                                        <div class="option-details">
-                                            <div class="option-title">Vereinsmitglied unter 18 Jahren</div>
-                                            <div class="option-description">Jugendmitgliedschaft mit besonderen Konditionen</div>
-                                            <div class="option-price">60,00 €</div>
-                                        </div>
-                                    </div>
-                                    <div class="membership-option">
-                                        <input type="radio" id="member-child" name="mitgliedschaft" value="child" required>
-                                        <div class="option-details">
-                                            <div class="option-title">3. Kind (beitragsfrei)</div>
-                                            <div class="option-description">Ab dem dritten Kind ist die Mitgliedschaft kostenlos</div>
-                                            <div class="option-price">0,00 €</div>
-                                        </div>
-                                    </div>
-                                    <div class="membership-option">
-                                        <input type="radio" id="member-student" name="mitgliedschaft" value="student" required>
-                                        <div class="option-details">
-                                            <div class="option-title">Schüler/innen und Schüler, Personen in Ausbildung, Studierende Personen, Personen ab 60 Jahren</div>
-                                            <div class="option-description">Ermäßigte Mitgliedschaft für bestimmte Personengruppen</div>
-                                            <div class="option-price">60,00 €</div>
-                                        </div>
-                                    </div>
-                                    <div class="membership-option">
-                                        <input type="radio" id="member-passive" name="mitgliedschaft" value="passive" required>
-                                        <div class="option-details">
-                                            <div class="option-title">Passives Mitglied zur Förderung des Sports</div>
-                                            <div class="option-description">Unterstützung des Vereins ohne aktive Sportteilnahme</div>
-                                            <div class="option-price">60,00 €</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="abteilung">Gewünschte Abteilung <span class="required">*</span></label>
-                                <select id="abteilung" name="abteilung" required>
-                                    <option value="">Bitte wählen...</option>
-                                    <option value="fussball">Fußball</option>
-                                    <option value="tennis">Tennis</option>
-                                    <option value="tischtennis">Tischtennis</option>
-                                    <option value="mehrere">Mehrere Abteilungen</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Aufnahme -->
-                        <div class="form-section">
-                            <h5>Aufnahme</h5>
-                            <div class="form-group">
-                                <label for="aufnahme-datum">Die Aufnahme in die Abteilung beantrage ich ab dem <span class="required">*</span></label>
-                                <input type="date" id="aufnahme-datum" name="aufnahme-datum" required>
-                            </div>
-                        </div>
-
-                        <!-- Einverständniserklärungen -->
-                        <div class="form-section">
-                            <h5>Einverständniserklärungen</h5>
-                            
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="datenschutz" name="datenschutz" required>
-                                <label for="datenschutz">
-                                    Ich stimme der Verarbeitung meiner personenbezogenen Daten entsprechend der Datenschutzerklärung zu. <span class="required">*</span>
-                                </label>
-                            </div>
-
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="bildrechte" name="bildrechte">
-                                <label for="bildrechte">
-                                    Ich erlaube die Verwendung von Bildern meiner Person für Vereinszwecke (Website, Social Media, Presseartikel).
-                                </label>
-                            </div>
-
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <label for="newsletter">
-                                    Ich möchte den Vereinsnewsletter per E-Mail erhalten.
-                                </label>
-                            </div>
-
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="agb" name="agb" required>
-                                <label for="agb">
-                                    Ich habe die Satzung und Beitragsordnung des Goyatzer SV gelesen und erkenne diese an. <span class="required">*</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Bemerkungen -->
-                        <div class="form-section">
-                            <h5>Sonstiges</h5>
-                            <div class="form-group">
-                                <label for="bemerkungen">Bemerkungen / Besondere Wünsche</label>
-                                <textarea id="bemerkungen" name="bemerkungen" placeholder="Hier können Sie weitere Anmerkungen oder besondere Wünsche eintragen..."></textarea>
-                            </div>
-                        </div>
-
-                        <!-- Form Actions -->
-                        <div class="form-actions">
-                            <button type="submit" class="submit-btn">Mitgliedsantrag senden</button>
-                            <button type="reset" class="reset-btn">Formular zurücksetzen</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="member-questions">
-        <div class="member-questions-content">
-            <h3>Noch Fragen zur Mitgliedschaft?</h3>
-            <p>
-                Wir helfen gerne weiter! Zögere nicht, uns bei Unklarheiten oder Fragen zu kontaktieren. Nutze unser Kontaktformular oder wende dich direkt an einen unserer Ansprechpartner.
-            </p>
-            <a href="/contact.html" class="secondary">Kontakt</a>
-        </div>
-    </div>
-    <div class="member-cancellation">
-        <div class="member-cancellation-content">
-            <h3>Mitgliedschaft kündigen</h3>
-            <p>
-                Du möchtest deine Mitgliedschaft beim Goyatzer SV beenden? Wir bedauern das sehr, verstehen aber, dass sich Umstände ändern können. Hier kannst du deine Kündigung einreichen.
-            </p>
-            <a href="/kuendigung.html" class="cancellation-btn">
-                <svg class="cancel-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                </svg>
-                Mitgliedschaft kündigen
-            </a>
-            <div class="warning-note">
-                <p><strong>Wichtiger Hinweis:</strong> Bitte beachte die Kündigungsfristen und lies die Kündigungsbedingungen sorgfältig durch, bevor du den Kündigungsprozess beginnst.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <!--Footer mit Logos, Impressum, Datenschutz, ... und social Media-->
-    <div class="footer">
-
-  <!--Logo mit Spruch auf beiden Seiten-->
-  <div class="footer-motto">
-
-    <p>Unsere Farben sind <br>GELB und BLAU.</p>
-    <img src="./assets/img/gsv-logo-removed.png" alt="Logo" width="400px">
-    <p>Wer sind WIR? <br>Der GSV.</p>
-
-  </div>
-
-  <!--blauer Footer-->
-  <div class="footer-box">
-
-    <!--Sponsoren-Logos-->
-    <div class="footer-sponsors">
-      <p>Unsere Sponsoren</p>
-
-      <div class="footer-sponsors-logos">
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-        <a href="">
-          <img src="./assets/img/BHG.svg" alt="BHG" loading="lazy">
-        </a>
-      </div>
-
-    </div>
-
-    <!--Impressum, Datenschutz, Kontakt, Social Media-->
-    <div class="footer-contacts-social-media">
-
-      <div class="footer-contacts">
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Impressum</a></li>
-          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Datenschutz</a></li>
-          <li><a href="/contact.html">Kontakt</a></li>
-          <li><a href="https://icons8.com" target="_blank">Icons by Icons8</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-social-media">
-        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-          </svg>
-        </a>
-        <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/goyatzer_sv/" target="_blank" aria-label="Instagram">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
 </div>
 
 
-    <!-- JavaScript -->
-    <script src="./assets/js/main.js" type="module"></script>
+  <main class="error-page">
+    <div class="error-container">
+      <div class="error-hero">
+        <img src="./assets/img/gsv-logo-removed.png" alt="Goyatzer SV Logo" class="error-logo">
+        <h1 class="error-code">503</h1>
+        <h2 class="error-title">Service vorübergehend nicht verfügbar</h2>
+        <p class="error-description">
+          Entschuldigung! Unsere Website wird gerade gewartet oder es liegt ein technisches Problem vor. 
+          Bitte versuchen Sie es in wenigen Minuten erneut.
+        </p>
+      </div>
+      
+      <div class="maintenance-info">
+        <div class="maintenance-icon">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Wartungsarbeiten im Gange</h3>
+        <p>Wir arbeiten daran, Ihnen ein noch besseres Erlebnis zu bieten.</p>
+      </div>
+      
+      <div class="error-actions">
+        <button onclick="location.reload()" class="btn btn-primary">Seite neu laden</button>
+        <a href="mailto:info@goyatzer-sv.de" class="btn btn-secondary">Kontakt per E-Mail</a>
+      </div>
+      
+      <div class="contact-info">
+        <h3>Dringende Angelegenheiten?</h3>
+        <p>Kontaktieren Sie uns direkt:</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <strong>E-Mail:</strong> info@goyatzer-sv.de
+          </div>
+          <div class="contact-item">
+            <strong>Telefon:</strong> [Telefonnummer einfügen]
+          </div>
+        </div>
+      </div>
+      
+      <div class="retry-info">
+        <p><small>Diese Seite wird automatisch alle 30 Sekunden aktualisiert.</small></p>
+      </div>
+    </div>
+  </main>
+
+  
+
+  <style>
+    .error-page {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 100%);
+    }
+
+    .error-container {
+      max-width: 600px;
+      text-align: center;
+      background: white;
+      border-radius: 15px;
+      padding: 3rem 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .error-hero {
+      margin-bottom: 2rem;
+    }
+
+    .error-logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .error-code {
+      font-size: 5rem;
+      font-weight: 700;
+      color: #f59e0b;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .error-title {
+      font-size: 1.8rem;
+      color: #1f2937;
+      margin: 1rem 0;
+      font-weight: 600;
+    }
+
+    .error-description {
+      color: #6b7280;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .maintenance-info {
+      background: #fef3c7;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid #fbbf24;
+    }
+
+    .maintenance-icon {
+      margin-bottom: 1rem;
+    }
+
+    .maintenance-info h3 {
+      color: #92400e;
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .maintenance-info p {
+      color: #a16207;
+      margin: 0;
+    }
+
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background-color: #1e40af;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: #f3f4f6;
+      color: #374151;
+      border: 1px solid #d1d5db;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e5e7eb;
+      transform: translateY(-2px);
+    }
+
+    .contact-info {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-info h3 {
+      color: #374151;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-item {
+      color: #6b7280;
+    }
+
+    .retry-info {
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .error-container {
+        margin: 1rem;
+        padding: 2rem 1rem;
+      }
+
+      .error-code {
+        font-size: 3.5rem;
+      }
+
+      .error-title {
+        font-size: 1.5rem;
+      }
+
+      .error-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+  </style>
+
+  <script>
+    // Auto-refresh every 30 seconds
+    setTimeout(function() {
+      location.reload();
+    }, 30000);
+  </script>
 </body>
 
 </html>

@@ -1,8 +1,8 @@
-// Contact site - Modern redesign
+// Kontakt site - Modern redesign
 @use "../base/variables" as *;
 
 //desktop size
-.contact-site {
+.kontakt-site {
     margin: 0 0 0 0;
     position: relative;
     top: -93px; // Move hero up to touch navigation, logo extends over hero
@@ -46,6 +46,18 @@
 
                 @media(max-width:$media-width-phone) {
                     font-size: 2rem;
+                }
+            }
+
+            h2 {
+                color: $color-accent;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0 auto 25px auto;
+
+                @media(max-width:$media-width-phone-navbar) {
+                    font-size: 1.3rem;
                 }
             }
 
@@ -419,7 +431,7 @@
 }
 
 @media (max-width:$media-width-phone-navbar) {
-    .contact-site {
+    .kontakt-site {
         .contacts-inner {
             flex-direction: column;
             gap: 40px;
@@ -501,7 +513,7 @@
 
 // Zusätzlicher Breakpoint für sehr kleine Bildschirme
 @media (max-width: 480px) {
-    .contact-site {
+    .kontakt-site {
         .contacts-inner {
             padding: 40px 15px;
             

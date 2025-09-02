@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Seite nicht gefunden - Goyatzer SV. Die angeforderte Seite konnte nicht gefunden werden.">
+  <link rel="stylesheet" href="assets/css/webit-testprojekt.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="build/assets/img/GoyatzerSV-Logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/assets/img/gsv-logo-removed.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="build/assets/img/gsv-logo-removed.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="build/assets/img/gsv-logo-removed.png">
+  
+  <title>404 - Seite nicht gefunden | Goyatzer SV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="top"></div>
+  
+  <div style="height: 0; position: absolute; visibility: hidden; width: 0;">
+    {svg:{icon-sprite}}
+  </div>
+  {app:{header}}
+
+  <main class="error-page">
+    <div class="error-container">
+      <div class="error-hero">
+        <img src="./assets/img/gsv-logo-removed.png" alt="Goyatzer SV Logo" class="error-logo">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Ups! Seite nicht gefunden</h2>
+        <p class="error-description">
+          Die Seite, die Sie suchen, konnte leider nicht gefunden werden. 
+          Möglicherweise wurde sie verschoben, gelöscht oder Sie haben eine falsche URL eingegeben.
+        </p>
+      </div>
+      
+      <div class="error-actions">
+        <a href="/index.html" class="btn btn-primary">Zur Startseite</a>
+        <a href="/fussball.html" class="btn btn-secondary">Fußball</a>
+        <a href="/tischtennis.html" class="btn btn-secondary">Tischtennis</a>
+        <a href="/kontakt.html" class="btn btn-secondary">Kontakt</a>
+      </div>
+      
+      <div class="error-suggestions">
+        <h3>Vielleicht suchen Sie nach:</h3>
+        <ul>
+          <li><a href="/mitglieder.html">Mitgliedschaft</a></li>
+          <li><a href="/aktuelles.html">Aktuelles</a></li>
+          <li><a href="/downloads.html">Downloads</a></li>
+          <li><a href="/impressionen-inspo.html">Impressionen</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  {app:{footer}}
+
+  <style>
+    .error-page {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    .error-container {
+      max-width: 600px;
+      text-align: center;
+      background: white;
+      border-radius: 15px;
+      padding: 3rem 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .error-hero {
+      margin-bottom: 2rem;
+    }
+
+    .error-logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .error-code {
+      font-size: 6rem;
+      font-weight: 700;
+      color: #1e40af;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .error-title {
+      font-size: 1.8rem;
+      color: #1f2937;
+      margin: 1rem 0;
+      font-weight: 600;
+    }
+
+    .error-description {
+      color: #6b7280;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background-color: #1e40af;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: #f3f4f6;
+      color: #374151;
+      border: 1px solid #d1d5db;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e5e7eb;
+      transform: translateY(-2px);
+    }
+
+    .error-suggestions {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 2rem;
+    }
+
+    .error-suggestions h3 {
+      color: #374151;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .error-suggestions ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .error-suggestions li a {
+      color: #1e40af;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .error-suggestions li a:hover {
+      background-color: #f3f4f6;
+    }
+
+    @media (max-width: 768px) {
+      .error-container {
+        margin: 1rem;
+        padding: 2rem 1rem;
+      }
+
+      .error-code {
+        font-size: 4rem;
+      }
+
+      .error-title {
+        font-size: 1.5rem;
+      }
+
+      .error-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 200px;
+      }
+    }
+  </style>
+</body>
+
+</html>

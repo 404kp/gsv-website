@@ -11,13 +11,14 @@
 @use "./app/swiper-slider/swiper-slider.scss";
 @use "./app/image-zoom/image-zoom.scss";
 @use "./app/landing-page/landing-page.scss";
-@use "./app/contact-site/contact-site.scss";
-@use "./app/member-site/member-site.scss";
+@use "./app/kontakt-site/kontakt-site.scss";
+@use "./app/mitglieder-site/mitglieder-site.scss";
 @use "./app/cancellation-page/cancellation-page.scss";
-@use "./app/football-site/football-site.scss";
+@use "./app/fussball-site/fussball-site.scss";
 @use "./app/youth-team/youth-team-page.scss";
 @use "./app/tennis/tischtennis.scss";
 @use "./app/aktuelles-site/aktuelles-site.scss";
+@use "./app/downloads-site/downloads-site.scss";
 @use "./app/footer/footer.scss";
 
 // Global fix: Hide all Swiper navigation buttons

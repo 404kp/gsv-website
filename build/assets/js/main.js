@@ -18,7 +18,7 @@ import InitSliderHero from "./swiper-slider/swiper-slider.js";
 import InitImageZoom from "./image-zoom/image-zoom.js";
 import InitSliderTestimonial from "./landing-page/landing-page.js";
 import InitMenuOverlayPhone from "./header/header.js";
-import InitFootballSite from "./football-site/football-site.js";
+import InitFootballSite from "./fussball-site/fussball-site.js";
 
 
 /**

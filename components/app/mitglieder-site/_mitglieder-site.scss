@@ -1,8 +1,8 @@
-// _member-site.scss - Modern redesign
+// _mitglieder-site.scss - Modern redesign
 @use "../base/variables" as *;
 
 //desktop size
-.member-site {
+.mitglieder-site {
     margin: 0;
     position: relative;
     top: -93px; // Move hero up to touch navigation, logo extends over hero
@@ -13,7 +13,7 @@
     }
 
     .member-hero {
-        background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center;
+        background: linear-gradient(rgba(14, 121, 191, 0.8), rgba(14, 121, 191, 0.6)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center;
         background-size: cover;
         padding: 8vh 0;
         display: flex;
@@ -428,6 +428,24 @@
                                 font-size: 0.9rem;
                                 line-height: 1.4;
                                 cursor: pointer;
+                                color: $color-neutral-900; // Schwarz für normale Texte
+                                
+                                .document-link {
+                                    color: $color-primary; // Blau für Links
+                                    text-decoration: underline;
+                                    font-weight: 600;
+                                    transition: color 0.3s ease;
+                                    
+                                    &:hover {
+                                        color: color-mix(in srgb, $color-primary 90%, black);
+                                        text-decoration: underline;
+                                    }
+                                    
+                                    &:focus {
+                                        outline: 2px solid $color-primary;
+                                        outline-offset: 2px;
+                                    }
+                                }
                             }
                         }
 
@@ -544,6 +562,78 @@
                                 border-color: #999;
                                 transform: translateY(-3px);
                                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+
+                    // SEPA-Highlights Styles
+                    .sepa-highlights {
+                        margin-top: 25px;
+                        padding: 20px;
+                        background: linear-gradient(135deg, rgba(14, 121, 191, 0.05), rgba(14, 121, 191, 0.02));
+                        border-radius: $border-radius-medium;
+                        border: 1px solid rgba(14, 121, 191, 0.1);
+
+                        .sepa-highlights-title {
+                            color: $color-primary;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                            text-align: center;
+                            padding-bottom: 10px;
+                            border-bottom: 2px solid rgba(14, 121, 191, 0.1);
+                        }
+
+                        .highlight-item {
+                            display: flex;
+                            align-items: center;
+                            padding: 8px 12px;
+                            margin-bottom: 8px;
+                            background: $color-neutral-0;
+                            border-radius: $border-radius-small;
+                            border-left: 3px solid $color-primary;
+                            transition: all 0.3s ease;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            &:hover {
+                                transform: translateX(5px);
+                                box-shadow: 0 2px 8px rgba(14, 121, 191, 0.1);
+                            }
+
+                            &.warning {
+                                border-left-color: #dc267f;
+                                background: linear-gradient(135deg, rgba(220, 38, 127, 0.05), rgba(220, 38, 127, 0.02));
+
+                                .highlight-text {
+                                    color: #dc267f;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            .highlight-text {
+                                color: #333;
+                                font-size: 0.95rem;
+                                font-weight: 500;
+                                line-height: 1.4;
+                            }
+                        }
+
+                        @media (max-width: $media-width-phone) {
+                            padding: 15px;
+
+                            .sepa-highlights-title {
+                                font-size: 1rem;
+                            }
+
+                            .highlight-item {
+                                padding: 6px 10px;
+
+                                .highlight-text {
+                                    font-size: 0.9rem;
+                                }
                             }
                         }
                     }
@@ -711,7 +801,7 @@
 
 // Mobile responsive adjustments
 @media (max-width: $media-width-phone-navbar) {
-    .member-site {
+    .mitglieder-site {
         .member-inner {
             padding: 0 15px;
 
