@@ -1,0 +1,43 @@
+Aktuell aktiv genutzte Icons (Priorität 1):
+Navigation Icons (Header-Menü)
+
+icon-football - Fußball (Navigation)
+icon-tabletennis - Tischtennis (Navigation)
+icon-news - News/Aktuelles (Navigation)
+icon-download - Downloads (Navigation)
+icon-aboutus - Über uns (Navigation)
+icon-contact - Kontakt (Navigation)
+icon-member - Mitglied werden (Navigation)
+
+
+Social Media Icons
+facebook - Facebook (Footer & Social Media Links)
+instagram - Instagram (Footer & Social Media Links)
+facebook-blue - Facebook blau (spezielle Kontakt-Seite)
+instagram-blue - Instagram blau (spezielle Kontakt-Seite)
+
+
+Utility Icons
+arrow-down - Dropdown-Pfeile (Navigation)
+
+FontAwesome Icons (externe Abhängigkeit):
+Diese werden aktuell verwendet, sollten aber durch Icons8 ersetzt werden:
+
+News-Seite FontAwesome Icons:
+fa-calendar-alt - Kalender für Datum
+fa-arrow-right - Pfeil für "Weiterlesen"
+fa-facebook-f - Facebook (alternative Darstellung)
+fa-instagram - Instagram (alternative Darstellung)
+
+
+Mitglieder-Seite FontAwesome Icons:
+fa-users - Gemeinschaft
+fa-futbol - Fußball/Sport
+fa-heartbeat - Gesundheit
+fa-child - Jugend/Kinder
+fa-calendar-check - Events/Termine
+fa-hands-helping - Hilfe/Unterstützung
+fa-download - Download
+fa-envelope - E-Mail
+fa-mail-bulk - Post
+fa-handshake - Persönlicher Kontakt
