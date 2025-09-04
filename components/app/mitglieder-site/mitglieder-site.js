@@ -229,14 +229,35 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mitgliedschaftsoptionen Styling
     const membershipOptions = document.querySelectorAll('.membership-option');
     membershipOptions.forEach(option => {
-        option.addEventListener('click', function() {
-            const radio = this.querySelector('input[type="radio"]');
+        const radio = option.querySelector('input[type="radio"]');
+        
+        // Click-Handler für das ganze Element
+        option.addEventListener('click', function(event) {
+            // Verhindere doppelte Aktivierung wenn direkt auf das Radio-Button geklickt wird
+            if (event.target.type === 'radio') {
+                return;
+            }
+            
+            // Radio-Button aktivieren
             radio.checked = true;
+            
+            // Event für Formvalidierung auslösen
+            radio.dispatchEvent(new Event('change', { bubbles: true }));
             
             // Alle anderen Optionen deselektieren (visuell)
             membershipOptions.forEach(opt => opt.classList.remove('selected'));
             // Diese Option als ausgewählt markieren
             this.classList.add('selected');
+        });
+        
+        // Change-Handler für das Radio-Button selbst (für direkte Klicks)
+        radio.addEventListener('change', function() {
+            if (this.checked) {
+                // Alle anderen Optionen deselektieren (visuell)
+                membershipOptions.forEach(opt => opt.classList.remove('selected'));
+                // Diese Option als ausgewählt markieren
+                option.classList.add('selected');
+            }
         });
     });
 

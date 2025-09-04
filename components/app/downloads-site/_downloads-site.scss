@@ -322,87 +322,80 @@
       }
     }
   }
-  
-  // Help Section
-  .downloads-help {
-    background: linear-gradient(135deg, $color-neutral-25 0%, rgba(14, 121, 191, 0.05) 100%);
-    border-radius: $border-radius-large;
-    padding: 50px 30px;
-    text-align: center;
-    margin-top: 60px;
-    
-    @media (max-width: $media-width-phone-navbar) {
-      padding: 40px 20px;
-      margin-top: 40px;
-    }
 
-    @media (max-width: $media-width-phone) {
-      padding: 30px 15px;
-      margin-top: 30px;
-    }
-    
-    .downloads-help-content {
-      max-width: 600px;
-      margin: 0 auto;
-      
-      h3 {
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: $color-primary;
-        margin-bottom: 15px;
-        
-        &::after {
-          display: none; // Remove the underline for this heading
-        }
-        
-        @media (max-width: $media-width-phone) {
-          font-size: 1.5rem;
-        }
-
-        @media (max-width: $media-width-phone-small) {
-          font-size: 1.3rem;
-        }
-      }
-      
-      p {
-        color: $color-neutral-700;
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 30px;
-        
-        @media (max-width: $media-width-phone) {
-          font-size: 1rem;
-          margin-bottom: 25px;
-        }
-
-        @media (max-width: $media-width-phone-small) {
-          font-size: 0.95rem;
-          margin-bottom: 20px;
-        }
-      }
-      
-      .primary {
-        background: $color-primary;
+    // Hilfe Section
+    .download-help {
+        padding: 6vh 2vw;
+        text-align: center;
+        background: linear-gradient(135deg, $color-primary, $color-primary);
         color: $color-neutral-0;
-        padding: 15px 30px;
-        border-radius: $border-radius-small;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 1.05rem;
-        display: inline-block;
-        transition: all 0.3s ease;
-        
-        &:hover {
-          background: color.adjust($color-primary, $lightness: -10%);
-          transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(14, 121, 191, 0.3);
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 8vh 0 0 0;
+        box-sizing: border-box;
+
+        @media (max-width: $media-width-phone-navbar) {
+            padding: 5vh 3vw;
+            margin: 7vh 0 0 0;
         }
 
-        @media (max-width: $media-width-phone-small) {
-          padding: 12px 24px;
-          font-size: 1rem;
+        @media (max-width: $media-width-phone) {
+            padding: 4vh 4vw;
+            margin: 6vh 0 0 0;
+            left: 0;
+            transform: none;
+            width: 100%;
         }
-      }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: $color-accent;
+
+            @media (max-width: $media-width-phone) {
+                font-size: 1.6rem;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+
+            @media (max-width: $media-width-phone) {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .primary {
+            font-size: 1.1rem;
+            padding: 15px 30px;
+            background: $color-accent;
+            color: $color-primary;
+            border: none;
+            border-radius: $border-radius-small;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: color.adjust($color-accent, $lightness: 10%);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(251, 233, 29, 0.4);
+            }
+
+            @media (max-width: $media-width-phone) {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+        }
     }
-  }
 }

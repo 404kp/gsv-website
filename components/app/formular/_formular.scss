@@ -55,7 +55,7 @@ form {
     }
 
     label {
-        display: block;
+        display: flex;
         font-weight: 600;
         color: $color-primary;
         margin: 0 0 8px 0;
