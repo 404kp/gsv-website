@@ -1,43 +1,43 @@
 Aktuell aktiv genutzte Icons (Priorität 1):
 Navigation Icons (Header-Menü)
 
-icon-football - Fußball (Navigation)
-icon-tabletennis - Tischtennis (Navigation)
-icon-news - News/Aktuelles (Navigation)
-icon-download - Downloads (Navigation)
-icon-aboutus - Über uns (Navigation)
-icon-contact - Kontakt (Navigation)
-icon-member - Mitglied werden (Navigation)
+icon-football - Fußball (Navigation) - WEISS (#ffffff) in Desktop-Navigation, SCHWARZ (#1e1e1e) im Mobile-Menu
+icon-tabletennis - Tischtennis (Navigation) - WEISS (#ffffff) in Desktop-Navigation, SCHWARZ (#1e1e1e) im Mobile-Menu
+icon-news - News/Aktuelles (Navigation) - WEISS (#ffffff) in Desktop-Navigation, SCHWARZ (#1e1e1e) im Mobile-Menu
+icon-download - Downloads (Navigation) - WEISS (#ffffff) in Desktop-Navigation, SCHWARZ (#1e1e1e) im Mobile-Menu, GELB (#fbe91d) auf Startseite News-Bereich
+icon-aboutus - Über uns (Navigation) - WEISS (#ffffff) in Desktop-Navigation, SCHWARZ (#1e1e1e) im Mobile-Menu
+icon-contact - Kontakt (Navigation) - WEISS (#ffffff) in Desktop-Navigation, SCHWARZ (#1e1e1e) im Mobile-Menu
+icon-member - Mitglied werden (Navigation) - WEISS (#ffffff) in Desktop-Navigation, SCHWARZ (#1e1e1e) im Mobile-Menu
 
 
 Social Media Icons
-facebook - Facebook (Footer & Social Media Links)
-instagram - Instagram (Footer & Social Media Links)
-facebook-blue - Facebook blau (spezielle Kontakt-Seite)
-instagram-blue - Instagram blau (spezielle Kontakt-Seite)
+facebook - Facebook (Footer & Social Media Links) - WEISS (durch CSS filter: invert(100%)) im Footer
+instagram - Instagram (Footer & Social Media Links) - WEISS (durch CSS filter: invert(100%)) im Footer
+facebook-blue - Facebook blau (spezielle Kontakt-Seite) - NICHT VERWENDET in regulären Seiten
+instagram-blue - Instagram blau (spezielle Kontakt-Seite) - NICHT VERWENDET in regulären Seiten
 
 
 Utility Icons
-arrow-down - Dropdown-Pfeile (Navigation)
+arrow-down - Dropdown-Pfeile (Navigation) - WEISS (#ffffff) in Navigation
 
 FontAwesome Icons (externe Abhängigkeit):
 Diese werden aktuell verwendet, sollten aber durch Icons8 ersetzt werden:
 
 News-Seite FontAwesome Icons:
-fa-calendar-alt - Kalender für Datum
-fa-arrow-right - Pfeil für "Weiterlesen"
-fa-facebook-f - Facebook (alternative Darstellung)
-fa-instagram - Instagram (alternative Darstellung)
+fa-calendar-alt - Kalender für Datum - NICHT VERWENDET in regulären Seiten
+fa-arrow-right - Pfeil für "Weiterlesen" - NICHT VERWENDET in regulären Seiten
+fa-facebook-f - Facebook (alternative Darstellung) - NICHT VERWENDET in regulären Seiten
+fa-instagram - Instagram (alternative Darstellung) - NICHT VERWENDET in regulären Seiten
 
 
 Mitglieder-Seite FontAwesome Icons:
-fa-users - Gemeinschaft
-fa-futbol - Fußball/Sport
-fa-heartbeat - Gesundheit
-fa-child - Jugend/Kinder
-fa-calendar-check - Events/Termine
-fa-hands-helping - Hilfe/Unterstützung
-fa-download - Download
-fa-envelope - E-Mail
-fa-mail-bulk - Post
-fa-handshake - Persönlicher Kontakt
+fa-users - Gemeinschaft - NICHT VERWENDET in regulären Seiten
+fa-futbol - Fußball/Sport - NICHT VERWENDET in regulären Seiten
+fa-heartbeat - Gesundheit - NICHT VERWENDET in regulären Seiten
+fa-child - Jugend/Kinder - NICHT VERWENDET in regulären Seiten
+fa-calendar-check - Events/Termine - NICHT VERWENDET in regulären Seiten
+fa-hands-helping - Hilfe/Unterstützung - NICHT VERWENDET in regulären Seiten
+fa-download - Download - NICHT VERWENDET in regulären Seiten
+fa-envelope - E-Mail - NICHT VERWENDET in regulären Seiten
+fa-mail-bulk - Post - NICHT VERWENDET in regulären Seiten
+fa-handshake - Persönlicher Kontakt - NICHT VERWENDET in regulären Seiten

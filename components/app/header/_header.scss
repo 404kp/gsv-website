@@ -434,8 +434,6 @@
 
     .menu-overlay-social-media {
       display: flex;
-      width: 40%;
-      justify-content: space-between;
       margin-top: 30px;
 
       @media(max-width:$media-width-phone-small) {
@@ -448,9 +446,12 @@
         background: none;
         border: none;
         text-decoration: none;
+        margin: 0 20px;
 
         .icon {
           margin: 0;
+          width: 45px;
+          height: 60px;
         }
       }
     }

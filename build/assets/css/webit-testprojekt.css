@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Swiper 11.2.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1558,8 +1557,6 @@ a {
   }
   .menu-overlay .menu-overlay-social-media {
     display: flex;
-    width: 40%;
-    justify-content: space-between;
     margin-top: 30px;
   }
 }
@@ -1575,9 +1572,12 @@ a {
     background: none;
     border: none;
     text-decoration: none;
+    margin: 0 20px;
   }
   .menu-overlay .menu-overlay-social-media a .icon {
     margin: 0;
+    width: 45px;
+    height: 60px;
   }
   .menu-overlay .close-menu-overlay {
     position: absolute;
@@ -3137,8 +3137,8 @@ form input.success:focus, form textarea.success:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   background-color: rgba(14, 121, 191, 0.1);
   transition: all 0.3s ease;
@@ -3148,8 +3148,8 @@ form input.success:focus, form textarea.success:focus {
   transform: scale(1.1) rotate(5deg);
 }
 .kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text .assoc-infos-social a .icon {
-  height: 20px;
-  width: 20px;
+  height: 32px;
+  width: 32px;
   fill: #0e79bf;
   transition: fill 0.3s ease;
 }
@@ -4384,9 +4384,20 @@ form input.success:focus, form textarea.success:focus {
   align-items: flex-start;
 }
 .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #eeeded;
+  border-radius: 50%;
   flex-shrink: 0;
   margin-top: 2px;
+}
+.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-text h4 {
   color: #0e79bf;
@@ -4488,6 +4499,11 @@ form input.success:focus, form textarea.success:focus {
   font-size: 0.9rem;
   line-height: 1.4;
   cursor: pointer;
+  color: #1e1e1e;
+}
+.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group.checkbox-group label .required {
+  color: #dc267f;
+  font-weight: bold;
 }
 .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions {
   display: flex;
@@ -4553,7 +4569,12 @@ form input.success:focus, form textarea.success:focus {
     gap: 20px;
   }
   .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon {
-    font-size: 1.3rem;
+    width: 35px;
+    height: 35px;
+  }
+  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon svg {
+    width: 18px;
+    height: 18px;
   }
   .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-text h4 {
     font-size: 1rem;
@@ -6053,7 +6074,6 @@ form input.success:focus, form textarea.success:focus {
 }
 .contact-buttons .contact-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 25px 30px;
   background: linear-gradient(135deg, rgba(14, 121, 191, 0.05), rgba(14, 121, 191, 0.02));
@@ -6080,40 +6100,70 @@ form input.success:focus, form textarea.success:focus {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(14, 121, 191, 0.2);
 }
-.contact-buttons .contact-btn span {
+.contact-buttons .contact-btn .contact-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.contact-buttons .contact-btn .contact-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+.contact-buttons .contact-btn .contact-header .contact-title {
   font-weight: 700;
   color: #0e79bf;
   font-size: 1.2rem;
-  margin-bottom: 8px;
-  text-align: center;
+  margin: 0;
 }
 @media (max-width: 850px) {
-  .contact-buttons .contact-btn span {
+  .contact-buttons .contact-btn .contact-header .contact-title {
     font-size: 1.1rem;
   }
 }
-.contact-buttons .contact-btn small {
+.contact-buttons .contact-btn .contact-icon {
+  width: 24px;
+  height: 24px;
+  color: #0e79bf;
+  flex-shrink: 0;
+}
+.contact-buttons .contact-btn .contact-email {
   color: #666;
   font-size: 1rem;
   font-weight: 500;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.contact-buttons .contact-btn small:before {
-  content: "✉";
-  font-size: 1.1rem;
-  color: #0e79bf;
+  background: rgba(14, 121, 191, 0.05);
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(14, 121, 191, 0.1);
 }
 @media (max-width: 850px) {
-  .contact-buttons .contact-btn small {
+  .contact-buttons .contact-btn .contact-email {
     font-size: 0.9rem;
+    padding: 6px 12px;
   }
 }
 @media (max-width: 850px) {
   .contact-buttons .contact-btn {
     padding: 20px 25px;
+  }
+  .contact-buttons .contact-btn .contact-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .contact-buttons .contact-btn .contact-header {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .contact-buttons .contact-btn .contact-content {
+    gap: 12px;
+  }
+  .contact-buttons .contact-btn .contact-header {
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
@@ -6558,9 +6608,22 @@ form input.success:focus, form textarea.success:focus {
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .aktuelles-page .news-section .news-card .news-content .read-more:hover {
   color: #fbe91d;
+}
+.aktuelles-page .news-section .news-card .news-content .read-more:hover .read-more-icon {
+  transform: translateX(3px);
+}
+.aktuelles-page .news-section .news-card .news-content .read-more .read-more-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 .aktuelles-page .contact-quick {
   padding: 6vh 2vw;
@@ -7241,10 +7304,16 @@ form input.success:focus, form textarea.success:focus {
   display: flex;
   gap: 32px;
   justify-content: center;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 .footer .footer-contacts-social-media .footer-social-media a:hover {
   transform: scale(1.1);
+}
+.footer .footer-contacts-social-media .footer-social-media .icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+  filter: brightness(0) invert(1);
 }
 .footer .footer-contacts-social-media .footer-social-media img {
   cursor: pointer;
@@ -7320,6 +7389,11 @@ form input.success:focus, form textarea.success:focus {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+  .footer-contacts-social-media .footer-social-media .icon {
+    width: 12vw;
+    height: 12vw;
+    padding-bottom: 2vw;
   }
   .footer-contacts-social-media .footer-social-media img {
     max-width: 5vw;

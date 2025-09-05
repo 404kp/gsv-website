@@ -410,9 +410,24 @@
                     text-decoration: none;
                     font-size: 0.9rem;
                     transition: color 0.3s ease;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5rem;
 
                     &:hover {
                         color: $color-accent;
+                        
+                        .read-more-icon {
+                            transform: translateX(3px);
+                        }
+                    }
+
+                    .read-more-icon {
+                        width: 18px;
+                        height: 18px;
+                        fill: currentColor;
+                        transition: transform 0.3s ease;
+                        flex-shrink: 0;
                     }
                 }
             }

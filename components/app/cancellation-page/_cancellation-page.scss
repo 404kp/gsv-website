@@ -100,9 +100,21 @@
                         align-items: flex-start;
 
                         .info-icon {
-                            font-size: 1.5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            background: $color-neutral-25;
+                            border-radius: 50%;
                             flex-shrink: 0;
                             margin-top: 2px;
+                            
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                                fill: $color-neutral-0;
+                            }
                         }
 
                         .info-text {
@@ -222,6 +234,12 @@
                             font-size: 0.9rem;
                             line-height: 1.4;
                             cursor: pointer;
+                            color: $color-neutral-100;
+                            
+                            .required {
+                                color: #dc267f;
+                                font-weight: bold;
+                            }
                         }
                     }
                 }
@@ -303,7 +321,13 @@
 
                         .info-item {
                             .info-icon {
-                                font-size: 1.3rem;
+                                width: 35px;
+                                height: 35px;
+                                
+                                svg {
+                                    width: 18px;
+                                    height: 18px;
+                                }
                             }
 
                             .info-text {
