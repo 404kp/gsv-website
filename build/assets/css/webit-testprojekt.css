@@ -3717,6 +3717,12 @@ form input.success:focus, form textarea.success:focus {
   grid-template-columns: 1fr 2fr;
   gap: 60px;
   align-items: start;
+  /*
+  // Privacy Information Styles - AUSKOMMENTIERT
+  .privacy-info {
+      // Styles entfernt - auskommentiert
+  }
+  */
 }
 @media (max-width: 1024px) {
   .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper {
@@ -3932,19 +3938,19 @@ form input.success:focus, form textarea.success:focus {
   font-size: 1.1rem;
   margin-top: 4px;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
 }
 @media (max-width: 850px) {
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions {
     flex-direction: column;
     align-items: center;
   }
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions .submit-btn {
   background: linear-gradient(135deg, #0e79bf, #005fa3);
   color: white;
   border: none;
@@ -3956,20 +3962,20 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(14, 121, 191, 0.3);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:hover {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions .submit-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(14, 121, 191, 0.4);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:active {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions .submit-btn:active {
   transform: translateY(0);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .submit-btn:disabled {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions .submit-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
   box-shadow: 0 5px 20px rgba(14, 121, 191, 0.3);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions .reset-btn {
   background: transparent;
   color: #666;
   border: 2px solid #ccc;
@@ -3981,20 +3987,20 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .form-actions .reset-btn:hover {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .form-actions .reset-btn:hover {
   background: #f5f5f5;
   border-color: #999;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights {
   margin-top: 25px;
   padding: 20px;
   background: linear-gradient(135deg, rgba(14, 121, 191, 0.05), rgba(14, 121, 191, 0.02));
   border-radius: 15px;
   border: 1px solid rgba(14, 121, 191, 0.1);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .sepa-highlights-title {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .sepa-highlights-title {
   color: #0e79bf;
   font-size: 1.1rem;
   font-weight: 600;
@@ -4003,7 +4009,7 @@ form input.success:focus, form textarea.success:focus {
   padding-bottom: 10px;
   border-bottom: 2px solid rgba(14, 121, 191, 0.1);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item {
   display: flex;
   align-items: center;
   padding: 8px 12px;
@@ -4013,42 +4019,43 @@ form input.success:focus, form textarea.success:focus {
   border-left: 3px solid #0e79bf;
   transition: all 0.3s ease;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item:last-child {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item:last-child {
   margin-bottom: 0;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item:hover {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item:hover {
   transform: translateX(5px);
   box-shadow: 0 2px 8px rgba(14, 121, 191, 0.1);
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item.warning {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item.warning {
   border-left-color: #dc267f;
   background: linear-gradient(135deg, rgba(220, 38, 127, 0.05), rgba(220, 38, 127, 0.02));
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item.warning .highlight-text {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item.warning .highlight-text {
   color: #dc267f;
   font-weight: 600;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item .highlight-text {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item .highlight-text {
   color: #333;
   font-size: 0.95rem;
   font-weight: 500;
   line-height: 1.4;
 }
 @media (max-width: 850px) {
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights {
     padding: 15px;
   }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .sepa-highlights-title {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .sepa-highlights-title {
     font-size: 1rem;
   }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item {
     padding: 6px 10px;
   }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form .sepa-highlights .highlight-item .highlight-text {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .sepa-highlights .highlight-item .highlight-text {
     font-size: 0.9rem;
   }
 }
-.mitglieder-site .member-questions {
+
+.member-questions {
   width: 100vw;
   background: #eeeded;
   margin: 0 auto;
@@ -4057,7 +4064,7 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.mitglieder-site .member-questions .member-questions-content {
+.member-questions .member-questions-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4067,18 +4074,18 @@ form input.success:focus, form textarea.success:focus {
   padding: 0 20px;
   text-align: center;
 }
-.mitglieder-site .member-questions .member-questions-content h3 {
+.member-questions .member-questions-content h3 {
   color: #0e79bf;
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 25px;
 }
 @media (max-width: 1150px) {
-  .mitglieder-site .member-questions .member-questions-content h3 {
+  .member-questions .member-questions-content h3 {
     font-size: 1.8rem;
   }
 }
-.mitglieder-site .member-questions .member-questions-content p {
+.member-questions .member-questions-content p {
   color: #666;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -4086,11 +4093,11 @@ form input.success:focus, form textarea.success:focus {
   max-width: 600px;
 }
 @media (max-width: 1150px) {
-  .mitglieder-site .member-questions .member-questions-content p {
+  .member-questions .member-questions-content p {
     font-size: 1.1rem;
   }
 }
-.mitglieder-site .member-questions .member-questions-content .secondary {
+.member-questions .member-questions-content .secondary {
   display: inline-block;
   padding: 15px 30px;
   background-color: #0e79bf;
@@ -4102,13 +4109,14 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(251, 233, 29, 0.3);
 }
-.mitglieder-site .member-questions .member-questions-content .secondary:hover {
+.member-questions .member-questions-content .secondary:hover {
   background-color: #0e79bf;
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(14, 121, 191, 0.3);
 }
-.mitglieder-site .member-cancellation {
+
+.member-cancellation {
   width: 100vw;
   background: linear-gradient(135deg, rgba(220, 38, 127, 0.1), rgba(220, 38, 127, 0.05));
   margin: 0 auto;
@@ -4117,7 +4125,7 @@ form input.success:focus, form textarea.success:focus {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.mitglieder-site .member-cancellation .member-cancellation-content {
+.member-cancellation .member-cancellation-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4127,18 +4135,18 @@ form input.success:focus, form textarea.success:focus {
   padding: 0 20px;
   text-align: center;
 }
-.mitglieder-site .member-cancellation .member-cancellation-content h3 {
+.member-cancellation .member-cancellation-content h3 {
   color: #dc267f;
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 25px;
 }
 @media (max-width: 1150px) {
-  .mitglieder-site .member-cancellation .member-cancellation-content h3 {
+  .member-cancellation .member-cancellation-content h3 {
     font-size: 1.8rem;
   }
 }
-.mitglieder-site .member-cancellation .member-cancellation-content p {
+.member-cancellation .member-cancellation-content p {
   color: #666;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -4146,11 +4154,11 @@ form input.success:focus, form textarea.success:focus {
   max-width: 600px;
 }
 @media (max-width: 1150px) {
-  .mitglieder-site .member-cancellation .member-cancellation-content p {
+  .member-cancellation .member-cancellation-content p {
     font-size: 1.1rem;
   }
 }
-.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn {
+.member-cancellation .member-cancellation-content .cancellation-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -4164,20 +4172,20 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(220, 38, 127, 0.3);
 }
-.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn:hover {
+.member-cancellation .member-cancellation-content .cancellation-btn:hover {
   background-color: #b01f68;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(220, 38, 127, 0.4);
 }
-.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn .cancel-icon {
+.member-cancellation .member-cancellation-content .cancellation-btn .cancel-icon {
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease;
 }
-.mitglieder-site .member-cancellation .member-cancellation-content .cancellation-btn:hover .cancel-icon {
+.member-cancellation .member-cancellation-content .cancellation-btn:hover .cancel-icon {
   transform: scale(1.1);
 }
-.mitglieder-site .member-cancellation .member-cancellation-content .warning-note {
+.member-cancellation .member-cancellation-content .warning-note {
   margin-top: 30px;
   padding: 20px;
   background-color: rgba(255, 193, 7, 0.1);
@@ -4185,7 +4193,7 @@ form input.success:focus, form textarea.success:focus {
   border-radius: 8px;
   max-width: 600px;
 }
-.mitglieder-site .member-cancellation .member-cancellation-content .warning-note p {
+.member-cancellation .member-cancellation-content .warning-note p {
   color: #856404;
   font-size: 0.95rem;
   margin: 0;

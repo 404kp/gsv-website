@@ -505,6 +505,15 @@
                         }
                     }
 
+                    }
+
+                    /*
+                    // Privacy Information Styles - AUSKOMMENTIERT
+                    .privacy-info {
+                        // Styles entfernt - auskommentiert
+                    }
+                    */
+
                     .form-actions {
                         display: flex;
                         gap: 20px;
@@ -797,7 +806,6 @@
             }
         }
     }
-}
 
 // Mobile responsive adjustments
 @media (max-width: $media-width-phone-navbar) {

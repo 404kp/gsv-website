@@ -177,6 +177,18 @@ export const config = {
             'swiper-bundle.min.js',
           ],
         },
+        {
+          options: {
+            sourceDir: './components/app/',
+            destinationDir: './build/assets/',
+            flatten: false,
+          },
+          files: [
+            '**/*.pdf',
+            '**/*.doc',
+            '**/*.docx',
+          ],
+        },
       ],
       /** @type {!Object} */
       imageMinify: {
