@@ -128,7 +128,7 @@
                     .assoc-icon {
                         height: 28px;
                         width: 28px;
-                        color: $color-primary;
+                        fill: $color-primary;
                         flex-shrink: 0;
                         margin-top: 4px;
                     }
@@ -152,7 +152,7 @@
                             }
 
                             &.clickable {
-                                color: $color-primary;
+                                color: $color-neutral-100;
                                 cursor: pointer;
                                 transition: color 0.3s ease;
 
@@ -347,7 +347,7 @@
                                 .contacts-item-mail-icon {
                                     height: 18px;
                                     width: 18px;
-                                    color: $color-primary;
+                                    fill: $color-primary;
                                     transition: color 0.3s ease;
                                 }
 
@@ -362,6 +362,9 @@
                                 &:hover .contacts-item-mail-icon,
                                 &:hover p {
                                     color: white;
+                                }
+                                &:hover .contacts-item-mail-icon {
+                                    fill: $color-neutral-0;
                                 }
                             }
                         }

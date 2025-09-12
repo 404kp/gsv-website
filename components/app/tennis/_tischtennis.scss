@@ -237,28 +237,36 @@
 
                 .info-row {
                     display: flex;
-                    align-items: flex-start;
+                    justify-content: center;
                     gap: 15px;
                     margin-bottom: 18px;
                     text-align: left;
 
-                    .info-icon {
-                        width: 22px;
-                        height: 22px;
-                        color: $color-primary;
-                        flex-shrink: 0;
-                        margin-top: 2px;
-                    }
+
 
                     > div {
-                        flex: 1;
+                        
+                        .info-row-items {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            .info-icon {
+                                width: 30px;
+                                height: 30px;
+                                color: $color-primary;
+                                flex-shrink: 0;
+                                margin-top: 2px;
+                                fill: $color-primary;
+                        }
 
                         span {
                             font-weight: 700;
                             color: $color-primary;
                             font-size: 1.05rem;
-                            display: block;
-                            margin-bottom: 5px;
+                            display: flex;
+                            justify-content: center;
+                        }
                         }
 
                         p {

@@ -3097,7 +3097,7 @@ form input.success:focus, form textarea.success:focus {
 .kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-icon {
   height: 28px;
   width: 28px;
-  color: #0e79bf;
+  fill: #0e79bf;
   flex-shrink: 0;
   margin-top: 4px;
 }
@@ -3119,7 +3119,7 @@ form input.success:focus, form textarea.success:focus {
   margin-bottom: 12px;
 }
 .kontakt-site .contacts-inner .assoc-infos .assoc-content .assoc-infos-item .assoc-infos-text p.clickable {
-  color: #0e79bf;
+  color: #1e1e1e;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -3292,7 +3292,7 @@ form input.success:focus, form textarea.success:focus {
 .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail .contacts-item-mail-icon {
   height: 18px;
   width: 18px;
-  color: #0e79bf;
+  fill: #0e79bf;
   transition: color 0.3s ease;
 }
 .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail p {
@@ -3304,6 +3304,9 @@ form input.success:focus, form textarea.success:focus {
 }
 .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover .contacts-item-mail-icon, .kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover p {
   color: white;
+}
+.kontakt-site .contacts-inner .key-contacts-block .contacts-personas .contacts-item-all .contacts-item a .contacts-item-mail:hover .contacts-item-mail-icon {
+  fill: #ffffff;
 }
 .kontakt-site .contact-map-container {
   width: 100vw;
@@ -3622,7 +3625,7 @@ form input.success:focus, form textarea.success:focus {
   height: 80px;
   width: 80px;
   margin-bottom: 25px;
-  color: #0e79bf;
+  fill: #0e79bf;
   transition: all 0.3s ease;
 }
 @media (max-width: 1150px) {
@@ -3736,6 +3739,11 @@ form input.success:focus, form textarea.success:focus {
   border-radius: 20px;
   border-left: 4px solid #fbe91d;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 90px;
+  align-self: start;
+  height: -moz-max-content;
+  height: max-content;
 }
 .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info h4 {
   color: #0e79bf;
@@ -3744,39 +3752,44 @@ form input.success:focus, form textarea.success:focus {
   margin-bottom: 25px;
   text-align: center;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows {
   display: flex;
   flex-direction: column;
+  gap: 18px;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 0;
+  text-align: left;
+}
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row > div .info-row-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-icon {
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row > div .info-row-items .info-icon {
+  width: 30px;
+  height: 30px;
   color: #0e79bf;
-  font-size: 1.1rem;
   flex-shrink: 0;
-  margin-top: 4px;
-  width: 20px;
-  height: 20px;
+  margin-top: 2px;
+  fill: #0e79bf;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text {
-  flex: 1;
-}
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text h5 {
-  color: #0e79bf;
-  font-size: 1.2rem;
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row > div .info-row-items span {
   font-weight: 700;
-  margin: 0 0 6px 0;
-  line-height: 1.3;
+  color: #0e79bf;
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: center;
 }
-.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text p {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.5;
+.mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row > div p {
   margin: 0;
+  color: #555;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form {
   background: #ffffff;
@@ -4219,25 +4232,30 @@ form input.success:focus, form textarea.success:focus {
   }
   .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info {
     padding: 30px 25px;
+    position: static;
+    top: auto;
   }
   .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info h4 {
     font-size: 1.6rem;
   }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows {
     gap: 20px;
   }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row {
     gap: 10px;
   }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-icon {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row .info-row-items {
+    gap: 12px;
+  }
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row .info-row-items .info-icon {
+    width: 22px;
+    height: 22px;
+    margin-top: 0;
+  }
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row .info-row-items span {
     font-size: 1rem;
-    width: 18px;
-    height: 18px;
   }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text h5 {
-    font-size: 1.1rem;
-  }
-  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-items .info-item .info-text p {
+  .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-info .info-rows .info-row p {
     font-size: 0.95rem;
   }
   .mitglieder-site .member-registration .member-registration-content .registration-form-wrapper .registration-form {
@@ -4846,11 +4864,17 @@ form input.success:focus, form textarea.success:focus {
 .fussball-site .training-schedule .training-team-item .training-contact .training-icon {
   width: 28px;
   height: 28px;
-  fill: #0e79bf;
   flex-shrink: 0;
   padding: 8px;
-  background: rgba(14, 121, 191, 0.1);
+  background: #0e79bf;
   border-radius: 10px;
+  /* Force the referenced symbol to render white without touching background */
+}
+.fussball-site .training-schedule .training-team-item .training-time .training-icon use,
+.fussball-site .training-schedule .training-team-item .training-location .training-icon use,
+.fussball-site .training-schedule .training-team-item .training-trainer .training-icon use,
+.fussball-site .training-schedule .training-team-item .training-contact .training-icon use {
+  filter: brightness(0) invert(1);
 }
 .fussball-site .training-schedule .training-team-item .training-time .training-info,
 .fussball-site .training-schedule .training-team-item .training-location .training-info,
@@ -4971,11 +4995,17 @@ form input.success:focus, form textarea.success:focus {
 .fussball-site .training-schedule .training-team-item-senior .training-contact .training-icon {
   width: 28px;
   height: 28px;
-  fill: #0e79bf;
   flex-shrink: 0;
   padding: 8px;
-  background: rgba(14, 121, 191, 0.1);
+  background: #0e79bf;
   border-radius: 10px;
+  /* Force the referenced symbol to render white without touching background */
+}
+.fussball-site .training-schedule .training-team-item-senior .training-time .training-icon use,
+.fussball-site .training-schedule .training-team-item-senior .training-location .training-icon use,
+.fussball-site .training-schedule .training-team-item-senior .training-trainer .training-icon use,
+.fussball-site .training-schedule .training-team-item-senior .training-contact .training-icon use {
+  filter: brightness(0) invert(1);
 }
 .fussball-site .training-schedule .training-team-item-senior .training-time .training-info,
 .fussball-site .training-schedule .training-team-item-senior .training-location .training-info,
@@ -5016,7 +5046,7 @@ form input.success:focus, form textarea.success:focus {
   transition: color 0.3s ease;
 }
 .fussball-site .training-schedule .training-team-item-senior .training-contact .training-info p:hover {
-  color: #fbe91d;
+  color: #0e79bf;
   text-decoration: underline;
 }
 .fussball-site .training-schedule .training-note {
@@ -5077,8 +5107,8 @@ form input.success:focus, form textarea.success:focus {
 .fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1vh 2vw;
-  max-width: 35vw;
+  gap: 1vh 10vw;
+  max-width: 70vw;
 }
 .fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item {
   display: flex;
@@ -5087,13 +5117,15 @@ form input.success:focus, form textarea.success:focus {
   text-align: left;
 }
 .fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item .trial-icon {
-  width: 16px;
-  height: 16px;
-  fill: #22c55e;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
   padding: 8px;
-  border: 2px solid #22c55e;
   border-radius: 8px;
+  /* Force the referenced symbol to render white without touching background */
+}
+.fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item .trial-icon use {
+  filter: brightness(0) invert(1);
 }
 .fussball-site .trial-training .trial-training-content .trial-training-text .trial-benefits .trial-benefits-list .trial-benefit-item p {
   margin: 0;
@@ -5416,13 +5448,7 @@ form input.success:focus, form textarea.success:focus {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.youth-team-page .youth-content .youth-info-grid .youth-info-card h3::before {
-  content: "";
-  width: 4px;
-  height: 24px;
-  background: #fbe91d;
-  border-radius: 2px;
+  justify-content: center;
 }
 .youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time,
 .youth-team-page .youth-content .youth-info-grid .youth-info-card .training-location,
@@ -5439,7 +5465,7 @@ form input.success:focus, form textarea.success:focus {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  fill: #fbe91d;
+  fill: #1e1e1e;
   margin-top: 2px;
 }
 .youth-team-page .youth-content .youth-info-grid .youth-info-card .training-time .training-info,
@@ -5892,27 +5918,31 @@ form input.success:focus, form textarea.success:focus {
 }
 .tennis-sports .sport-card .sport-content .training-info .info-row {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 18px;
   text-align: left;
 }
-.tennis-sports .sport-card .sport-content .training-info .info-row .info-icon {
-  width: 22px;
-  height: 22px;
+.tennis-sports .sport-card .sport-content .training-info .info-row > div .info-row-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.tennis-sports .sport-card .sport-content .training-info .info-row > div .info-row-items .info-icon {
+  width: 30px;
+  height: 30px;
   color: #0e79bf;
   flex-shrink: 0;
   margin-top: 2px;
+  fill: #0e79bf;
 }
-.tennis-sports .sport-card .sport-content .training-info .info-row > div {
-  flex: 1;
-}
-.tennis-sports .sport-card .sport-content .training-info .info-row > div span {
+.tennis-sports .sport-card .sport-content .training-info .info-row > div .info-row-items span {
   font-weight: 700;
   color: #0e79bf;
   font-size: 1.05rem;
-  display: block;
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
 }
 .tennis-sports .sport-card .sport-content .training-info .info-row > div p {
   margin: 0;
