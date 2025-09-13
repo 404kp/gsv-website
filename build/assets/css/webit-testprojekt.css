@@ -4377,6 +4377,7 @@ form input.success:focus, form textarea.success:focus {
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 20px;
+  position: relative;
 }
 .cancellation-page .cancellation-content .cancellation-form-wrapper {
   display: grid;
@@ -4390,80 +4391,94 @@ form input.success:focus, form textarea.success:focus {
     gap: 40px;
   }
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info {
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+  height: -moz-max-content;
+  height: max-content;
   background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
   padding: 40px;
   border-radius: 20px;
   border-left: 4px solid #ffc107;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info h2 {
+@media (max-width: 1024px) {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info {
+    position: static;
+    top: auto;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info h2 {
   color: #0e79bf;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 30px;
+  text-align: center;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items {
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 18px;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item {
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row {
   display: flex;
+  justify-content: flex-start;
   gap: 15px;
-  align-items: flex-start;
+  margin-bottom: 0;
+  text-align: left;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon {
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div .info-row-items {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: #eeeded;
-  border-radius: 50%;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div .info-row-items .info-icon {
+  width: 30px;
+  height: 30px;
+  color: #0e79bf;
   flex-shrink: 0;
   margin-top: 2px;
+  fill: #0e79bf;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
-}
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-text h4 {
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div .info-row-items span {
+  font-weight: 600;
   color: #0e79bf;
   font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 8px 0;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-text p {
+.cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div p {
   color: #666;
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form {
   background: #ffffff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form h2 {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form h2 {
   color: #0e79bf;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
   text-align: center;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-section {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-section {
   margin-bottom: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid #eee;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-section:last-of-type {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-section:last-of-type {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-section h3 {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-section h3 {
   color: #0e79bf;
   font-size: 1.4rem;
   font-weight: 600;
@@ -4471,28 +4486,28 @@ form input.success:focus, form textarea.success:focus {
   padding-left: 15px;
   border-left: 3px solid #fbe91d;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-row {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 @media (max-width: 850px) {
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-row {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-row {
     grid-template-columns: 1fr;
     gap: 15px;
   }
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group {
   margin-bottom: 20px;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group label {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group label {
   display: block;
   color: #0e79bf;
   font-weight: 600;
   margin-bottom: 8px;
   font-size: 0.95rem;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group input, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group select, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group textarea {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group input, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group select, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group textarea {
   width: 100%;
   padding: 12px 15px;
   border: 2px solid #e0e0e0;
@@ -4501,52 +4516,52 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-sizing: border-box;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group input:focus, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group select:focus, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group textarea:focus {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group input:focus, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group select:focus, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group textarea:focus {
   outline: none;
   border-color: #0e79bf;
   box-shadow: 0 0 0 3px rgba(14, 121, 191, 0.1);
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group input:invalid, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group select:invalid, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group textarea:invalid {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group input:invalid, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group select:invalid, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group textarea:invalid {
   border-color: #dc267f;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group textarea {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group textarea {
   resize: vertical;
   min-height: 100px;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group.checkbox-group {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group.checkbox-group {
   display: flex;
   align-items: flex-start;
   gap: 12px;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group.checkbox-group input[type=checkbox] {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group.checkbox-group input[type=checkbox] {
   width: auto;
   margin-top: 3px;
   flex-shrink: 0;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group.checkbox-group label {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group.checkbox-group label {
   margin-bottom: 0;
   font-size: 0.9rem;
   line-height: 1.4;
   cursor: pointer;
   color: #1e1e1e;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group.checkbox-group label .required {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group.checkbox-group label .required {
   color: #dc267f;
   font-weight: bold;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
 }
 @media (max-width: 850px) {
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions {
     flex-direction: column;
     align-items: center;
   }
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions .submit-btn {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions .submit-btn {
   background: linear-gradient(135deg, #dc267f, #b01f68);
   color: white;
   border: none;
@@ -4558,14 +4573,14 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(220, 38, 127, 0.3);
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions .submit-btn:hover {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions .submit-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(220, 38, 127, 0.4);
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions .submit-btn:active {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions .submit-btn:active {
   transform: translateY(0);
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions .cancel-btn {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions .cancel-btn {
   background: transparent;
   color: #0e79bf;
   border: 2px solid #0e79bf;
@@ -4577,7 +4592,7 @@ form input.success:focus, form textarea.success:focus {
   transition: all 0.3s ease;
   display: inline-block;
 }
-.cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions .cancel-btn:hover {
+.cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions .cancel-btn:hover {
   background: #0e79bf;
   color: white;
   transform: translateY(-3px);
@@ -4588,49 +4603,48 @@ form input.success:focus, form textarea.success:focus {
   .cancellation-page .cancellation-content {
     padding: 60px 15px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info {
     padding: 30px 25px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info h2 {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info h2 {
     font-size: 1.6rem;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items {
-    gap: 20px;
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows {
+    gap: 15px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon {
-    width: 35px;
-    height: 35px;
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div .info-row-items {
+    gap: 12px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-icon svg {
-    width: 18px;
-    height: 18px;
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div .info-row-items .info-icon {
+    width: 26px;
+    height: 26px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-text h4 {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div .info-row-items span {
     font-size: 1rem;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-info .info-items .info-item .info-text p {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper aside.cancellation-info .info-rows .info-row > div p {
     font-size: 0.9rem;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form {
     padding: 30px 25px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form h2 {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form h2 {
     font-size: 1.8rem;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-section {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-section {
     margin-bottom: 30px;
     padding-bottom: 20px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-section h3 {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-section h3 {
     font-size: 1.2rem;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group input, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group select, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-group textarea {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group input, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group select, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-group textarea {
     padding: 10px 12px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions {
     margin-top: 30px;
   }
-  .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions .submit-btn, .cancellation-page .cancellation-content .cancellation-form-wrapper .cancellation-form .form-actions .cancel-btn {
+  .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions .submit-btn, .cancellation-page .cancellation-content .cancellation-form-wrapper main.cancellation-form .form-actions .cancel-btn {
     padding: 12px 30px;
     font-size: 1rem;
   }
@@ -6544,7 +6558,7 @@ form input.success:focus, form textarea.success:focus {
 }
 .aktuelles-page .news-section h3 {
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
   font-weight: 700;
   color: #0e79bf;
   text-align: center;

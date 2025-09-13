@@ -64,6 +64,7 @@
         max-width: 1400px;
         margin: 0 auto;
         padding: 80px 20px;
+        position: relative; // Important for sticky children
 
         .cancellation-form-wrapper {
             display: grid;
@@ -76,55 +77,67 @@
                 gap: 40px;
             }
 
-            .cancellation-info {
+            aside.cancellation-info {
+                position: sticky;
+                top: 90px; // Same as mitglieder-site - keep clear of fixed header
+                align-self: start; // ensure sticky anchors to grid start
+                height: max-content; // don't stretch with grid row - same as mitglieder-site
                 background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
                 padding: 40px;
                 border-radius: 20px;
                 border-left: 4px solid #ffc107;
+
+                @media (max-width: $media-width-tablet) {
+                    position: static;
+                    top: auto;
+                    max-height: none;
+                    overflow-y: visible;
+                }
 
                 h2 {
                     color: $color-primary;
                     font-size: 1.8rem;
                     font-weight: 700;
                     margin-bottom: 30px;
+                    text-align: center;
                 }
 
-                .info-items {
+                .info-rows {
                     display: flex;
                     flex-direction: column;
-                    gap: 25px;
+                    gap: 18px;
 
-                    .info-item {
+                    .info-row {
                         display: flex;
+                        justify-content: flex-start;
                         gap: 15px;
-                        align-items: flex-start;
+                        margin-bottom: 0;
+                        text-align: left;
 
-                        .info-icon {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 40px;
-                            height: 40px;
-                            background: $color-neutral-25;
-                            border-radius: 50%;
-                            flex-shrink: 0;
-                            margin-top: 2px;
+                        > div {
+                            .info-row-items {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 15px;
+                                margin-bottom: 8px;
+                                
+                                .info-icon {
+                                    width: 30px;
+                                    height: 30px;
+                                    color: $color-primary;
+                                    flex-shrink: 0;
+                                    margin-top: 2px;
+                                    fill: $color-primary;
+                                }
+                                
+                                span {
+                                    font-weight: 600;
+                                    color: $color-primary;
+                                    font-size: 1.1rem;
+                                }
+                            }
                             
-                            svg {
-                                width: 20px;
-                                height: 20px;
-                                fill: $color-neutral-0;
-                            }
-                        }
-
-                        .info-text {
-                            h4 {
-                                color: $color-primary;
-                                font-size: 1.1rem;
-                                font-weight: 600;
-                                margin: 0 0 8px 0;
-                            }
-
                             p {
                                 color: #666;
                                 font-size: 0.95rem;
@@ -136,7 +149,7 @@
                 }
             }
 
-            .cancellation-form {
+            main.cancellation-form {
                 background: $color-neutral-0;
                 padding: 40px;
                 border-radius: 20px;
@@ -309,32 +322,29 @@
             padding: 60px 15px;
 
             .cancellation-form-wrapper {
-                .cancellation-info {
+                aside.cancellation-info {
                     padding: 30px 25px;
 
                     h2 {
                         font-size: 1.6rem;
                     }
 
-                    .info-items {
-                        gap: 20px;
+                    .info-rows {
+                        gap: 15px;
 
-                        .info-item {
-                            .info-icon {
-                                width: 35px;
-                                height: 35px;
-                                
-
-                                svg {
-                                    width: 18px;
-                                    height: 18px;
+                        .info-row {
+                            > div {
+                                .info-row-items {
+                                    gap: 12px;
                                     
-                                }
-                            }
+                                    .info-icon {
+                                        width: 26px;
+                                        height: 26px;
+                                    }
 
-                            .info-text {
-                                h4 {
-                                    font-size: 1rem;
+                                    span {
+                                        font-size: 1rem;
+                                    }
                                 }
 
                                 p {
@@ -345,7 +355,7 @@
                     }
                 }
 
-                .cancellation-form {
+                main.cancellation-form {
                     padding: 30px 25px;
 
                     h2 {
