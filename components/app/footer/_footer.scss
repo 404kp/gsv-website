@@ -94,6 +94,7 @@
         }
 
         li {
+          display: flex;
           @media(max-width:750px)
           {
             padding: 2px;

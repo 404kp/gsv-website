@@ -732,8 +732,7 @@ a:focus, input:focus, textarea:focus {
 }
 
 body, p, h1, h2, h3, h4, h5, h6, div {
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -1812,8 +1811,7 @@ h4 {
 .teaser-categories .teaser-categories-item a .teaser-categories-item-text h4 {
   font-size: clamp(1.2rem, 1.2vw, 2rem);
   margin: 0;
-  -webkit-hyphens: none;
-          hyphens: none;
+  hyphens: none;
   text-align: center;
   font-weight: 600;
 }
@@ -3006,8 +3004,7 @@ form input.success:focus, form textarea.success:focus {
   padding: 0 20px;
 }
 .kontakt-site .contacts-hero .contacts-hero-text h1 {
-  -webkit-hyphens: none;
-          hyphens: none;
+  hyphens: none;
   margin: 0 auto 20px auto;
   text-align: center;
   max-width: 800px;
@@ -5623,8 +5620,7 @@ form input.success:focus, form textarea.success:focus {
   display: inline-block;
   text-align: center;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 @media (max-width: 1024px) {
   .youth-team-page .youth-content .youth-details .youth-cta .cta-buttons .primary,
@@ -7353,6 +7349,9 @@ form input.success:focus, form textarea.success:focus {
   .footer .footer-contacts-social-media .footer-contacts ul {
     flex-direction: column;
   }
+}
+.footer .footer-contacts-social-media .footer-contacts ul li {
+  display: flex;
 }
 @media (max-width: 750px) {
   .footer .footer-contacts-social-media .footer-contacts ul li {
