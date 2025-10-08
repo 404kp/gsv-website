@@ -85,11 +85,20 @@
 
       ul {
         list-style: none;
-        display: flex;
         padding-left: 0;
-        gap: 3vw;
+        display: flex;
+        flex-direction: row;
+        @media(max-width:750px)
+        {
+          flex-direction: column;
+        }
 
         li {
+          @media(max-width:750px)
+          {
+            padding: 2px;
+            margin: 5px;
+          }
           &:hover {
             transform: scale(1.1);
           }

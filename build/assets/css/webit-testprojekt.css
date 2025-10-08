@@ -7345,9 +7345,20 @@ form input.success:focus, form textarea.success:focus {
 }
 .footer .footer-contacts-social-media .footer-contacts ul {
   list-style: none;
-  display: flex;
   padding-left: 0;
-  gap: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 750px) {
+  .footer .footer-contacts-social-media .footer-contacts ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 750px) {
+  .footer .footer-contacts-social-media .footer-contacts ul li {
+    padding: 2px;
+    margin: 5px;
+  }
 }
 .footer .footer-contacts-social-media .footer-contacts ul li:hover {
   transform: scale(1.1);
