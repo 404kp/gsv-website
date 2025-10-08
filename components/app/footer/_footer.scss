@@ -95,8 +95,10 @@
 
         li {
           display: flex;
+          margin: 10px;
           @media(max-width:750px)
           {
+            justify-content: center;
             padding: 2px;
             margin: 5px;
           }

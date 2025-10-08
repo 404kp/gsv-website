@@ -7352,9 +7352,11 @@ form input.success:focus, form textarea.success:focus {
 }
 .footer .footer-contacts-social-media .footer-contacts ul li {
   display: flex;
+  margin: 10px;
 }
 @media (max-width: 750px) {
   .footer .footer-contacts-social-media .footer-contacts ul li {
+    justify-content: center;
     padding: 2px;
     margin: 5px;
   }
