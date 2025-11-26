@@ -1,0 +1,32 @@
+{
+  "news": [
+    {
+      "date": "15. Oktober 2024",
+      "title": "Erfolgreiches Jugendturnier bei bestem Wetter",
+      "text": "Am vergangenen Wochenende fand unser jährliches Jugendturnier statt. Bei strahlendem Sonnenschein kämpften über 50 Nachwuchskicker aus der Region fair um den Sieg...",
+      "link": "#",
+      "linkText": "Weiterlesen"
+    },
+    {
+      "date": "08. Oktober 2024",
+      "title": "Tischtennis: Erste Mannschaft bleibt ungeschlagen",
+      "text": "Mit einem knappen 9:7 Sieg gegen den Tabellenzweiten konnte unsere erste Tischtennis-Mannschaft ihre Tabellenführung verteidigen und bleibt weiterhin ungeschlagen...",
+      "link": "#",
+      "linkText": "Spielbericht"
+    },
+    {
+      "date": "02. Oktober 2024",
+      "title": "Trainer für D-Jugend gesucht",
+      "text": "Wir suchen einen engagierten Trainer für unsere D-Jugend Mannschaft. Ideal für Quereinsteiger mit Spaß am Umgang mit Kindern. Trainerschein kann über den Verein erworben werden...",
+      "link": "/kontakt.html",
+      "linkText": "Kontakt aufnehmen"
+    },
+    {
+      "date": "25. September 2024",
+      "title": "Rückblick: Vereinsfest war großer Erfolg",
+      "text": "Unser diesjähriges Vereinsfest lockte über 300 Besucher auf den Sportplatz. Bei Live-Musik, leckerem Essen und tollen Aktionen für die Kinder wurde bis spät in die Nacht gefeiert...",
+      "link": "#",
+      "linkText": "Bildergalerie"
+    }
+  ]
+}
