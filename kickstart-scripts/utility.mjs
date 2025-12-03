@@ -227,7 +227,7 @@ export function isWsl() {
  */
 export function replacePlaceholder(content) {
   return content.replace(
-    new RegExp('{(app|deferred|svg):{([\\w|\\-]{0,})}}|{(app|deferred|svg):{(.+):{(.+)}}}',
+    new RegExp('{(app|deferred|svg|loop):{([\\w|\\-]{0,})}}|{(app|deferred|svg|loop):{(.+):{(.+)}}}',
     'g'
   ), (string) => {
 
@@ -241,6 +241,39 @@ export function replacePlaceholder(content) {
 
       /** @type {string} */
       let type = match[0];
+
+      if (type === 'loop') {
+        const dataName = match[1];
+        const templateName = match.length > 2 ? match[2] : dataName;
+
+        const dataPath = path.join('content', dataName + '.json');
+        const templatePath = path.join('components', 'app', templateName + '.html');
+
+        if (fs.existsSync(dataPath) && fs.existsSync(templatePath)) {
+          const data = JSON.parse(fs.readFileSync(dataPath, { encoding: 'utf8' }));
+          const template = fs.readFileSync(templatePath, { encoding: 'utf8' });
+          
+          let items = [];
+          if (Array.isArray(data)) {
+            items = data;
+          } else if (data[dataName] && Array.isArray(data[dataName])) {
+            items = data[dataName];
+          } else {
+             // Fallback: try to find the first array property
+             const key = Object.keys(data).find(k => Array.isArray(data[k]));
+             if (key) items = data[key];
+          }
+
+          return items.map(item => {
+            let itemHtml = template;
+            Object.keys(item).forEach(key => {
+              itemHtml = itemHtml.replace(new RegExp('{{' + key + '}}', 'g'), item[key]);
+            });
+            return itemHtml;
+          }).join('\n');
+        }
+        return string;
+      }
 
       /** @type {boolean} */
       const isSvg = type === 'svg' ? true : false;

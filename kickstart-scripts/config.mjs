@@ -189,6 +189,16 @@ export const config = {
             '**/*.docx',
           ],
         },
+        {
+          options: {
+            sourceDir: './admin/',
+            destinationDir: './build/admin/',
+            flatten: false,
+          },
+          files: [
+            '**/*',
+          ],
+        },
       ],
       /** @type {!Object} */
       imageMinify: {
