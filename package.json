@@ -57,8 +57,8 @@
     "build:statics": "node --experimental-modules --no-warnings kickstart-scripts/tasks/svg-sprite.mjs && node --experimental-modules --no-warnings kickstart-scripts/tasks/statics-copy.mjs && node --experimental-modules --no-warnings kickstart-scripts/tasks/image-minify.mjs",
     "build:statics:prod": "node --experimental-modules --no-warnings kickstart-scripts/tasks/svg-sprite.mjs --mode=prod && node --experimental-modules --no-warnings kickstart-scripts/tasks/statics-copy.mjs --mode=prod && node --experimental-modules --no-warnings kickstart-scripts/tasks/image-minify.mjs --mode=prod",
     "watch": "node --experimental-modules --no-warnings kickstart-scripts/livereload.mjs",
-    "build:dev": "npm run build:clean && npm run build:statics && npm run build:html && npm run build:css",
-    "build:prod": "npm run build:clean:prod && npm run build:statics:prod && npm run build:html:prod && npm run build:css:prod && npm run build:js:prod",
+    "build:dev": "npm run build:clean && npm run fetch-football && npm run build:statics && npm run build:html && npm run build:css",
+    "build:prod": "npm run build:clean:prod && npm run fetch-football && npm run build:statics:prod && npm run build:html:prod && npm run build:css:prod && npm run build:js:prod",
     "sync:preview": "node --experimental-modules --no-warnings kickstart-scripts/tasks/ssh-deploy.mjs --stage=preview --task=deploy",
     "deploy:preview": "npm run build:dev && node --experimental-modules --no-warnings kickstart-scripts/tasks/ssh-deploy.mjs --stage=preview --task=deploy",
     "deploy:preview:rollback": "node --experimental-modules --no-warnings kickstart-scripts/tasks/ssh-deploy.mjs --stage=preview --task=rollback",
@@ -67,7 +67,8 @@
     "deploy:demo:rollback": "node --experimental-modules --no-warnings kickstart-scripts/tasks/ssh-deploy.mjs --stage=demo --task=rollback",
     "lint:css": "node --experimental-modules --no-warnings kickstart-scripts/tasks/css-lint.mjs",
     "lint:js": "node --experimental-modules --no-warnings kickstart-scripts/tasks/js-lint.mjs",
-    "validate:html": "node --experimental-modules --no-warnings kickstart-scripts/tasks/html-validate.mjs"
+    "validate:html": "node --experimental-modules --no-warnings kickstart-scripts/tasks/html-validate.mjs",
+    "fetch-football": "node --experimental-modules --no-warnings kickstart-scripts/tasks/fetch-football-data.mjs"
   },
   "engines": {
     "node": "~22",

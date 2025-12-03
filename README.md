@@ -39,3 +39,34 @@ Please take a look at [the configuration file](./kickstart-scripts/config.mjs). 
 ### Scripts
 
 There are multiple npm scripts available to run from either an IDE or via a command line tool. Please take a look at the [package.json](./package.json) for more information.
+
+## Wöchentliche Aktualisierung (Fußball-Daten)
+
+Die Fußball-Daten (letztes Spiel, nächstes Spiel, Tabellenplatz) im Teaser auf der Startseite werden automatisch von **Fupa.net** und **Fussball.de** abgerufen.
+
+### Automatische Aktualisierung
+Der Abruf der Daten ist in den Build-Prozess integriert. Jedes Mal, wenn das Projekt neu gebaut wird, werden die Daten aktualisiert.
+
+```bash
+# Für Entwicklung (lokal)
+npm run build:dev
+
+# Für Produktion (Deployment)
+npm run build:prod
+```
+
+### Manuelle Aktualisierung
+Falls nur die Fußball-Daten aktualisiert werden sollen, ohne das gesamte Projekt neu zu bauen, kann folgender Befehl genutzt werden:
+
+```bash
+npm run fetch-football
+```
+
+### Workflow für die wöchentliche Pflege
+1. **Daten abrufen**: Führe `npm run fetch-football` (oder einen Build-Befehl) aus.
+2. **Prüfen**: Kontrolliere die Datei `components/app/teaser/teaser.html` oder starte den lokalen Server (`npm run dev`), um zu sehen, ob die Daten korrekt sind (Ergebnisse, Gegner, Wappen).
+3. **Veröffentlichen**:
+   - Wenn alles korrekt ist, müssen die Änderungen committed und gepusht werden.
+   - Führe anschließend das Deployment aus (z.B. `npm run deploy:demo` oder den entsprechenden Workflow).
+
+**Hinweis**: Das Skript erkennt automatisch die aktuelle Saison (z.B. 2025-26) basierend auf dem aktuellen Datum.

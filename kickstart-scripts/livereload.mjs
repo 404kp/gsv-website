@@ -150,6 +150,13 @@ try {
   // Add event listeners to file changes trigger the corresponding build process.
   watcher.on('change', (filepath) => triggerNodeScript(filepath));
 
+  console.log('Starting Python HTTP Server on port 8000...');
+  const pythonServer = child_process.spawn('python', ['-m', 'http.server', '8000'], {
+    cwd: 'build',
+    stdio: 'inherit',
+    shell: true
+  });
+
   console.log('Tell me a story.. I will sit here and listen.');
 } catch (error) {
   showError(error);

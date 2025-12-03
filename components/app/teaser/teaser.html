@@ -19,65 +19,114 @@
   </div>
 </div>
 
-<!--Teaser komplett auskommentieren
 
-<h3>Abteilung Fußball Herren</h3>
-<div class="newsteaser">
 
-  <div class="newsteaser-game">
-    <h4>Letztes Spiel</h4>
-    <div class="newsteaser-game-score">
-      <div class="newsteaser-game-score-logo1">Fb
-        <img src="./assets/img/gsv-logo-removed.png" alt="Logo1" loading="lazy">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTBALL-DATA-START -->
+
+<div class="football-teaser-wrapper" style="max-width: 1000px; margin: 5vh auto; padding: 0 20px;">
+  <h3 style="text-align: center; margin-bottom: 40px;">Abteilung Fußball Herren</h3>
+  
+  <div class="newsteaser" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: stretch;">
+
+    <!-- Last Game -->
+    <div class="newsteaser-card" style="flex: 1; min-width: 300px; background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between; align-items: center; transition: transform 0.3s ease;">
+      <div style="width: 100%;">
+        <h4 style="margin-top: 0; margin-bottom: 25px; color: #333; font-size: 1.4rem; text-align: center;">Letztes Spiel</h4>
+        
+        <div class="game-score-row" style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 10px;">
+          <!-- Home Logo -->
+          <div class="team-logo" style="flex: 1; display: flex; justify-content: flex-end;">
+            <img src="./assets/img/gsv-logo-removed.png" alt="Goyatzer SV" loading="lazy" style="height: 60px; width: auto; object-fit: contain;">
+          </div>
+          
+          <!-- Score -->
+          <div class="score-info" style="text-align: center; min-width: 80px;">
+            <span style="font-size: 2.2rem; font-weight: 800; line-height: 1; color: #1e1e1e; display: block;">2:0</span>
+            <span style="font-size: 0.9rem; color: #888; margin-top: 5px; display: block;">29.11.</span>
+          </div>
+          
+          <!-- Opponent Logo -->
+          <div class="team-logo" style="flex: 1; display: flex; justify-content: flex-start;">
+            <img src="https://image.fupa.net/club/3h8GcSsKTCJn/32x32.jpeg" alt="FSV Rot-Weiß Luckau Luckau II" loading="lazy" style="height: 60px; width: auto; object-fit: contain;">
+          </div>
+        </div>
       </div>
-      <div class="newsteaser-score-date">
-        <p>1:0</p>
-        <p>08.11.</p>
-      </div>
-      <div class="newsteaser-game-score-logo2">
-        <img src="./assets/img/dynamo_dresden.png" alt="Logo2" loading="lazy">
-      </div>
+
+      <a href="https://www.fupa.net/team/goyatzer-sv-m1-2025-26/matches" target="_blank" class="secondary" style="width: 100%; margin-top: 20px; font-size: 1rem; padding: 12px; text-align: center; text-decoration: none; box-sizing: border-box; display: inline-block;">
+        zum Spielbericht
+      </a>
     </div>
-    <a href="https://www.fussball.de/mannschaft/goyatzer-sv-goyatzer-sv-brandenburg/-/saison/2425/team-id/015S8IN9N4000000VV0AG80NVVD9188S#!/"
-      target="_blank" class="secondary">
-      zum Spielbericht
-    </a>
-  </div>
 
+    <!-- Next Game -->
+    <div class="newsteaser-card" style="flex: 1; min-width: 300px; background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between; align-items: center; transition: transform 0.3s ease;">
+      <div style="width: 100%;">
+        <h4 style="margin-top: 0; margin-bottom: 25px; color: #333; font-size: 1.4rem; text-align: center;">Nächstes Spiel</h4>
+        
+        <div class="game-score-row" style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 10px;">
+          <!-- Opponent Logo (Assuming Away for next game logic or just generic placement) -->
+          <!-- Note: We don't know if Home/Away easily, so we place Opponent Left, GSV Right for variety or keep consistent? -->
+          <!-- Let's keep consistent: GSV Left, Opponent Right for simplicity, or swap if we knew. -->
+          <!-- User image showed Opponent Left for Next Game. Let's try to swap for variety if it's a future game? -->
+          <!-- Actually, let's keep GSV on the right for "Next Game" to imply "We are waiting for them" or similar? -->
+          <!-- User image had: Opponent (Left) - Time - GSV (Right). Let's mimic that. -->
+          
+          <div class="team-logo" style="flex: 1; display: flex; justify-content: flex-end;">
+             <img src="https://image.fupa.net/team/k63KBTDYOoG1/32x32.jpeg" alt="SV Calau" loading="lazy" style="height: 60px; width: auto; object-fit: contain;">
+          </div>
+          
+          <div class="score-info" style="text-align: center; min-width: 80px;">
+            <span style="font-size: 2.2rem; font-weight: 800; line-height: 1; color: #1e1e1e; display: block;">15:00</span>
+            <span style="font-size: 0.9rem; color: #888; margin-top: 5px; display: block;">15.03.</span>
+          </div>
+          
+          <div class="team-logo" style="flex: 1; display: flex; justify-content: flex-start;">
+            <img src="./assets/img/gsv-logo-removed.png" alt="Goyatzer SV" loading="lazy" style="height: 60px; width: auto; object-fit: contain;">
+          </div>
+        </div>
+      </div>
 
-  <div class="newsteaser-game">
-    <h4>Nächstes Spiel</h4>
-    <div class="newsteaser-game-score">
-      <div class="newsteaser-game-score-logo1">
-        <img src="./assets/img/dynamo_dresden.png" alt="Logo1" loading="lazy">
-      </div>
-      <div class="newsteaser-score-date">
-        <p>1:0</p>
-        <p>08.11.</p>
-      </div>
-      <div class="newsteaser-game-score-logo2">
-        <img src="./assets/img/gsv-logo-removed.png" alt="Logo2" loading="lazy">
-      </div>
+      <a href="https://www.fupa.net/team/goyatzer-sv-m1-2025-26/matches" target="_blank" class="secondary" style="width: 100%; margin-top: 20px; font-size: 1rem; padding: 12px; text-align: center; text-decoration: none; box-sizing: border-box; display: inline-block;">
+        zum Vorbericht
+      </a>
     </div>
-    <a href="https://www.fussball.de/mannschaft/goyatzer-sv-goyatzer-sv-brandenburg/-/saison/2425/team-id/015S8IN9N4000000VV0AG80NVVD9188S#!/"
-      target="_blank" class="secondary">
-      zum Spielbericht
-    </a>
-  </div>
 
+    <!-- Table Rank -->
+    <!-- Removed as per user request -->
 
-  <div class="newsteaser-table">
-    <h4>Tabelle</h4>
-    <a href="https://www.fussball.de/mannschaft/goyatzer-sv-goyatzer-sv-brandenburg/-/saison/2425/team-id/015S8IN9N4000000VV0AG80NVVD9188S#!/"
-      target="_blank">
-      <div class="newsteaser-table-ph">
-        <img src="./assets/img/newsteaser-table-ph.png" alt="Tabelle" loading="lazy">
-      </div>
-    </a>
   </div>
 </div>
 
-Ende auskommentierter Teaser-->
+<!-- FOOTBALL-DATA-END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Teaser für Kategorien unten vor Footer-->
 <div class="teaser-categories">
